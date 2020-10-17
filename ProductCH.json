@@ -1,0 +1,1012 @@
+{
+    "Product": [
+        {
+            "_id": "5f8a7c431596447db94c0e9c",
+            "proGroupN": "ตู้เย็น 1 ประตู",
+            "proName": "ตู้เย็น SAMSUNG รุ่น RA19PT2",
+            "number": "1",
+            "priceUnit": "5590.56",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7c661596447db94c0eac",
+            "proGroupN": "ตู้เย็น 1 ประตู",
+            "proName": "ตู้เย็น TOSHIBA รุ่น GRB175Z",
+            "number": "1",
+            "priceUnit": "5290.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7c9d1596447db94c0ed2",
+            "proGroupN": "ตู้เย็น 1 ประตู",
+            "proName": "ตู้เย็น TOSHIBA รุ่น GRA706CI",
+            "number": "4",
+            "priceUnit": "4590.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7cbe1596447db94c0edf",
+            "proGroupN": "ตู้เย็น 1 ประตู",
+            "proName": "ตู้เย็น Haier รุ่น HR-CEQ18 1ประตู",
+            "number": "1",
+            "priceUnit": "5390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7cfc1596447db94c0eef",
+            "proGroupN": "ตู้เย็น 1 ประตู",
+            "proName": "ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู",
+            "number": "1",
+            "priceUnit": "5390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7ede1596447db94c0f46",
+            "proGroupN": "ตู้เย็น 2 ประตูู",
+            "proName": "ตู้เย็น HITACHI รุ่น RV450PZ",
+            "number": "1",
+            "priceUnit": "21990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7eed1596447db94c0f4b",
+            "proGroupN": "ตู้เย็น 2 ประตู",
+            "proName": "ตู้เย็น HITACHI รุ่น RVG380PZ",
+            "number": "1",
+            "priceUnit": "18990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7efc1596447db94c0f4e",
+            "proGroupN": "ตู้เย็น 2 ประตูู",
+            "proName": "ตู้เย็น HITACHI รุ่น RS600GP2TH",
+            "number": "4",
+            "priceUnit": "49990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f091596447db94c0f53",
+            "proGroupN": "ตู้เย็น 2 ประตูู",
+            "proName": "ตู้เย็น TOSHIBA รุ่น GR-TG41KDZ",
+            "number": "1",
+            "priceUnit": "14990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f151596447db94c0f56",
+            "proGroupN": "ตู้เย็น 2 ประตู",
+            "proName": "ตู้เย็น HITACHI รุ่น RVG550PZ",
+            "number": "1",
+            "priceUnit": "29900.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f3e1596447db94c0f67",
+            "proGroupN": "ตู้เเช่",
+            "proName": "ตู้เเช่  THE COOL รุ่น Alex-2P PROMOTION 25 Q",
+            "number": "2",
+            "priceUnit": "21900.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f6d1596447db94c0f79",
+            "proGroupN": "ตู้เเช่",
+            "proName": "ตู้เเช่  THE COOL รุ่น SARAH 5.3 Q ฝาทึบ",
+            "number": "1",
+            "priceUnit": "5990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f7e1596447db94c0f81",
+            "proGroupN": "ตู้เเช่",
+            "proName": "ตู้เเช่  THE COOL รุ่น Ivy BW280 9.8 Q",
+            "number": "1",
+            "priceUnit": "15990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7f981596447db94c0f86",
+            "proGroupN": "ตู้เเช่",
+            "proName": "ตู้เเช่  FRESHER รุ่น FC288 ขนาด 10.2 Q แช่เย็น",
+            "number": "4",
+            "priceUnit": "15990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a7fe11596447db94c0f8b",
+            "proGroupN": "เครื่องทำน้ำร้อน-เย็น",
+            "proName": "เครื่องทำน้ำร้อน-น้ำเย็น JTL รุ่น DP03F",
+            "number": "1",
+            "priceUnit": "3990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8a7fee1596447db94c0f8e",
+            "proGroupN": "เครื่องทำน้ำร้อน-เย็น",
+            "proName": "เครื่องทำน้ำอุ่น  HITACHI รุ่น HES48VD",
+            "number": "1",
+            "priceUnit": "5390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8a7ffd1596447db94c0f91",
+            "proGroupN": "เครื่องทำน้ำร้อน-เย็น",
+            "proName": "เครื่องทำน้ำร้อน-น้ำเย็น MAZUMA รุ่น DP745C",
+            "number": "1",
+            "priceUnit": "8190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8a80091596447db94c0f96",
+            "proGroupN": "เครื่องทำน้ำร้อน-เย็น",
+            "proName": "เครื่องทำน้ำร้อน-น้ำเย็น  MAZUMA รุ่น DP871UV",
+            "number": "2",
+            "priceUnit": "17900.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8a80171596447db94c0f99",
+            "proGroupN": "เครื่องทำน้ำร้อน-เย็น",
+            "proName": "เครื่องทำน้ำเย็น FRESHER รุ่น FWC599+ถัง",
+            "number": "1",
+            "priceUnit": "3590.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8a80291596447db94c0fa5",
+            "proGroupN": "เครื่องซักผ้า 2 ถัง",
+            "proName": "เครื่องซักผ้า SHARP รุ่น ES-TT70T ขนาด 7กก",
+            "number": "1",
+            "priceUnit": "4390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8a80391596447db94c0fa8",
+            "proGroupN": "เครื่องซักผ้า 1 ถัง",
+            "proName": "เครื่องซักผ้าฝาหน้า  Whirlpool รุ่น 3XWTW5705SW",
+            "number": "1",
+            "priceUnit": "27902.77",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aa7fb1596447db94c11a9",
+            "proGroupN": "เครื่องซักผ้า 1 ถัง",
+            "proName": "เครื่องซักผ้าอัตโนมัติ  TOSHIBA รุ่น AWDE1100GT INVERTER",
+            "number": "1",
+            "priceUnit": "10990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aa8591596447db94c11c6",
+            "proGroupN": "เครื่องซักผ้าฝาหน้า",
+            "proName": "เครื่องซักผ้าฝาหน้า  HITACHI รุ่น BD-W80XWV",
+            "number": "1",
+            "priceUnit": "26900.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aa8771596447db94c11d2",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติกน้ำร้อน SHARP รุ่น KPB16S",
+            "number": "5",
+            "priceUnit": "700.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa88d1596447db94c11d9",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติกน้ำร้อน AJ รุ่น TP930ขนาด 2.8ลิตร",
+            "number": "6",
+            "priceUnit": "750.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa89f1596447db94c11dc",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติก MITSUSHITA รุ่น KP2421",
+            "number": "1",
+            "priceUnit": "579.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa8cb1596447db94c11f3",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติกน้ำร้อน KITTY รุ่น KT282ขนาด 2.5 ลิตร",
+            "number": "12",
+            "priceUnit": "690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa8dc1596447db94c11f6",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติกน้ำ DORAAEMON รุ่น KT-283ขนาด 2.5 ลิตร",
+            "number": "1",
+            "priceUnit": "690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa8eb1596447db94c11fd",
+            "proGroupN": "กระติกน้ำร้อน",
+            "proName": "กระติกน้ำร้อน HABARA รุ่น NHP289",
+            "number": "2",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa90a1596447db94c1204",
+            "proGroupN": "หม้อ",
+            "proName": "หม้อ FAMILY รุ่น BC018P",
+            "number": "2",
+            "priceUnit": "599.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aa94a1596447db94c121a",
+            "proGroupN": "หม้อ",
+            "proName": "หม้อ LOVE STAR รุ่น DSR20",
+            "number": "1",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac1f1596447db94c12a8",
+            "proGroupN": "หม้อ",
+            "proName": "หม้อ SHARP รุ่น KSHD15",
+            "number": "11",
+            "priceUnit": "690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac2e1596447db94c12ab",
+            "proGroupN": "หม้อ",
+            "proName": "หม้อ KASHIWA รุ่น RC180",
+            "number": "10",
+            "priceUnit": "399.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac3d1596447db94c12b3",
+            "proGroupN": "หม้อ",
+            "proName": "หม้อ SHARP รุ่น KSHD55",
+            "number": "1",
+            "priceUnit": "2450.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac4b1596447db94c12ba",
+            "proGroupN": "เครื่องปั่น",
+            "proName": "เครื่องปั่น NATIONAL รุ่น MXT110PN",
+            "number": "1",
+            "priceUnit": "699.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac5a1596447db94c12bd",
+            "proGroupN": "เครื่องปั่น",
+            "proName": "เครื่องปั่น SHARP รุ่น EMSMART4",
+            "number": "4",
+            "priceUnit": "1040.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac6d1596447db94c12c9",
+            "proGroupN": "เครื่องปั่น",
+            "proName": "เครื่องปั่น AJ รุ่น BL002 350W ขนาด 1.5 ลิตร",
+            "number": "1",
+            "priceUnit": "790.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac7b1596447db94c12cc",
+            "proGroupN": "เครื่องปั่น",
+            "proName": "เครื่องปั่น OTTO รุ่น BE127",
+            "number": "24",
+            "priceUnit": "1490.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac881596447db94c12d3",
+            "proGroupN": "เครื่องปั่น",
+            "proName": "เครื่องปั่น SHARP รุ่น EMICEPOWER",
+            "number": "5",
+            "priceUnit": "1240.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aac951596447db94c12d6",
+            "proGroupN": "LED",
+            "proName": "LED Skyworth รุ่น 14E57",
+            "number": "1",
+            "priceUnit": "2990.30",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaca21596447db94c12db",
+            "proGroupN": "LED",
+            "proName": "LED TOSHIBA รุ่น 23PB200T",
+            "number": "1",
+            "priceUnit": "5290.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aacd41596447db94c12e2",
+            "proGroupN": "LED",
+            "proName": "LED ACONATIC 24 นิ้ว รุ่น 24HD513AN",
+            "number": "5",
+            "priceUnit": "2790.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aace61596447db94c12e7",
+            "proGroupN": "LED",
+            "proName": "LED ACONATIC 43 นิ้ว รุ่น AN43DF800SM Smart TV",
+            "number": "1",
+            "priceUnit": "109000.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aacf51596447db94c12ea",
+            "proGroupN": "LED",
+            "proName": "LED PRISMAPRO 32 นิ้ว รุ่น KML32H8",
+            "number": "1",
+            "priceUnit": "7990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aad011596447db94c12f1",
+            "proGroupN": "เตาเเก๊ส",
+            "proName": "เตาแก๊ส HANABISHI รุ่น RY144",
+            "number": "1",
+            "priceUnit": "499.05",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad0c1596447db94c12f4",
+            "proGroupN": "เตาเเก๊ส",
+            "proName": "เตาแก๊ส JTL รุ่น GI118",
+            "number": "1",
+            "priceUnit": "549.05",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad171596447db94c12f9",
+            "proGroupN": "เตาเเก๊ส",
+            "proName": "เตาแก๊ส Lucky Flema รุ่น AT502",
+            "number": "15",
+            "priceUnit": "1790.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad231596447db94c12fc",
+            "proGroupN": "เตาเเก๊ส",
+            "proName": "เตาแก๊ส ไดน่าเฟรม หนาแสตนเลสเดี่ยวรุ่นLK112",
+            "number": "4",
+            "priceUnit": "899.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad381596447db94c1303",
+            "proGroupN": "เตาเเก๊ส",
+            "proName": "เตาแก๊ส Lucky Flema รุ่น AT402",
+            "number": "1",
+            "priceUnit": "3390.34",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad6d1596447db94c1316",
+            "proGroupN": "กระทะไฟฟ้า",
+            "proName": "กระทะไฟฟ้า IN HOUSE รุ่น EP-1002",
+            "number": "3",
+            "priceUnit": "690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad771596447db94c131d",
+            "proGroupN": "กระทะไฟฟ้า",
+            "proName": "กระทะไฟฟ้า MITSUMARU รุ่น ACP-142L",
+            "number": "14",
+            "priceUnit": "599.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad831596447db94c1320",
+            "proGroupN": "กระทะไฟฟ้า",
+            "proName": "กระทะไฟฟ้า HANABISHI รุ่น HEP1900S",
+            "number": "1",
+            "priceUnit": "659.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad8d1596447db94c1323",
+            "proGroupN": "กระทะไฟฟ้า",
+            "proName": "กระทะไฟฟ้า HANABISHI รุ่น HEP190",
+            "number": "1",
+            "priceUnit": "569.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aad981596447db94c1326",
+            "proGroupN": "กระทะไฟฟ้า",
+            "proName": "กระทะไฟฟ้า HANABISHI รุ่น HEP10",
+            "number": "1",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aada21596447db94c1329",
+            "proGroupN": "กระทะ",
+            "proName": "กระทะ Tefal รุ่น C1846414",
+            "number": "2",
+            "priceUnit": "690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aadab1596447db94c132c",
+            "proGroupN": "กระทะ",
+            "proName": "กระทะ Tefal รุ่น C1849624",
+            "number": "4",
+            "priceUnit": "1390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aadb61596447db94c1333",
+            "proGroupN": "กระทะ",
+            "proName": "กระทะ Tefal รุ่น C1849824",
+            "number": "5",
+            "priceUnit": "1590.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aadc11596447db94c1336",
+            "proGroupN": "กระทะ",
+            "proName": "กระทะ Tefal รุ่น C6150414",
+            "number": "5",
+            "priceUnit": "1090.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aadca1596447db94c1339",
+            "proGroupN": "กระทะ",
+            "proName": "กระทะ Tefal รุ่น C6150514",
+            "number": "5",
+            "priceUnit": "1190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aadd61596447db94c133c",
+            "proGroupN": "เตารีด",
+            "proName": "เตารีด INTER NATIONAL CB95",
+            "number": "4",
+            "priceUnit": "359.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aade41596447db94c133f",
+            "proGroupN": "เตารีด",
+            "proName": "เตารีด NATIONAL รุ่น NI21A 4.5 ปอนด์",
+            "number": "9",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aadee1596447db94c1346",
+            "proGroupN": "เตารีด",
+            "proName": "เตารีด Tefal รุ่น FV1320TO",
+            "number": "11",
+            "priceUnit": "599.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aadff1596447db94c1349",
+            "proGroupN": "เตารีด",
+            "proName": "เตารีด Tefal รุ่น FS2525TO",
+            "number": "1",
+            "priceUnit": "490.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae651596447db94c1371",
+            "proGroupN": "เตารีด",
+            "proName": "เตารีด SHARP AMP565T",
+            "number": "4",
+            "priceUnit": "660.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae711596447db94c1376",
+            "proGroupN": "เครื่องดูดฝุ่น",
+            "proName": "เครื่องดูดฝุ่น HITACHI รุ่น CVSC22V",
+            "number": "3",
+            "priceUnit": "13900.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae7d1596447db94c137b",
+            "proGroupN": "เครื่องดูดฝุ่น",
+            "proName": "เครื่องดูดฝุ่น HITACHI รุ่น CV940Y",
+            "number": "1",
+            "priceUnit": "3290.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae871596447db94c137e",
+            "proGroupN": "เครื่องดูดฝุ่น",
+            "proName": "เครื่องดูดฝุ่น HITACHI รุ่น PvXA100แบบแบตเตอรี่",
+            "number": "4",
+            "priceUnit": "8490.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae941596447db94c1386",
+            "proGroupN": "เครื่องดูดฝุ่น",
+            "proName": "เครื่องดูดฝุ่น MD รุ่น V-1703",
+            "number": "8",
+            "priceUnit": "2990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aae9f1596447db94c138d",
+            "proGroupN": "เครื่องดูดฝุ่น",
+            "proName": "เครื่องดูดฝุ่น DAEWOO รุ่น RCC230",
+            "number": "1",
+            "priceUnit": "2390.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaeaa1596447db94c1390",
+            "proGroupN": "พัดลม",
+            "proName": "พัดลม VNP รุ่น V-Hitech 16",
+            "number": "20",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaeb41596447db94c1395",
+            "proGroupN": "พัดลม",
+            "proName": "พัดลม TOSHIBA รุ่น F234",
+            "number": "3",
+            "priceUnit": "2190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaebf1596447db94c139a",
+            "proGroupN": "พัดลม",
+            "proName": "พัดลมไอน้ำ MASTERKOOL รุ่น 07EX",
+            "number": "2",
+            "priceUnit": "3190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaecc1596447db94c139d",
+            "proGroupN": "พัดลม",
+            "proName": "พัดลม ACCORD รุ่น 18HC",
+            "number": "1",
+            "priceUnit": "1190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaed81596447db94c13a2",
+            "proGroupN": "เเอร์",
+            "proName": "แอร์ Midea รุ่น MSAEB-12CRN8 ขนาด12,000BTU",
+            "number": "1",
+            "priceUnit": "12900.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8aaee21596447db94c13a7",
+            "proGroupN": "เเอร์",
+            "proName": "แอร์ SHARP 18000BTU รุ่น AH-PR19",
+            "number": "1",
+            "priceUnit": "26500.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8aaf2f1596447db94c13c5",
+            "proGroupN": "เเอร์",
+            "proName": "แอร์ HITACHI รุ่น RASVX13CET INVERTER JAPAN MODEL",
+            "number": "5",
+            "priceUnit": "31900.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8aaf391596447db94c13c8",
+            "proGroupN": "เเอร์",
+            "proName": "แอร์ YORK รุ่น YFHFYC009BAEFA 9,000BTU",
+            "number": "1",
+            "priceUnit": "11900.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8aaf431596447db94c13cb",
+            "proGroupN": "เเอร์",
+            "proName": "แอร์ HAIER รุ่น HSU-13CTR03T",
+            "number": "1",
+            "priceUnit": "11900.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8aaf561596447db94c13d0",
+            "proGroupN": "ทีวี",
+            "proName": "TV 14 นิ้ว SANSUNG รุ่น KI14SS",
+            "number": "2",
+            "priceUnit": "1790.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaf691596447db94c13d5",
+            "proGroupN": "ทีวี",
+            "proName": "TV 15 นิ้ว PTK ขนาด 14 นิ้ว",
+            "number": "2",
+            "priceUnit": "1790.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaf751596447db94c13d8",
+            "proGroupN": "ทีวี",
+            "proName": "TV 21 นิ้ว FAMILY รุ่น 21FA12P",
+            "number": "1",
+            "priceUnit": "2990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaf831596447db94c13db",
+            "proGroupN": "ทีวี",
+            "proName": "TV 20 นิ้ว SUNSUNG รุ่น KI20SS",
+            "number": "5",
+            "priceUnit": "2590.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaf8d1596447db94c13de",
+            "proGroupN": "เครื่องทำน้ำอุ่น",
+            "proName": "เครื่องทำน้ำอุ่น HITACHI รุ่น HES35V",
+            "number": "2",
+            "priceUnit": "3690.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aaf971596447db94c13e3",
+            "proGroupN": "เครื่องทำน้ำอุ่น",
+            "proName": "เครื่องทำน้ำอุ่น TOSHIBA รุ่น WH3511G",
+            "number": "2",
+            "priceUnit": "3190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aafa21596447db94c13e6",
+            "proGroupN": "เครื่องทำน้ำอุ่น",
+            "proName": "เครื่องทำน้ำอุ่น MAZUMA รุ่น INSPIRE 4.5",
+            "number": "1",
+            "priceUnit": "1990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aafaf1596447db94c13eb",
+            "proGroupN": "เครื่องทำน้ำอุ่น",
+            "proName": "เครื่องทำน้ำอุ่น TRIMOND รุ่น KHWB35",
+            "number": "2",
+            "priceUnit": "1990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
+        },
+        {
+            "_id": "5f8aafbd1596447db94c13f3",
+            "proGroupN": "เครื่องปิ้ง",
+            "proName": "เครื่องทำขนมปัง KITTY รุ่น YT2001",
+            "number": "1",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aafd11596447db94c13f8",
+            "proGroupN": "เครื่องปิ้ง",
+            "proName": "เตาปิ้งย่าง HANABISHI รุ่น HSG305",
+            "number": "1",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aafde1596447db94c13fb",
+            "proGroupN": "เครื่องปิ้ง",
+            "proName": "เตาปิ้งย่าง OTTO รุ่น GR141",
+            "number": "55",
+            "priceUnit": "499.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aafe81596447db94c1400",
+            "proGroupN": "เครื่องปิ้ง",
+            "proName": "เตาปิ้งย่าง  NANOTECH รุ่น ETK22",
+            "number": "1",
+            "priceUnit": "5990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aaff21596447db94c1403",
+            "proGroupN": "เครื่องปิ้ง",
+            "proName": "เตาปิ้งย่าง-หม้อสุกี้ MITSUMARU รุ่น AP-MC14",
+            "number": "58",
+            "priceUnit": "1050.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8aaffd1596447db94c1406",
+            "proGroupN": "เตาไฟฟ้า",
+            "proName": "เตาอบไฟฟ้า OXYGEN รุ่น 70L",
+            "number": "1",
+            "priceUnit": "3990.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8ab0081596447db94c140b",
+            "proGroupN": "เตาไฟฟ้า",
+            "proName": "เตาอบไฟฟ้า OXYGEN รุ่น CS4502D 45L",
+            "number": "1",
+            "priceUnit": "2190.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8ab0151596447db94c140e",
+            "proGroupN": "เตาไฟฟ้า",
+            "proName": "เตาอบไฟฟ้า OTTO รุ่น TO772",
+            "number": "1",
+            "priceUnit": "4290.00",
+            "proType": "เครื่องใช้ไฟฟ้าภายในครัวเรือน"
+        },
+        {
+            "_id": "5f8ab0251596447db94c1413",
+            "proGroupN": "เครื่องฟอกอากาศ",
+            "proName": "เครื่องฟอกอากาศ HITACHI รุ่น EPA3000",
+            "number": "1",
+            "priceUnit": "4490.00",
+            "proType": "เครื่องปรับอากาศ"
+        },
+        {
+            "_id": "5f8ab0311596447db94c1416",
+            "proGroupN": "กล้องวงจรปิด",
+            "proName": "กล้องอินฟาเรด LEOTECH รุ่น BL700V1-00",
+            "number": "38",
+            "priceUnit": "2000.00",
+            "proType": "กล้องวงจรปิด"
+        },
+        {
+            "_id": "5f8ab03c1596447db94c1419",
+            "proGroupN": "กล้องวงจรปิด",
+            "proName": "เครื่องบันทึกภาพ 8 กล้อง LEOTECH รุ่น DVR8CHV1 Harddisk 1 TB พร้อมติดตั้ง",
+            "number": "10",
+            "priceUnit": "32900.00",
+            "proType": "กล้องวงจรปิด"
+        },
+        {
+            "_id": "5f8ab0451596447db94c141e",
+            "proGroupN": "กล้องวงจรปิด",
+            "proName": "กล้องติดรถยนต์ LEOTECH รุ่น SMART EYES CVR501DL",
+            "number": "9",
+            "priceUnit": "2590.00",
+            "proType": "กล้องวงจรปิด"
+        },
+        {
+            "_id": "5f8ab0501596447db94c1421",
+            "proGroupN": "ที่นอน",
+            "proName": "ที่นอน DUNLOPPILLO ขนาด 6 ฟุต ที่นอนสปริงออร์คิตพลัส",
+            "number": "1",
+            "priceUnit": "8590.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab05a1596447db94c1426",
+            "proGroupN": "ที่นอน",
+            "proName": "ที่นอน STONGMAT ขนาด 6X8 ที่นอนยางสังเคราะห์ ",
+            "number": "2",
+            "priceUnit": "5000.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0641596447db94c1429",
+            "proGroupN": "ที่นอน",
+            "proName": "ที่นอน BERLIN ขนาด 6X8 ที่นอนสปริง ผ้าจีน",
+            "number": "4",
+            "priceUnit": "2790.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab06d1596447db94c142c",
+            "proGroupN": "ตู้กับข้าว",
+            "proName": "ตู้กับข้าวโอทู ขาต่ำ สีขาว (กระเบื้อง)",
+            "number": "1",
+            "priceUnit": "2490.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0771596447db94c142f",
+            "proGroupN": "ตู้กับข้าว",
+            "proName": "ตู้กับข้าว 80 เซนติเมตร ขาสูง สีขาว",
+            "number": "1",
+            "priceUnit": "2290.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0831596447db94c1434",
+            "proGroupN": "ตู้กับข้าว",
+            "proName": "ตู้กับข้าว จิ๋ว สีขาว",
+            "number": "7",
+            "priceUnit": "1690.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab08d1596447db94c1437",
+            "proGroupN": "ตู้กับข้าว",
+            "proName": "ตู้กับข้าว จิ๋ว สีชา",
+            "number": "1",
+            "priceUnit": "1790.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab09c1596447db94c143c",
+            "proGroupN": "เตียงเหล็ก",
+            "proName": "เตียงเหล็ก ขนาด 5 ฟุต เสา3 ระแนง ทอง,สีระเบิดเงิน",
+            "number": "2",
+            "priceUnit": "2590.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0a71596447db94c143f",
+            "proGroupN": "เตียงเหล็ก",
+            "proName": "เตียงเหล็ก ขนาด 6 ฟุต เสา3 ระแนง ทอง,สีระเบิดเงิน",
+            "number": "1",
+            "priceUnit": "2790.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0b31596447db94c1442",
+            "proGroupN": "เตียงเหล็ก",
+            "proName": "เตียงปรับโยก 4001-1",
+            "number": "4",
+            "priceUnit": "300.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0bc1596447db94c1447",
+            "proGroupN": "เตียงเหล็ก",
+            "proName": "เตียงระแนงเหล็ก(ยูโร) 5 ฟุต",
+            "number": "1",
+            "priceUnit": "2090.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0c61596447db94c144a",
+            "proGroupN": "เตียงเหล็ก",
+            "proName": "บล๊อคที่นอน 6 ฟุต พร้อมหัว",
+            "number": "1",
+            "priceUnit": "6290.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0d11596447db94c144f",
+            "proGroupN": "เตียงไม้",
+            "proName": "เตียงนอน ZEN 6 ฟุต เทาเข็ม,ดำ",
+            "number": "3",
+            "priceUnit": "6590.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0db1596447db94c1452",
+            "proGroupN": "เตียงไม้",
+            "proName": "เตียงไม้ขนาด 5 ฟุต สีสักGM-01/5",
+            "number": "1",
+            "priceUnit": "3090.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0e51596447db94c1455",
+            "proGroupN": "เตียงไม้",
+            "proName": "เตียงไม้ระแนงสี ขนาด 6 ฟุต สีโอ๊คGM-08/6",
+            "number": "1",
+            "priceUnit": "2400.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0ed1596447db94c145c",
+            "proGroupN": "ตู้เสื้อผ้า",
+            "proName": "ตู้เสื้อผ้า 80 ซม. รุ่น ลายการ์ตูนสีเขียวGM-80",
+            "number": "2",
+            "priceUnit": "1390.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab0f81596447db94c1461",
+            "proGroupN": "ตู้เสื้อผ้า",
+            "proName": "ตู้เสื้อผ้า  รุ่น  WD1201ขนาด 4 ฟุต 3 ลิ้นชัก(ประกอบ)",
+            "number": "1",
+            "priceUnit": "2990.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1221596447db94c147a",
+            "proGroupN": "ตู้เสื้อผ้า",
+            "proName": "ตู้เสื้อผ้า รุ่น WD1211ขนาด 120cm 3ลิ้นชัก(ประกอบ)",
+            "number": "1",
+            "priceUnit": "3490.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab12d1596447db94c147d",
+            "proGroupN": "โต๊ะ",
+            "proName": "โต๊ะรีดผ้า 6 ระดับ 3017-4",
+            "number": "2",
+            "priceUnit": "220.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1361596447db94c1482",
+            "proGroupN": "โต๊ะ",
+            "proName": "โต๊ะญี่ปุ่น 20 X 30ขา ABS",
+            "number": "4",
+            "priceUnit": "179.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1411596447db94c1487",
+            "proGroupN": "โต๊ะ",
+            "proName": "โต๊ะนักเรียนปรับระดับ (การ์ตูน) 3006-08",
+            "number": "1",
+            "priceUnit": "1000.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab14b1596447db94c148a",
+            "proGroupN": "โต๊ะ",
+            "proName": "โต๊ะเครื่องแป้ง สีลายต่างๆ รุ่น GM-P61",
+            "number": "1",
+            "priceUnit": "1190.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1551596447db94c148d",
+            "proGroupN": "ราวตากผ้า",
+            "proName": "ราวผ้า ราวตะกร้า 407 5001-9",
+            "number": "2",
+            "priceUnit": "520.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab15f1596447db94c1490",
+            "proGroupN": "ราวตากผ้า",
+            "proName": "ราวผ้า  A-คู่ SPB 5011-8",
+            "number": "1",
+            "priceUnit": "260.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab16b1596447db94c1493",
+            "proGroupN": "ราวตากผ้า",
+            "proName": "ราวผ้า T-(SPB)",
+            "number": "16",
+            "priceUnit": "240.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1771596447db94c1498",
+            "proGroupN": "เก้าอี้",
+            "proName": "เก้าอี้ผักผ่อน 062-C21-8035",
+            "number": "1",
+            "priceUnit": "1990.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab17f1596447db94c149d",
+            "proGroupN": "เก้าอี้",
+            "proName": "เก้าอี้สำนักงาน GOLDEN SEATรุ่น 072-C21-4005",
+            "number": "2",
+            "priceUnit": "1390.00",
+            "proType": "เฟอร์นิเจอร์"
+        },
+        {
+            "_id": "5f8ab1891596447db94c14a0",
+            "proGroupN": "เก้าอี้",
+            "proName": "เก้าอี้จัดเลี้ยง ขาชุบ เบาะดำ 1026-01",
+            "number": "1",
+            "priceUnit": "500.00",
+            "proType": "เฟอร์นิเจอร์"
+        }
+    ]
+}
