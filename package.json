@@ -11,13 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/meipraewrung/CHECOMMERCE.git"
   },
-  "author": "",
+  "author": "navin@telusko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/meipraewrung/CHECOMMERCE/issues"
   },
   "homepage": "https://github.com/meipraewrung/CHECOMMERCE#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9"
