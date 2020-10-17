@@ -1,21 +1,25 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const url = 'mongodb://localhost/CHECOMMERCE'
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-const app = express()
+const app = express();
 
-mongoose.connect(url, {useNewUrlParser:true})
-const con = mongoose.connection
+//CHECOMMERCE -- Database
+const url = 'mongodb://localhost/CHECOMMERCE';
+mongoose.connect(url, { useNewUrlParser:true }, () => {
+    console.log('connected to DB!')
+});
+const con = mongoose.connection;
 
 con.on('open', () => {
-    console.log('connected...')
-})
+    console.log('connected...');
+});
 
-app.use(express.json())
+app.use(express.json());
 
-const productRouter = require('./routes/products')
-app.use('/products', productRouter)
+const productRouter = require('./routes/products');
+app.use('/products', productRouter);
 
 app.listen(9000, () => {
-    console.log('Server started')
-})
+    console.log('Server started');
+});
