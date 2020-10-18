@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema({
+  _id : mongoose.ObjectId,
   proGroupN: {
     type: String,
     required: true
@@ -20,7 +21,7 @@ const productSchema = mongoose.Schema({
   proType: {
     type: String,
     required: true
-  },
+  }
 });
 
-module.exports = mongoose.model("Product", productSchema);
+module.exports = mongoose.model("Products", productSchema);

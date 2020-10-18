@@ -2,17 +2,17 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../models/product');
 
-router.get('/', async(req,res) => {
+router.get('/', async(req, res) => {
     try {
         const products = await Product.find();
         res.json(products);
     } catch(err) {
-        res.send('Error ' + err);
+        res.json({ message: err });
     }
 })
 
 router.post('/', async(req, res) => {
-    const product = new Product({
+    const addProduct = new Product({
         proGroupN: req.body.proGroupN,
         proName: req.body.proName,
         number: req.body.number,
@@ -20,14 +20,16 @@ router.post('/', async(req, res) => {
         proType: req.body.proType
     });
 
-    try {
-        const proD = await product.save();
-        res.json(proD);
-    } catch(err) {
-        res.json({ message: err });
-        res.send('Error ' + err);
-    }
-})
+    // console.log(addProduct);
+    // try {
+    //     const saveProd = await addProduct.save();
+    //     res.json(saveProd);
+    // } catch(err) {
+    //     res.json({ message: err });
+    // };
+
+
+});
 
 router.get('/:id', async(req,res) => {
     try {
@@ -35,27 +37,8 @@ router.get('/:id', async(req,res) => {
         res.json(products);
     } catch(err) {
         res.send('Error ' + err);
-    }
-})
-
-// router.get('/:proName', async(req,res) => {
-//     try {
-//         const products = await Product.findOne(req.params.proName)
-//         res.json(products)
-//     } catch(err) {
-//         res.send('Error ' + err)
-//     }
-// })
-
-// router.get('/:type', async(req,res) => {
-//     try {
-//         const products = await Product.findByType()
-//         res.json(products)
-//     } catch(err) {
-//         res.send('Error ' + err)
-//     }
-// })
-
+    };
+});
 
 // router.patch('/:id', async(req,res) => {
 //     try {
