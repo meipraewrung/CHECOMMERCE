@@ -182,266 +182,53 @@
 				</div>
 				<!-- Sidebar end=============================================== -->
 				<div class="span9">
-					<ul class="breadcrumb">
-						<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-						<li class="active">Products Name</li>
-					</ul>
-					<h3> Products Name <small class="pull-right"> 40 products are available </small></h3>
-					<hr class="soft" />
-					<form class="form-horizontal span6">
-						<div class="control-group">
-							<label class="control-label alignL">Sort By </label>
-							<select>
-								<option>Priduct name A - Z</option>
-								<option>Priduct name Z - A</option>
-								<option>Priduct Stoke</option>
-								<option>Price Lowest first</option>
-							</select>
-						</div>
-					</form>
-
-					<div id="myTab" class="pull-right">
-						<a href="productsAdd.html"><span class="btn btn-large btn-info"><i
-							class=""></i>เพิ่มสินค้า</span></a>
-						<a href="#listView" data-toggle="tab"><span class="btn btn-large"><i
-									class="icon-list"></i></span></a>
-						<a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i
-									class="icon-th-large"></i></span></a>
-					</div>
-					<br class="clr" />
-					<div class="tab-content">
-						<div class="tab-pane" id="listView">
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น SAMSUNG รุ่น RA19PT2</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น SAMSUNG รุ่น RA19PT2</h5>
-									<p>
-										ตู้เย็น 1 ประตู SAMSUNG รุ่น RA19PT2 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5590.56</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-
-									</form>
+					<form class="form-inline" name="form_productAdd" method="post" action="">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input12">ชื่อกลุ่มสินค้า</label>
+								<div class="controls">
+									<input type="text" class="input-xxlarge" id="input12" placeholder="ตู้เย็น 1 ประตู" disabled>
 								</div>
 							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRB175Z.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น TOSHIBA รุ่น GRB175Z</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น TOSHIBA รุ่น GRB175Z</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น TOSHIBA รุ่น GRB175Z เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5290.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
+							<div class="control-group">
+								<label class="control-label" for="input12">ชื่อสินค้า</label>
+								<div class="controls">
+									<input type="text" class="input-xxlarge" id="input12" placeholder="ตู้เย็น SAMSUNG รุ่น RA19PT2" disabled>
 								</div>
 							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRA706CI.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น TOSHIBA รุ่น GRA706CI</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น TOSHIBA รุ่น GRA706CI</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น TOSHIBA รุ่น GRA706CI เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿4590.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-
-									</form>
+							<div class="control-group">
+								<label class="control-label" for="input13">หน่วยจำนวน</label>
+								<div class="controls">
+									<input type="text" class="input-medium" id="input13" placeholder="1" disabled>
 								</div>
 							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น Haier รุ่น HR-CEQ18 1 ประตู</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น Haier รุ่น HR-CEQ18 1 ประตู</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น Haier รุ่น HR-CEQ18 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5390.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
+							<div class="control-group">
+								<label class="control-label" for="input_1">ราคา/หน่วย</label>
+								<div class="controls">
+									<input type="text" class="input-medium" id="input_1" placeholder="5590.56" disabled>
 								</div>
 							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น Haier รุ่น HR-DMB18 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5390.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
+							<div class="control-group">
+								<label class="control-label" for="input12">ประเภทสินค้า</label>
+								<div class="controls">
+									<input type="text" class="input-xxlarge" id="input12" placeholder="เครื่องใช้ไฟฟ้าภายในบ้าน" disabled>
 								</div>
 							</div>
-						</div>
-
-						<div class="tab-pane  active" id="blockView">
-							<ul class="thumbnails">
-								<li class="span3">
-									<div class="thumbnail">
-										<a href="productsDetails.html"><img style="height: 150px; width: auto"
+							<div class="control-group">
+								<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
+								<div class="controls">
+									<img style="height: 150px; width: auto"
 												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-												alt="" /></a>
-										<div class="caption">
-											<h5>ตู้เย็น SAMSUNG รุ่น RA19PT2</h5>
-											<p>
-												฿5590.56
-											</p>
-											<h4 style="text-align:center"><a class="btn" href="productsDetails.html"> <i
-														class="icon-zoom-in"></i></a> <a href="productsEdit.html"
-													class="btn btn-primary">แก้ไข<i class=""></i></a>
-												<a href="" class="btn btn-danger" onclick="javascript:doRemoveItem(this);">ลบ<i class=""></i></a></h4>
-										</div>
-									</div>
-								</li>
-								<li class="span3">
-									<div class="thumbnail">
-										<a href="productsDetails.html"><img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRB175Z.jpg"
-												alt="" /></a>
-										<div class="caption">
-											<h5>ตู้เย็น TOSHIBA รุ่น GRB175Z</h5>
-											<p>
-												฿5290.00
-											</p>
-											<h4 style="text-align:center"><a class="btn" href="productsDetails.html"> <i
-														class="icon-zoom-in"></i></a> <a href="productsEdit.html"
-													class="btn btn-primary">แก้ไข<i class=""></i></a>
-												<a href="" class="btn btn-danger">ลบ<i class=""></i></a></h4>
-										</div>
-									</div>
-								</li>
-								<li class="span3">
-									<div class="thumbnail">
-										<a href="productsDetails.html"><img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRA706CI.jpg"
-												alt="" /></a>
-										<div class="caption">
-											<h5>ตู้เย็น TOSHIBA รุ่น GRA706CI</h5>
-											<p>
-												฿4590.56
-											</p>
-											<h4 style="text-align:center"><a class="btn" href="productsDetails.html"> <i
-														class="icon-zoom-in"></i></a> <a href="productsEdit.html"
-													class="btn btn-primary">แก้ไข<i class=""></i></a>
-												<a href="" class="btn btn-danger">ลบ<i class=""></i></a></h4>
-										</div>
-									</div>
-								</li>
-								<li class="span3">
-									<div class="thumbnail">
-										<a href="productsDetails.html"><img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น Haier รุ่น HR-CEQ18 1ประตู.jpg"
-												alt="" /></a>
-										<div class="caption">
-											<h5>ตู้เย็น Haier รุ่น HR-CEQ18 1ประตู</h5>
-											<p>
-												฿5390.00
-											</p>
-											<h4 style="text-align:center"><a class="btn" href="productsDetails.html"> <i
-														class="icon-zoom-in"></i></a> <a href="productsEdit.html"
-													class="btn btn-primary">แก้ไข<i class=""></i></a>
-												<a href="" class="btn btn-danger">ลบ<i class=""></i></a></h4>
-										</div>
-									</div>
-								</li>
-								<li class="span3">
-									<div class="thumbnail">
-										<a href="productsDetails.html"><img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู.jpg"
-												alt="" /></a>
-										<div class="caption">
-											<h5>ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู</h5>
-											<p>
-												฿5390.00
-											</p>
-											<h4 style="text-align:center"><a class="btn" href="productsDetails.html"> <i
-														class="icon-zoom-in"></i></a> <a href="productsEdit.html"
-													class="btn btn-primary">แก้ไข<i class=""></i></a>
-												<a href="" class="btn btn-danger">ลบ<i class=""></i></a></h4>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<hr class="soft" />
-						</div>
-					</div>
-					<div class="pagination">
-						<ul>
-							<li><a href="#">&lsaquo;</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">...</a></li>
-							<li><a href="#">&rsaquo;</a></li>
-						</ul>
-					</div>
-					<br class="clr" />
+												alt="" />
+								</div>
+							</div>
+							<div class="form-actions">
+								<!-- <button type="submit" class="btn btn-primary">บันทึก</button>
+								<button class="btn" class="btn btn-danger">ยกเลิก</button> -->
+								<a href="products.html" class="btn btn-danger">กลับ<i class=""></i></a>
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
