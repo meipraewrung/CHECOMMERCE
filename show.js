@@ -12,6 +12,8 @@ $(document).ready(function() {
            '</a><div class="caption">'+
              '<h5>'+ data[i].proName+'</h5>'+
              '<h4 style="text-align:center">'+
+             '<a class="btn" href="product_details.html?productID='+i+'">'+
+              '<i class="icon-zoom-in"></i></a> '+
                '<a class="btn" href="product_summary.html?productID='+i+'">Add to '+
                '<i class="icon-shopping-cart"></i></a>'+ 
                '<a class="btn btn-primary" href="#">&euro;'+data[i].priceUnit+'</a></h4>'+
