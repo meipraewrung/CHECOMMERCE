@@ -182,186 +182,95 @@
 				</div>
 				<!-- Sidebar end=============================================== -->
 				<div class="span9">
-					<ul class="breadcrumb">
-						<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-						<li class="active">Products Name</li>
-					</ul>
-					<h3> Products Name <small class="pull-right"> 40 products are available </small></h3>
-					<hr class="soft" />
-					<form class="form-horizontal span6">
-						<div class="control-group">
-							<label class="control-label alignL">Sort By </label>
-							<select>
-								<option>Priduct name A - Z</option>
-								<option>Priduct name Z - A</option>
-								<option>Priduct Stoke</option>
-								<option>Price Lowest first</option>
-							</select>
-						</div>
+					<form class="form-inline" name="form_productAdd" method="post" action="">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
+								<div class="controls">
+									<select id="select01">
+										<option>ตู้เย็น 1 ประตู</option>
+										<option>ตู้เย็น 2 ประตูู</option>
+										<option>ตู้เเช่</option>
+										<option>เครื่องทำน้ำร้อน-เย็น</option>
+										<option>เครื่องซักผ้า 2 ถัง</option>
+										<option>เครื่องซักผ้า 1 ถัง</option>
+										<option>เครื่องซักผ้าฝาหน้า</option>
+										<option>กระติกน้ำร้อน</option>
+										<option>หม้อ</option>
+										<option>เครื่องปั่น</option>
+										<option>LED</option>
+										<option>เตาเเก๊ส</option>
+										<option>กระทะไฟฟ้า</option>
+										<option>กระทะ</option>
+										<option>เตารีด</option>
+										<option>เครื่องดูดฝุ่น</option>
+										<option>พัดลม</option>
+										<option>เเอร์</option>
+										<option>ทีวี</option>
+										<option>เครื่องทำน้ำอุ่น</option>
+										<option>เครื่องปิ้ง</option>
+										<option>เตาไฟฟ้า</option>
+										<option>เครื่องฟอกอากาศ</option>
+										<option>กล้องวงจรปิด</option>
+										<option>ที่นอน</option>
+										<option>ตู้กับข้าว</option>
+										<option>เตียงเหล็ก</option>
+										<option>เตียงไม้</option>
+										<option>ตู้เสื้อผ้า</option>
+										<option>โต๊ะ</option>
+										<option>ราวตากผ้า</option>
+										<option>เก้าอี้</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input12">ชื่อสินค้า</label>
+								<div class="controls">
+									<input type="text" class="input-xxlarge" id="input12">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input13">หน่วยจำนวน</label>
+								<div class="controls">
+									<input type="text" class="input-medium" id="input13">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input_1">ราคา/หน่วย</label>
+								<div class="controls">
+									<input type="text" class="input-medium" id="input_1">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="select01">ประเภทสินค้า</label>
+								<div class="controls">
+									<select id="select01">
+										<option>เครื่องใช้ไฟฟ้าภายในบ้าน</option>
+										<option>เครื่องใช้ไฟฟ้าภายในครัวเรือน</option>
+										<option>เครื่องปรับอากาศ</option>
+										<option>กล้องวงจรปิด</option>
+										<option>เฟอร์นิเจอร์</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
+								<div class="controls">
+									<input class="input-file" id="fileInput" type="file">
+								</div>
+							</div>
+							<div class="form-actions">
+								<!-- <button type="submit" class="btn btn-primary">บันทึก</button>
+								<button class="btn" class="btn btn-danger">ยกเลิก</button> -->
+								<a href="productsEdit.html" class="btn btn-primary">บันทึก<i class=""></i></a>
+								<a href="products.html" class="btn btn-danger">ยกเลิก<i class=""></i></a>
+							</div>
+						</fieldset>
 					</form>
-
-					<div id="myTab" class="pull-right">
-						<a href="productsAdd.html"><span class="btn btn-large btn-info"><i
-							class=""></i>เพิ่มสินค้า</span></a>
-						<a href="#listView" data-toggle="tab"><span class="btn btn-large"><i
-									class="icon-list"></i></span></a>
-						<a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i
-									class="icon-th-large"></i></span></a>
-					</div>
-					<br class="clr" />
-					<div class="tab-content">
-						<div class="tab-pane" id="listView">
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น SAMSUNG รุ่น RA19PT2</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น SAMSUNG รุ่น RA19PT2</h5>
-									<p>
-										ตู้เย็น 1 ประตู SAMSUNG รุ่น RA19PT2 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5590.56</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-
-									</form>
-								</div>
-							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRB175Z.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น TOSHIBA รุ่น GRB175Z</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น TOSHIBA รุ่น GRB175Z</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น TOSHIBA รุ่น GRB175Z เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5290.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
-								</div>
-							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น TOSHIBA รุ่น GRA706CI.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น TOSHIBA รุ่น GRA706CI</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น TOSHIBA รุ่น GRA706CI</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น TOSHIBA รุ่น GRA706CI เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿4590.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-
-									</form>
-								</div>
-							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น Haier รุ่น HR-CEQ18 1 ประตู</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น Haier รุ่น HR-CEQ18 1 ประตู</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น Haier รุ่น HR-CEQ18 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5390.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
-								</div>
-							</div>
-							<hr class="soft" />
-							<div class="row">
-								<div class="span2">
-									<img src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู.jpg"
-										alt="" />
-								</div>
-								<div class="span4">
-									<h3>ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู</h3>
-									<hr class="soft" />
-									<h5>ตู้เย็น Haier รุ่น HR-DMB18 1 ประตู</h5>
-									<p>
-										ตู้เย็น 1 ประตู ตู้เย็น Haier รุ่น HR-DMB18 เครื่องใช้ไฟฟ้าภายในบ้าน
-									</p>
-									<a class="btn btn-small pull-right" href="productsDetails.html">รายละเอียด</a>
-									<br class="clr" />
-								</div>
-								<div class="span3 alignR">
-									<form class="form-horizontal qtyFrm">
-										<h3> ฿5390.00</h3>
-										<a href="productsEdit.html" class="btn btn-large btn-primary">แก้ไข<i
-												class=""></i></a>
-										<a href="" class="btn btn-large btn-danger">ลบ<i class=""></i></a>
-									</form>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane  active" id="blockView">
-							<ul class="thumbnails" id="thumbnails">
-								<!-- show data -->
-						</ul>
-							<hr class="soft" />
-						</div>
-					</div>
-					<div class="pagination">
-						<ul>
-							<li><a href="#">&lsaquo;</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">...</a></li>
-							<li><a href="#">&rsaquo;</a></li>
-						</ul>
-					</div>
-					<br class="clr" />
 				</div>
 			</div>
 		</div>
-  </div>
+	</div>
 	<!-- Footer ================================================================== -->
 	<div id="footerSection">
 		<div class="container">
@@ -491,6 +400,5 @@
 	</div>
 	<span id="themesBtn"></span>
 </body>
-<script src="show.js"></script>
 
 </html>
