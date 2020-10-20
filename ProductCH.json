@@ -1,5 +1,6 @@
 {"Product":[
         {
+            "productID": 1,
             "proGroupN": "ตู้เย็น 1 ประตู",
             "proName": "ตู้เย็น SAMSUNG รุ่น RA19PT2",
             "number": "1",
@@ -7,6 +8,7 @@
             "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน"
         },
         {
+            "productID": 2,
             "proGroupN": "ตู้เย็น 1 ประตู",
             "proName": "ตู้เย็น TOSHIBA รุ่น GRB175Z",
             "number": "1",
