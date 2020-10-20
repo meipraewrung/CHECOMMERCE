@@ -19,8 +19,6 @@ $(document).ready(function() {
                '<a class="btn btn-primary" href="#">&euro;'+data[i].priceUnit+'</a></h4>'+
            '</div> </div></li>';
         }
-        console.log(show);
-        //$('#totalProduct').append(all);
         document.getElementById('thumbnails').innerHTML = show;
     });
 });
