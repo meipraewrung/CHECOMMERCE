@@ -8,7 +8,7 @@ $(document).ready(function() {
        show+= '<li class="span3">'+
        '<div class="thumbnail">'+
          '<a href="product_details.html?productID='+i+'">'+
-         '<img src="themes/images/products/3.jpg" alt="" />'+
+         '<img style="height: 150px; width: auto" src="'+data[i].proImage+'" alt="" />'+
          '</a><div class="caption">'+
            '<h5>'+ data[i].proName+'</h5>'+
            '<h4 style="text-align:center">'+
@@ -16,7 +16,7 @@ $(document).ready(function() {
             '<i class="icon-zoom-in"></i></a> '+
              '<a class="btn" href="product_summary.html?productID='+i+'">Add to '+
              '<i class="icon-shopping-cart"></i></a>'+ 
-             '<a class="btn btn-primary" href="#">&euro;'+data[i].priceUnit+'</a></h4>'+
+             '<a class="btn btn-primary" href="#">฿'+data[i].priceUnit+'</a></h4>'+
          '</div> </div></li>';
       }
       document.getElementById('thumbnails').innerHTML = show;
