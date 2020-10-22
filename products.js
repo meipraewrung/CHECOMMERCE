@@ -23,9 +23,9 @@ $(document).ready(function() {
         '<div class="span3 alignR">'+
           '<form class="form-horizontal qtyFrm">'+
             '<h3>฿'+data[i].priceUnit+'</h3>'+
-            '<a class="btn btn-large btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
-              '<i class=""></i></a>'+
-            '<a class="btn btn-large btn-danger" href="products.html?productID='+i+'">ลบ'+
+            '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+              '<i class=""></i></a> '+
+            '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
               '<i class=""></i></a>'+
           '<form>'+'</div>'+'</div>'+
           '<hr class="soft" />';
@@ -53,9 +53,9 @@ $(document).ready(function() {
                 '<h4 style="text-align:center">'+
                 '<a class="btn" href="product_details.html?productID='+i+'">'+
                   '<i class="icon-zoom-in"></i></a> '+
-                '<a class="btn btn-large btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+                '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
                   '<i class=""></i></a> '+
-                '<a class="btn btn-large btn-danger" href="products.html?productID='+i+'">ลบ'+
+                '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
                   '<i class=""></i></a>'+
                 '</h4>'+
               '</div>'+'</div>'+'</li>';
