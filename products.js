@@ -51,12 +51,12 @@ $(document).ready(function() {
               '<div class="caption">'+
                 '<h5>'+ data[i].proName+'</h5>'+
                 '<h4 style="text-align:center">'+
-                '<a class="btn" href="product_details.html?productID='+i+'">'+
-                  '<i class="icon-zoom-in"></i></a> '+
-                '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
-                  '<i class=""></i></a> '+
-                '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
-                  '<i class=""></i></a>'+
+                  '<a class="btn" href="product_details.html?productID='+i+'">'+
+                    '<i class="icon-zoom-in"></i></a> '+
+                  '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+                    '<i class=""></i></a> '+
+                  '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
+                    '<i class=""></i></a>'+
                 '</h4>'+
               '</div>'+'</div>'+'</li>';
       }
