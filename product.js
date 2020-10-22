@@ -27,8 +27,8 @@ $(document).ready(function() {
 				  '<input type="checkbox"> Adds product to compair'+
 			  	'</label><br />'+
 				'<a class="btn" href="product_summary.html?productID='+i+'">เพิ่ม '+
-				  	'<i class="icon-shopping-cart"></i></a>'+
-					  '<a class="btn btn-primary" href="#">฿'+data[i].priceUnit+'</a></h4>'+
+				  	'<i class="icon-shopping-cart"></i></a> '+
+				'<a class="btn btn-primary" href="#">฿'+data[i].priceUnit+'</a></h4>'+
 			'<form>'+'</div>'+'</div>'+
 			'<hr class="soft" />';
 		  }
