@@ -11,7 +11,7 @@ $(document).ready(function() {
       console.log(data);          
       var all = data.length;
       var showList ="";
-      for(var i =0;i<all;i++){
+      for(var i =1;i<=all;i++){
         showList += 
         '<div class="row">'+
           '<div class="span2">'+
