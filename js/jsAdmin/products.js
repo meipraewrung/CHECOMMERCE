@@ -6,7 +6,7 @@ $(document).ready(function() {
     //  console.log(data);          
       var all =data.length;
       var show ="";
-      for(var i =0;i<all;i++){
+      for(var i =1;i<=all;i++){
        show+= 
        '<li class="span3">'+
           '<div class="thumbnail">'+
