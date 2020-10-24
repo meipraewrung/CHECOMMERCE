@@ -12,33 +12,30 @@ $(document).ready(function() {
       var all = data.length;
       var showList ="";
       for(var i =1;i<=all;i++){
-        if(data[i].customerID===pid){
-        showList += '<div id="gallery" class="span3">'+
-        '<a href="'+data[i].proImage+'" title="'+data[i].proName+'">'+
-          '<img src="'+data[i].proImage+'" style="width:100%"'+
-            'alt="'+data[i].proName+'" />'+
-        '</a> </div>'+
-        '<div class="span6" id="showdetail>'+"<h3>"+data[i].proName+"</h3>"+
-        '<small>'+data[i].proGroupN+'</small>'+
-        '<hr class="soft" />'+
-        '<form class="form-horizontal qtyFrm">'+
-          '<div class="control-group">'+
-            '<label class="control-label"><span>'+data[i].priceUnit+'</span></label>'+
-            '<div class="controls">'+
-              '<input type="number" class="span1" placeholder="Qty." disabled />'+
-              document.getElementById("favorite").value=data[i].number+
-              '<input type="text" class="span1" placeholder="color" disabled />'+
-             '</button>  </div> </div> </form>'+
-             '<hr class="soft clr" />'+
-             '<p>'+data[i].proGroupN+'</p><hr class="soft" /></div>';
+        showList += 
+        '<div class="row">'+
+          '<div class="span2">'+
+            '<img style="height: 150px; width: auto" src="'+data[i].proImage+'" alt="" />'+
+          '</div>'+
+          '<div class="span4">'+
+            '<h3>'+ data[i].proName+'</h3>'+
+            '<hr class="soft" />'+
+            '<h5>'+ data[i].proName+'</h5>'+
+            '<p>'+ data[i].proName+'</p>'+
+            '<a class="btn btn-small pull-right" href="productsDetails.html?productID='+i+'">รายละเอียด'+
+              '<i class=""></i></a>'+
+            '<hr class="soft" />'+
+          '</div>'+
+          '<div class="span3 alignR">'+
+            '<form class="form-horizontal qtyFrm">'+
+              '<h3>฿'+data[i].priceUnit+'</h3>'+
+              '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+                '<i class=""></i></a> '+
+              '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
+                '<i class=""></i></a>'+
+            '<form>'+'</div>'+'</div>'+
+            '<hr class="soft" />';
           }
-          else {
-            alert("Can not find");
-            window.location.href = "products.html" ;
-
-          }
-        }
-
-      document.getElementById('showdetail').innerHTML = showList;
+      document.getElementById('proListView').innerHTML = showList;
     });
   });
