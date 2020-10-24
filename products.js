@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 //product listView
 $(document).ready(function() {
   var url = "http://localhost:3000/product?";
@@ -33,6 +35,7 @@ $(document).ready(function() {
     document.getElementById('proListView').innerHTML = showList;
   });
 });
+>>>>>>> parent of efb9a4a... Edit Products
 
 //product blockView
 $(document).ready(function() {
@@ -41,7 +44,11 @@ $(document).ready(function() {
     //  console.log(data);          
       var all =data.length;
       var show ="";
+<<<<<<< HEAD
+      for(var i =1;i<=all;i++){
+=======
       for(var i =0;i<all;i++){
+>>>>>>> parent of efb9a4a... Edit Products
        show+= 
        '<li class="span3">'+
           '<div class="thumbnail">'+
@@ -51,12 +58,21 @@ $(document).ready(function() {
               '<div class="caption">'+
                 '<h5>'+ data[i].proName+'</h5>'+
                 '<h4 style="text-align:center">'+
+<<<<<<< HEAD
                 '<a class="btn" href="product_details.html?productID='+i+'">'+
                   '<i class="icon-zoom-in"></i></a> '+
                 '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
                   '<i class=""></i></a> '+
                 '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
                   '<i class=""></i></a>'+
+=======
+                  '<a class="btn" href="product_details.html?productID='+i+'">'+
+                    '<i class="icon-zoom-in"></i></a> '+
+                  '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+                    '<i class=""></i></a> '+
+                  '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
+                    '<i class=""></i></a>'+
+>>>>>>> parent of efb9a4a... Edit Products
                 '</h4>'+
               '</div>'+'</div>'+'</li>';
       }
