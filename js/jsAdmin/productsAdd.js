@@ -16,7 +16,7 @@ $(document).ready(function () {
 
         var all = data.length;
         var r = "";
-        for (var i = 0; i < all; i++) {
+        for (var i = 1; i <= all; i++) {
            
             r+='"'+data[i].proGroupN+'",';
         
