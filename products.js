@@ -5,7 +5,7 @@ $(document).ready(function() {
     console.log(data);          
     var all = data.length;
     var showList ="";
-    for(var i=1 ;i<=all ;i++){
+    for(var i =0;i<all;i++){
       showList += 
       '<div class="row">'+
         '<div class="span2">'+
@@ -41,11 +41,7 @@ $(document).ready(function() {
     //  console.log(data);          
       var all =data.length;
       var show ="";
-<<<<<<< HEAD
-      for(var i=1 ;i<=all ;i++){
-=======
       for(var i =0;i<all;i++){
->>>>>>> parent of 3060391... edit All link , move file and write get by id in product_details for admin
        show+= 
        '<li class="span3">'+
           '<div class="thumbnail">'+
@@ -55,12 +51,12 @@ $(document).ready(function() {
               '<div class="caption">'+
                 '<h5>'+ data[i].proName+'</h5>'+
                 '<h4 style="text-align:center">'+
-                  '<a class="btn" href="product_details.html?productID='+i+'">'+
-                    '<i class="icon-zoom-in"></i></a> '+
-                  '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
-                    '<i class=""></i></a> '+
-                  '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
-                    '<i class=""></i></a>'+
+                '<a class="btn" href="product_details.html?productID='+i+'">'+
+                  '<i class="icon-zoom-in"></i></a> '+
+                '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+                  '<i class=""></i></a> '+
+                '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
+                  '<i class=""></i></a>'+
                 '</h4>'+
               '</div>'+'</div>'+'</li>';
       }
