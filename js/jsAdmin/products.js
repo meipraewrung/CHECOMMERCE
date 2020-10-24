@@ -42,7 +42,11 @@ $(document).ready(function() {
       var all =data.length;
       var show ="";
 <<<<<<< HEAD
+<<<<<<< HEAD
       for(var i=1 ;i<=all ;i++){
+=======
+      for(var i =0;i<all;i++){
+>>>>>>> parent of 3060391... edit All link , move file and write get by id in product_details for admin
 =======
       for(var i =0;i<all;i++){
 >>>>>>> parent of 3060391... edit All link , move file and write get by id in product_details for admin
