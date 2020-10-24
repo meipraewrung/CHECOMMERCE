@@ -1,19 +1,21 @@
+//product listView
 var urlSearchParams = URL.searchParams;
 let params = (new URL(document.location)).searchParams;
-let tid = params.get("id");
+let pid = params.get("productID");
 let options = {};
-var show = '';
-console.log(tid);
-
-$(document).ready(function () {
-    var url = "http://localhost:3000/customers?";
-    $.get(url, function (data) {
-
-        var all = data.length;
-        var r = "";
-        for (var i = 0; i < all; i++) {
-            if (data[i].customerID === tid) {
-                r += '<tr><td>' + data[i].customerID + '</td><td>' +
+var show='';
+console.log(pid);
+$(document).ready(function() {
+    var url = "http://localhost:3000/product?";
+    $.get(url, function(data) {
+      console.log(data);          
+      var all = data.length;
+      let show = "";
+      for (let index = 0; index < data.length; index++) {
+        // show += JSON.stringify(data[index]);
+        console.log(data[index].productID);
+        if(data[index].productID==pid){
+        show+= '<tr><td>' + data[i].customerID + '</td><td>' +
                     data[i].companyName + '</td><td>' + data[i].contactName + '</td><td>' + data[i].contactTitle + '</td><td>' +
                     "street :" + data[i].address.street + "<br>" +
                     "city :" + data[i].address.city + "<br>" +

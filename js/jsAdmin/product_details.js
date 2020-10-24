@@ -10,32 +10,41 @@ $(document).ready(function() {
     $.get(url, function(data) {
       console.log(data);          
       var all = data.length;
-      var showList ="";
-      for(var i =1;i<=all;i++){
-        showList += 
+      let show = "";
+      for (let index = 0; index < data.length; index++) {
+        // show += JSON.stringify(data[index]);
+        console.log(data[index].productID);
+        if(data[index].productID==pid){
+        show+= 
         '<div class="row">'+
           '<div class="span2">'+
-            '<img style="height: 150px; width: auto" src="'+data[i].proImage+'" alt="" />'+
+            '<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
           '</div>'+
           '<div class="span4">'+
-            '<h3>'+ data[i].proName+'</h3>'+
+            '<h3>'+ JSON.stringify(data[index].proName)+'</h3>'+
             '<hr class="soft" />'+
-            '<h5>'+ data[i].proName+'</h5>'+
-            '<p>'+ data[i].proName+'</p>'+
-            '<a class="btn btn-small pull-right" href="productsDetails.html?productID='+i+'">รายละเอียด'+
+            '<h5>'+ JSON.stringify(data[index].proName)+'</h5>'+
+            '<p>'+ JSON.stringify(data[index].proName)+'</p>'+
+            '<a class="btn btn-small pull-right" href="productsDetails.html?productID='+index+'">รายละเอียด'+
               '<i class=""></i></a>'+
             '<hr class="soft" />'+
           '</div>'+
           '<div class="span3 alignR">'+
             '<form class="form-horizontal qtyFrm">'+
-              '<h3>฿'+data[i].priceUnit+'</h3>'+
-              '<a class="btn btn-primary" href="productsEdit.html?productID='+i+'">แก้ไข'+
+              '<h3>฿'+data[index].priceUnit+'</h3>'+
+              '<a class="btn btn-primary" href="productsEdit.html?productID='+(index+1)+'">แก้ไข'+
                 '<i class=""></i></a> '+
-              '<a class="btn btn-danger" href="products.html?productID='+i+'">ลบ'+
+              '<a class="btn btn-danger" href="products.html?productID='+(index+1)+'">ลบ'+
                 '<i class=""></i></a>'+
             '<form>'+'</div>'+'</div>'+
             '<hr class="soft" />';
+        }
+        // else {
+        //   alert("Can not find");
+        //   $("#err").show();
+        //   window.location.href = "products.html"
+        // }
           }
-      document.getElementById('proListView').innerHTML = showList;
+      document.getElementById('proListView').innerHTML = show;
     });
   });
