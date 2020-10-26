@@ -15,8 +15,8 @@ $(document).ready(function() {
         // show += JSON.stringify(data[index]);
         if(data[index].id==pid){
             console.log(data[index]);
-                $("#Group").val(JSON.stringify(data[index].proGroupN));
-                $("#ProName").val(JSON.stringify(data[index].proName));
+                $("#Groups").val(data[index].proGroupN);
+                $("#ProName").val(data[index].proName);
                 $("#total").val(data[index].number);
                 $("#price").val(data[index].priceUnit);
                 $("#type").val(data[index].proType);
@@ -61,19 +61,19 @@ $("#save").click(function () {
     console.log('SAVE');
     let newuser = {};
     
-    newuser.id = pid;
-    newuser.proGroupN = $("#Group").val();
+    // newuser.id = pid;
+    newuser.proGroupN = $("#Groups").val();
     newuser.proName = $("#ProName").val();
     newuser.number = $("#total").val();
     newuser.priceUnit = $("#price").val();
-    newuserproType = $("#type").val(); 
+    newuser.proType = $("#type").val(); 
     newuser.proImage = document.getElementById('image').src;
 
-    console.log(JSON.stringify(newuser));
-    var updateUrl = "http://localhost:3000/product?productID="+pid ;
-    console.log(updateUrl);
+    console.log(newuser);
+    // var updateUrl = "http://localhost:3000/product?"+pid ;
+    // console.log(updateUrl);
     $.ajax({
-        url: "http://localhost:3000/product?productID="+pid,
+        url: "http://localhost:3000/product/"+pid,
         type: 'PUT',
         // data: newuser,
         dataType: 'json',
@@ -84,8 +84,8 @@ $("#save").click(function () {
             console.log('Updated!');
         }
     });
-    // $("#err").show();
-    // setTimeout(location.reload.bind(location), 900);
+    $("#err").show();
+    setTimeout(location.reload.bind(location), 900);
 });
 
 

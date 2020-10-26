@@ -1,16 +1,16 @@
 {
   "product": [
     {
-      "id": 1,
       "proGroupN": "ตู้เย็น 1 ประตู",
       "proName": "ตู้เย็น SAMSUNG รุ่น RA19PT2",
-      "number": 1,
-      "priceUnit": 5590.56,
+      "number": "1",
+      "priceUnit": "5590.56",
       "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน",
-      "proImage": "themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
+      "proImage": "themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg",
+      "id": 1
     },
     {
-      "productID": 2,
+      "id": 2,
       "proGroupN": "ตู้เย็น 1 ประตู",
       "proName": "ตู้เย็น TOSHIBA รุ่น GRB175Z",
       "number": 1,
@@ -1136,12 +1136,6 @@
       "priceUnit": 500,
       "proType": "เฟอร์นิเจอร์",
       "proImage": "themes/images/products/เฟอร์นิเจอร์/เก้าอี้/เก้าอี้จัดเลี้ยง ขาชุบ เบาะดำ 1026-01.jpg"
-    },
-    {
-      "proGroupN": "Test",
-      "proName": "Test",
-      "number": 1,
-      "id": 2
     }
   ]
 }

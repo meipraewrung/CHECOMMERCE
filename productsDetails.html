@@ -184,48 +184,50 @@
 				<div class="span9">
 					<form class="form-inline" name="form_productAdd" method="post" action="">
 						<fieldset>
-							<div class="control-group">
-								<label class="control-label" for="input12">ชื่อกลุ่มสินค้า</label>
-								<div class="controls">
-									<input type="text" class="input-xxlarge" id="input12" placeholder="ตู้เย็น 1 ประตู" disabled>
+							<div id="editdata">
+								<div class="control-group">
+									<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="Group" disabled>
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input12">ชื่อสินค้า</label>
-								<div class="controls">
-									<input type="text" class="input-xxlarge" id="input12" placeholder="ตู้เย็น SAMSUNG รุ่น RA19PT2" disabled>
+								<div class="control-group">
+									<label class="control-label" for="input12">ชื่อสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="ProName" disabled>
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input13">หน่วยจำนวน</label>
-								<div class="controls">
-									<input type="text" class="input-medium" id="input13" placeholder="1" disabled>
+								<div class="control-group">
+									<label class="control-label" for="input13">หน่วยจำนวน</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="total" disabled>
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input_1">ราคา/หน่วย</label>
-								<div class="controls">
-									<input type="text" class="input-medium" id="input_1" placeholder="5590.56" disabled>
+								<div class="control-group">
+									<label class="control-label" for="input_1">ราคา/หน่วย</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="price" disabled> 
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input12">ประเภทสินค้า</label>
-								<div class="controls">
-									<input type="text" class="input-xxlarge" id="input12" placeholder="เครื่องใช้ไฟฟ้าภายในบ้าน" disabled>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
-								<div class="controls">
-									<img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-												alt="" />
+								<div class="control-group">
+									<label class="control-label" for="select01">ประเภทสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id=type disabled>
+
+									</div>
+								</div> 
+								<div class="control-group">
+									<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
+									<div class="controls" >
+										<img style="height: 150px; width: auto" accept='/themes/images/products/*'id="image"  src="" alt="" disabled/>
+										<!-- <input class="input-file" onchange="myFunction(this);" id="fileInput" type="file" > -->
+									</div>
 								</div>
 							</div>
 							<div class="form-actions">
-								<!-- <button type="submit" class="btn btn-primary">บันทึก</button>
-								<button class="btn" class="btn btn-danger">ยกเลิก</button> -->
-								<a href="products.html" class="btn btn-danger">กลับ<i class=""></i></a>
+								<!-- <button type="button" class="btn btn-outline-primary" id="save" name="save">
+									บันทึก </button> -->
+								<a href="products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>
 							</div>
 						</fieldset>
 					</form>
