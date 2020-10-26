@@ -1,4 +1,3 @@
-//product listView
 var urlSearchParams = URL.searchParams;
 let params = (new URL(document.location)).searchParams;
 let pid = params.get("productID");
@@ -6,6 +5,7 @@ let options = {};
 var show='';
 console.log(pid);
 $(document).ready(function() {
+  console.log(pid);
     var url = "http://localhost:3000/product?";
     $.get(url, function(data) {
       console.log(data);          

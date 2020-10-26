@@ -33,7 +33,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
-    <script src="/js/jsAdmin/productsEdit.js"></script>
 </head>
 
 <body>
@@ -63,7 +62,8 @@
 				</a>
 				<div class="navbar-inner">
 					<a class="brand" href="index.html"><img style="width:10%"
-							src="themes/images/products/LogoCH/LogoNewCH-removebg-preview.png" alt="CH Phatthalung" /></a>
+							src="themes/images/products/LogoCH/LogoNewCH-removebg-preview.png"
+							alt="CH Phatthalung" /></a>
 					<form class="form-inline navbar-search" method="post" action="products.html">
 						<input id="srchFld" class="srchTxt" type="text" />
 						<select class="srchTxt">
@@ -122,7 +122,7 @@
 			<div class="row">
 				<!-- Sidebar ================================================== -->
 				<div id="sidebar" class="span3">
-					<ul id="sideManu" class="nav nav-tabs nav-stacked">			
+					<ul id="sideManu" class="nav nav-tabs nav-stacked">
 						<li class="subMenu"><a>เครื่องใช้ไฟฟ้าภายในบ้าน</a>
 							<ul style="display:none">
 								<li><a href="products.html"><i class="icon-chevron-right"></i>LED</a></li>
@@ -182,89 +182,50 @@
 				<div class="span9">
 					<form class="form-inline" name="form_productAdd" method="post" action="">
 						<fieldset>
-							<div class="control-group">
-								<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
-								<div class="controls">
-									<select id="select01">
-										<option>ตู้เย็น 1 ประตู</option>
-										<option>ตู้เย็น 2 ประตูู</option>
-										<option>ตู้เเช่</option>
-										<option>เครื่องทำน้ำร้อน-เย็น</option>
-										<option>เครื่องซักผ้า 2 ถัง</option>
-										<option>เครื่องซักผ้า 1 ถัง</option>
-										<option>เครื่องซักผ้าฝาหน้า</option>
-										<option>กระติกน้ำร้อน</option>
-										<option>หม้อ</option>
-										<option>เครื่องปั่น</option>
-										<option>LED</option>
-										<option>เตาเเก๊ส</option>
-										<option>กระทะไฟฟ้า</option>
-										<option>กระทะ</option>
-										<option>เตารีด</option>
-										<option>เครื่องดูดฝุ่น</option>
-										<option>พัดลม</option>
-										<option>เเอร์</option>
-										<option>ทีวี</option>
-										<option>เครื่องทำน้ำอุ่น</option>
-										<option>เครื่องปิ้ง</option>
-										<option>เตาไฟฟ้า</option>
-										<option>เครื่องฟอกอากาศ</option>
-										<option>กล้องวงจรปิด</option>
-										<option>ที่นอน</option>
-										<option>ตู้กับข้าว</option>
-										<option>เตียงเหล็ก</option>
-										<option>เตียงไม้</option>
-										<option>ตู้เสื้อผ้า</option>
-										<option>โต๊ะ</option>
-										<option>ราวตากผ้า</option>
-										<option>เก้าอี้</option>
-									</select>
+							<div id="editdata">
+								<div class="control-group">
+									<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="Group" disabled>
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input12">ชื่อสินค้า</label>
-								<div class="controls">
-									<input type="text" class="input-xxlarge" id="input12" placeholder="ตู้เย็น SAMSUNG รุ่น RA19PT2">
+								<div class="control-group">
+									<label class="control-label" for="input12">ชื่อสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="ProName">
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input13">หน่วยจำนวน</label>
-								<div class="controls">
-									<input type="text" class="input-medium" id="input13" placeholder="1">
+								<div class="control-group">
+									<label class="control-label" for="input13">หน่วยจำนวน</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="total">
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="input_1">ราคา/หน่วย</label>
-								<div class="controls">
-									<input type="text" class="input-medium" id="input_1" placeholder="5590.56">
+								<div class="control-group">
+									<label class="control-label" for="input_1">ราคา/หน่วย</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="price">
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="select01">ประเภทสินค้า</label>
-								<div class="controls">
-									<select id="select01">
-										<option>เครื่องใช้ไฟฟ้าภายในบ้าน</option>
-										<option>เครื่องใช้ไฟฟ้าภายในครัวเรือน</option>
-										<option>เครื่องปรับอากาศ</option>
-										<option>กล้องวงจรปิด</option>
-										<option>เฟอร์นิเจอร์</option>
-									</select>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
-								<div class="controls">
-									<img style="height: 150px; width: auto"
-												src="themes/images/products/ในบ้าน/ตู้เย็น/1ประตู/ตู้เย็น SAMSUNG รุ่น RA19PT2.jpg"
-												alt="" />
-									<input class="input-file" id="fileInput" type="file">
+								<div class="control-group">
+									<label class="control-label" for="select01">ประเภทสินค้า</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id=type disabled>
+
+									</div>
+								</div> 
+								<div class="control-group">
+									<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
+									<div class="controls" >
+										<img style="height: 150px; width: auto" accept='/themes/images/products/*'id="image"  src="" alt="" />
+										<input class="input-file" onchange="myFunction(this);" id="fileInput" type="file">
+									</div>
 								</div>
 							</div>
 							<div class="form-actions">
-								<!-- <button type="submit" class="btn btn-primary">บันทึก</button>
-								<button class="btn" class="btn btn-danger">ยกเลิก</button> -->
-								<a href="productsEdit.html" class="btn btn-primary">บันทึก<i class=""></i></a>
-								<a href="products.html" class="btn btn-danger">ยกเลิก<i class=""></i></a>
+								<button type="button" class="btn btn-outline-primary" id="save" name="save">
+									บันทึก </button>
+								<a href="products.html" class="btn btn-danger" id="cancle">ยกเลิก<i class=""></i></a>
 							</div>
 						</fieldset>
 					</form>
@@ -278,7 +239,7 @@
 			<div class="row">
 				<div class="span3">
 					<h5>ข้อมูลทั่วไป</h5>
-					<a href="#">เกี่ยวกับเรา</a>   
+					<a href="#">เกี่ยวกับเรา</a>
 					<a href="#">ติดต่อเรา</a>
 					<a href="#">สินค้ามาใหม่</a>
 					<a href="#">แผนผังเว็บไซต์</a>
@@ -401,5 +362,6 @@
 	</div>
 	<span id="themesBtn"></span>
 </body>
+<script language="JavaScript" type="text/javascript" src="/js/jsAdmin/productsEdit.js"></script>
 
 </html>
