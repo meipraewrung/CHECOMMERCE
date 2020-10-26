@@ -14,7 +14,7 @@ $(document).ready(function() {
       for (let index = 0; index < data.length; index++) {
         // show += JSON.stringify(data[index]);
         console.log(data[index].productID);
-        if(data[index].productID==pid){
+        if(data[index].id==pid){
         show+= 
         '<div class="row">'+
           '<div class="span2">'+

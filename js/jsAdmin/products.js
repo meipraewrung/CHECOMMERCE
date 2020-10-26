@@ -10,7 +10,7 @@ $(document).ready(function() {
         show+= 
         '<li class="span3">'+
           '<div class="thumbnail">'+
-              '<a href="productsDetails.html?productID='+data[index].productID+'">'+
+              '<a href="productsDetails.html?productID='+data[index].id+'">'+
                   '<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
               '</a>'+
               '<div class="caption">'+

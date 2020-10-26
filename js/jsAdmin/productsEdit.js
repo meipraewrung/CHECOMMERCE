@@ -13,7 +13,7 @@ $(document).ready(function() {
       let show = "";
       for (let index = 0; index < data.length; index++) {
         // show += JSON.stringify(data[index]);
-        if(data[index].productID==pid){
+        if(data[index].id==pid){
             console.log(data[index]);
                 $("#Group").val(JSON.stringify(data[index].proGroupN));
                 $("#ProName").val(JSON.stringify(data[index].proName));
@@ -61,7 +61,7 @@ $("#save").click(function () {
     console.log('SAVE');
     let newuser = {};
     
-    newuser.productID = pid;
+    newuser.id = pid;
     newuser.proGroupN = $("#Group").val();
     newuser.proName = $("#ProName").val();
     newuser.number = $("#total").val();
