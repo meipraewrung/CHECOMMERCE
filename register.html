@@ -141,44 +141,79 @@
 		<strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 	 </div> -->
 						<form class="form-horizontal">
-							<h4>Your personal information</h4>
+							<h4>ข้อมูลสมาชิก</h4>
 							<div class="control-group">
-								<label class="control-label">Title <sup>*</sup></label>
+								<label class="control-label">คำนำหน้า <sup>*</sup></label>
 								<div class="controls">
-									<select class="span1" name="days">
+									<select class="span1" name="days" id="Title">
 										<option value="">-</option>
-										<option value="1">Mr.</option>
-										<option value="2">Mrs</option>
-										<option value="3">Miss</option>
+										<option value="1">นาย</option>
+										<option value="2">นาง</option>
+										<option value="3">นางสาว</option>
 									</select>
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputFname1">First name <sup>*</sup></label>
+								<label class="control-label" for="inputFname1">ชื่อ <sup>*</sup></label>
 								<div class="controls">
-									<input type="text" id="inputFname1" placeholder="First Name">
+									<input type="text" id="inputFname" placeholder="จุฬาลักษณ์">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputLnam">Last name <sup>*</sup></label>
+								<label class="control-label" for="inputLnam">นามสกุล <sup>*</sup></label>
 								<div class="controls">
-									<input type="text" id="inputLnam" placeholder="Last Name">
+									<input type="text" id="inputLname" placeholder="ธรรมเพชร">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="input_email">Email <sup>*</sup></label>
+								<label class="control-label" for="input_email">อีเมล <sup>*</sup></label>
 								<div class="controls">
-									<input type="text" id="input_email" placeholder="Email">
+									<input type="text" id="input_email" placeholder="xxx@gmail.com">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputPassword1">Password <sup>*</sup></label>
+								<label class="control-label" for="inputPassword1">รหัสผ่าน <sup>*</sup></label>
 								<div class="controls">
-									<input type="password" id="inputPassword1" placeholder="Password">
+									<input type="password" id="inputPassword" placeholder="********">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">Date of Birth <sup>*</sup></label>
+								<div class="nativeDatePicker">
+									<label for="bday">วัน เดือน ปีเกิด:</label>
+									<input type="date" id="bday" name="bday">
+									<span class="validity"></span>
+								  </div>
+								  <!-- <p class="fallbackLabel">วัน เดือน ปีเกิด:</p>
+								  <div class="fallbackDatePicker">
+									<span>
+									  <label for="day">วัน:</label>
+									  <select id="day" name="day">
+									  </select>
+									</span>
+									<span>
+									  <label for="month">เดือน:</label>
+									  <select id="month" name="month">
+										<option selected>มกราคม</option>
+										<option>กุมภาพันธุ์</option>
+										<option>มีนาคม</option>
+										<option>เมษายน</option>
+										<option>พฤกษภาคม</option>
+										<option>มิถุนายน</option>
+										<option>กรกฎาคม</option>
+										<option>สิงหาคม</option>
+										<option>กันยายน</option>
+										<option>ตุลาคม</option>
+										<option>พฤศจิกายน</option>
+										<option>ธันวาคม</option>
+									  </select>
+									</span>
+									<span>
+									  <label for="year">ปี:</label>
+									  <select id="year" name="year">
+									  </select>
+									</span> -->
+								  </div>
+								<!-- <label class="control-label">Date of Birth <sup>*</sup></label>
 								<div class="controls">
 									<select class="span1" name="days">
 										<option value="">-</option>
@@ -190,7 +225,23 @@
 										<option value="6">6&nbsp;&nbsp;</option>
 										<option value="7">7&nbsp;&nbsp;</option>
 									</select>
-									<select class="span1" name="days">
+									<select class="span1" name="month">
+										<option value="">-</option>
+										<option value="1">1&nbsp;&nbsp;</option>
+										<option value="2">2&nbsp;&nbsp;</option>
+										<option value="3">3&nbsp;&nbsp;</option>
+										<option value="4">4&nbsp;&nbsp;</option>
+										<option value="5">5&nbsp;&nbsp;</option>
+										<option value="6">6&nbsp;&nbsp;</option>
+										<option value="7">7&nbsp;&nbsp;</option>
+										<option value="8">8&nbsp;&nbsp;</option>
+										<option value="9">9&nbsp;&nbsp;</option>
+										<option value="10">10&nbsp;&nbsp;</option>
+										<option value="11">11&nbsp;&nbsp;</option>
+										<option value="12">12&nbsp;&nbsp;</option>
+										
+									</select>
+									<select class="span1" name="year">
 										<option value="">-</option>
 										<option value="1">1&nbsp;&nbsp;</option>
 										<option value="2">2&nbsp;&nbsp;</option>
@@ -200,17 +251,7 @@
 										<option value="6">6&nbsp;&nbsp;</option>
 										<option value="7">7&nbsp;&nbsp;</option>
 									</select>
-									<select class="span1" name="days">
-										<option value="">-</option>
-										<option value="1">1&nbsp;&nbsp;</option>
-										<option value="2">2&nbsp;&nbsp;</option>
-										<option value="3">3&nbsp;&nbsp;</option>
-										<option value="4">4&nbsp;&nbsp;</option>
-										<option value="5">5&nbsp;&nbsp;</option>
-										<option value="6">6&nbsp;&nbsp;</option>
-										<option value="7">7&nbsp;&nbsp;</option>
-									</select>
-								</div>
+								</div> -->
 							</div>
 
 							<div class="alert alert-block alert-error fade in">
@@ -219,8 +260,15 @@
 								industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 							</div>
 
-							<h4>Your address</h4>
-							<div class="control-group">
+							<h4>ที่อยู่จัดส่ง<sup>*</sup></h4>
+							 <div class="control-group">
+								
+								<div class="controls">
+									<textarea name="address" id="address" cols="26"
+										rows="3"></textarea>
+								</div>
+							</div> 
+							<!-- <div class="control-group">
 								<label class="control-label" for="inputFname">First name <sup>*</sup></label>
 								<div class="controls">
 									<input type="text" id="inputFname" placeholder="First Name">
@@ -321,15 +369,15 @@
 										<option value="50">Wyoming</option>
 									</select>
 								</div>
-							</div>
+							</div> -->
 							<div class="control-group">
-								<label class="control-label" for="postcode">Zip / Postal Code<sup>*</sup></label>
+								<label class="control-label" for="postcode">Postal Code<sup>*</sup></label>
 								<div class="controls">
 									<input type="text" id="postcode" placeholder="Zip / Postal Code" />
 								</div>
 							</div>
 
-							<div class="control-group">
+							<!-- <div class="control-group">
 								<label class="control-label" for="country">Country<sup>*</sup></label>
 								<div class="controls">
 									<select id="country">
@@ -337,26 +385,26 @@
 										<option value="1">Country</option>
 									</select>
 								</div>
-							</div>
-							<div class="control-group">
+							</div> -->
+							<!-- <div class="control-group">
 								<label class="control-label" for="aditionalInfo">Additional information</label>
 								<div class="controls">
 									<textarea name="aditionalInfo" id="aditionalInfo" cols="26"
 										rows="3">Additional information</textarea>
 								</div>
-							</div>
-							<div class="control-group">
+							</div> -->
+							<!-- <div class="control-group">
 								<label class="control-label" for="phone">Home phone <sup>*</sup></label>
 								<div class="controls">
 									<input type="text" name="phone" id="phone" placeholder="phone" /> <span>You must
 										register at least one phone number</span>
 								</div>
-							</div>
+							</div> -->
 
 							<div class="control-group">
 								<label class="control-label" for="mobile">Mobile Phone </label>
 								<div class="controls">
-									<input type="text" name="mobile" id="mobile" placeholder="Mobile Phone" />
+									<input type="text" name="mobile" id="mobilephone" placeholder="Mobile Phone" />
 								</div>
 							</div>
 
