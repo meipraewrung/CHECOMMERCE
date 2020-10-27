@@ -15,8 +15,8 @@
 //         }
 //     }
 // });
-console.log("dd");
-$(document).ready(function() {
+//console.log("dd");
+//$(document).ready(function() {
 $("#login").click(function() {
     var email = document.getElementById('inputEmail').value;
     var pwd = document.getElementById('inputPassword').value;    
@@ -30,7 +30,7 @@ $.get(url, function(data) {
             console.log("SuccessAdmin");
            window.location.href = "products.html" ;
             }
-            else if (data[i].customerEmail===email && data[i].customerPWSl === pwd ){
+            else if (data.customerEmail===email && data.customerPWSl === pwd ){
             // $("#suc").show();
             console.log("SuccessUser");
            window.location.href = "products.html" ;
@@ -42,4 +42,4 @@ $.get(url, function(data) {
          }
         });
 });
-});
+//});
