@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>CHECOMMERCE</title>
+	<title>Bootshop online Shopping cart</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -33,7 +33,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
-	<script src="js/productsAdd.js"></script>
 </head>
 
 <body>
@@ -62,13 +61,13 @@
 					<span class="icon-bar"></span>
 				</a>
 				<div class="navbar-inner">
-					<a class="brand" href="index.html"><img style="height: 35px; width: 95px"
-							src="themes/images/products/LogoCH/LogoNewCH-removebg-preview.png"
-							alt="CH Phatthalung" /></a>
+					<!-- <a class="brand" href="index.html"><img style="width:10%"
+							src="img/product/LogoCH/LogoNewCH-removebg-preview.png" alt="CH Phatthalung" /></a> -->
 					<form class="form-inline navbar-search" method="post" action="products.html">
 						<input id="srchFld" class="srchTxt" type="text" />
 						<select class="srchTxt">
 							<option>All</option>
+							<option>สินค้ามาใหม่</option>
 							<option>เครื่องใช้ไฟฟ้าภายในบ้าน</option>
 							<option>เครื่องใช้ไฟฟ้าในครัวเรือน</option>
 							<option>เครื่องปรับอากาศ</option>
@@ -117,7 +116,6 @@
 		</div>
 	</div>
 	<!-- Header End====================================================================== -->
-
 	<div id="mainBody">
 		<div class="container">
 			<div class="row">
@@ -126,247 +124,213 @@
 
 					<ul id="sideManu" class="nav nav-tabs nav-stacked">
 
-						<li class="subMenu"><a>เครื่องใช้ไฟฟ้าภายในบ้าน</a>
-							<ul style="display:none">
-								<li><a href="products.html"><i class="icon-chevron-right"></i>LED</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เตารีด</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>พัดลม</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ทีวี</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องซักผ้า</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องดูดฝุ่น</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เย็น</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องทำน้ำอุ่น</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เเช่</a></li>
+						<ul id="sideManu" class="nav nav-tabs nav-stacked">
+							<li class="subMenu"><a>เครื่องใช้ไฟฟ้าภายในบ้าน</a>
+								<ul style="display:none">
+									<li><a href="products.html"><i class="icon-chevron-right"></i>LED</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เตารีด</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>พัดลม</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ทีวี</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องซักผ้า</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องดูดฝุ่น</a>
+									</li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เย็น</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องทำน้ำอุ่น</a>
+									</li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เเช่</a></li>
 
-							</ul>
-						</li>
-						<li class="subMenu"><a>เครื่องใช้ไฟฟ้าในครัวเรือน</a>
-							<ul style="display:none">
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องปั่น</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เตาแก๊ส</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>กระทะ</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เตาไฟฟ้า</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องปิ้ง</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>กระทะไฟฟ้า</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>กระติกน้ำร้อน</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>หม้อ</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องทำน้ำร้อน-เย็น</a>
-								</li>
-							</ul>
-						</li>
-						<li class="subMenu"><a>เครื่องปรับอากาศ</a>
-							<ul style="display:none">
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เเอร์</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องฟองอากาศ</a></li>
-							</ul>
-						</li>
-						<li class="subMenu"><a>เฟอร์นิเจอร์</a>
-							<ul style="display:none">
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ที่นอน</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เตียงเหล็ก</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เตียงไม้</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้กับข้าว</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เสื้อผ้า</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>โต๊ะ</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>ราวตากผ้า</a></li>
-								<li><a href="products.html"><i class="icon-chevron-right"></i>เก้าอี้</a></li>
-							</ul>
-						</li>
-						<li class="subMenu"><a>กล้องวงจรปิด</a>
-							<ul style="display:none">
-								<li><a href="products.html"><i class="icon-chevron-right"></i>กล้องวงจรปิด</a></li>
+								</ul>
+							</li>
+							<li class="subMenu"><a>เครื่องใช้ไฟฟ้าในครัวเรือน</a>
+								<ul style="display:none">
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องปั่น</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เตาแก๊ส</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>กระทะ</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เตาไฟฟ้า</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องปิ้ง</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>กระทะไฟฟ้า</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>กระติกน้ำร้อน</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>หม้อ</a></li>
+									<li><a href="products.html"><i
+												class="icon-chevron-right"></i>เครื่องทำน้ำร้อน-เย็น</a>
+									</li>
+								</ul>
+							</li>
+							<li class="subMenu"><a>เครื่องปรับอากาศ</a>
+								<ul style="display:none">
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เเอร์</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เครื่องฟองอากาศ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="subMenu"><a>เฟอร์นิเจอร์</a>
+								<ul style="display:none">
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ที่นอน</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เตียงเหล็ก</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เตียงไม้</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้กับข้าว</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ตู้เสื้อผ้า</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>โต๊ะ</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>ราวตากผ้า</a></li>
+									<li><a href="products.html"><i class="icon-chevron-right"></i>เก้าอี้</a></li>
+								</ul>
+							</li>
+							<li class="subMenu"><a>กล้องวงจรปิด</a>
+								<ul style="display:none">
+									<li><a href="products.html"><i class="icon-chevron-right"></i>กล้องวงจรปิด</a></li>
 
-							</ul>
-						</li>
+								</ul>
+							</li>
 
+						</ul>
 					</ul>
 				</div>
 				<!-- Sidebar end=============================================== -->
 				<div class="span9">
-					<form class="form-inline" name="form_productAdd" method="post" action="">
-						<fieldset>
-							<div id="editdata">
-								<div class="control-group">
-									<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
-									<div class="controls">
-										<input type="text" class="input-xxlarge" id="Group" disabled>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input12">ชื่อสินค้า</label>
-									<div class="controls">
-										<input type="text" class="input-xxlarge" id="ProName" disabled>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input13">หน่วยจำนวน</label>
-									<div class="controls">
-										<input type="text" class="input-medium" id="total" disabled>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input_1">ราคา/หน่วย</label>
-									<div class="controls">
-										<input type="text" class="input-medium" id="price" disabled>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="select01">ประเภทสินค้า</label>
-									<div class="controls">
-										<input type="text" class="input-medium" id=type disabled>
-
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="fileInput">รูปภาพสินค้า</label>
-									<div class="controls">
-										<img style="height: 150px; width: auto" accept='/themes/images/products/*'
-											id="image" src="" alt="" disabled />
-										<!-- <input class="input-file" onchange="myFunction(this);" id="fileInput" type="file" > -->
-									</div>
-								</div>
-							</div>
-							<div class="form-actions">
-								<!-- <button type="button" class="btn btn-outline-primary" id="save" name="save">
-									บันทึก </button> -->
-								<a href="products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>
-							</div>
-						</fieldset>
-					</form>
+					<ul class="breadcrumb">
+						<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+						<li><a href="products.html">Products</a>
+							<spanclass="divider">/</span>
+						</li>
+						<li class="active">product Details</li>
+					</ul>
+					<div class="row" id="proListView" >
+						<!-- show data -->
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Footer ================================================================== -->
-	<div id="footerSection">
-		<div class="container">
-			<div class="row">
-				<div class="span3">
-					<h5>ข้อมูลทั่วไป</h5>
-					<a href="#">เกี่ยวกับเรา</a>
-					<a href="#">ติดต่อเรา</a>
-					<a href="#">สินค้ามาใหม่</a>
-					<a href="#">แผนผังเว็บไซต์</a>
+		<!-- MainBody End ============================= -->
+		<!-- Footer ================================================================== -->
+		<div id="footerSection">
+			<div class="container">
+				<div class="row">
+					<div class="span3">
+						<h5>ข้อมูลทั่วไป</h5>
+						<a href="#">เกี่ยวกับเรา</a>
+						<a href="#">ติดต่อเรา</a>
+						<a href="#">สินค้ามาใหม่</a>
+						<a href="#">แผนผังเว็บไซต์</a>
+					</div>
+					<div class="span3">
+						<h5>ข้อมูลสมาชิก</h5>
+						<a href="#">ประวัติการสั่งซื้อ</a>
+						<a href="#">สินค้าที่สนใจ</a>
+						<a href="#">เปรียบเทียบสินค้า</a>
+						<a href="#">สถานะการจัดส่ง</a>
+					</div>
+					<div id="socialMedia" class="span3 pull-right">
+						<h5>SOCIAL MEDIA </h5>
+						<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook"
+								alt="facebook" /></a>
+						<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter"
+								alt="twitter" /></a>
+						<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube"
+								alt="youtube" /></a>
+					</div>
 				</div>
-				<div class="span3">
-					<h5>ข้อมูลสมาชิก</h5>
-					<a href="#">ประวัติการสั่งซื้อ</a>
-					<a href="#">สินค้าที่สนใจ</a>
-					<a href="#">เปรียบเทียบสินค้า</a>
-					<a href="#">สถานะการจัดส่ง</a>
+				<p class="pull-right">&copy; Bootshop</p>
+			</div><!-- Container End -->
+		</div>
+		<!-- Placed at the end of the document so the pages load faster ============================================= -->
+		<script src="themes/js/jquery.js" type="text/javascript"></script>
+		<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="themes/js/google-code-prettify/prettify.js"></script>
+
+		<script src="themes/js/bootshop.js"></script>
+		<script src="themes/js/jquery.lightbox-0.5.js"></script>
+
+		<!-- Themes switcher section ============================================================================================= -->
+		<div id="secectionBox">
+			<link rel="stylesheet" href="themes/switch/themeswitch.css" type="text/css" media="screen" />
+			<script src="themes/switch/theamswitcher.js" type="text/javascript" charset="utf-8"></script>
+			<div id="themeContainer">
+				<div id="hideme" class="themeTitle">Style Selector</div>
+				<div class="themeName">Oregional Skin</div>
+				<div class="images style">
+					<a href="themes/css/#" name="bootshop"><img src="themes/switch/images/clr/bootshop.png"
+							alt="bootstrap business templates" class="active"></a>
+					<a href="themes/css/#" name="businessltd"><img src="themes/switch/images/clr/businessltd.png"
+							alt="bootstrap business templates" class="active"></a>
 				</div>
-				<div id="socialMedia" class="span3 pull-right">
-					<h5>SOCIAL MEDIA </h5>
-					<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook"
-							alt="facebook" /></a>
-					<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter"
-							alt="twitter" /></a>
-					<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube"
-							alt="youtube" /></a>
+				<div class="themeName">Bootswatch Skins (11)</div>
+				<div class="images style">
+					<a href="themes/css/#" name="amelia" title="Amelia"><img src="themes/switch/images/clr/amelia.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="spruce" title="Spruce"><img src="themes/switch/images/clr/spruce.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="superhero" title="Superhero"><img
+							src="themes/switch/images/clr/superhero.png" alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="cyborg"><img src="themes/switch/images/clr/cyborg.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="cerulean"><img src="themes/switch/images/clr/cerulean.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="journal"><img src="themes/switch/images/clr/journal.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="readable"><img src="themes/switch/images/clr/readable.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="simplex"><img src="themes/switch/images/clr/simplex.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="slate"><img src="themes/switch/images/clr/slate.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="spacelab"><img src="themes/switch/images/clr/spacelab.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="united"><img src="themes/switch/images/clr/united.png"
+							alt="bootstrap business templates"></a>
+					<p style="margin:0;line-height:normal;margin-left:-10px;display:none;"><small>These are just
+							examples
+							and you can build your own color scheme in the backend.</small></p>
 				</div>
-			</div>
-			<p class="pull-right">&copy; Bootshop</p>
-		</div><!-- Container End -->
-	</div>
-	<!-- Placed at the end of the document so the pages load faster ============================================= -->
-	<script src="themes/js/jquery.js" type="text/javascript"></script>
-	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="themes/js/google-code-prettify/prettify.js"></script>
+				<div class="themeName">Background Patterns </div>
+				<div class="images patterns">
+					<a href="themes/css/#" name="pattern1"><img src="themes/switch/images/pattern/pattern1.png"
+							alt="bootstrap business templates" class="active"></a>
+					<a href="themes/css/#" name="pattern2"><img src="themes/switch/images/pattern/pattern2.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern3"><img src="themes/switch/images/pattern/pattern3.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern4"><img src="themes/switch/images/pattern/pattern4.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern5"><img src="themes/switch/images/pattern/pattern5.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern6"><img src="themes/switch/images/pattern/pattern6.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern7"><img src="themes/switch/images/pattern/pattern7.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern8"><img src="themes/switch/images/pattern/pattern8.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern9"><img src="themes/switch/images/pattern/pattern9.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern10"><img src="themes/switch/images/pattern/pattern10.png"
+							alt="bootstrap business templates"></a>
 
-	<script src="themes/js/bootshop.js"></script>
-	<script src="themes/js/jquery.lightbox-0.5.js"></script>
+					<a href="themes/css/#" name="pattern11"><img src="themes/switch/images/pattern/pattern11.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern12"><img src="themes/switch/images/pattern/pattern12.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern13"><img src="themes/switch/images/pattern/pattern13.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern14"><img src="themes/switch/images/pattern/pattern14.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern15"><img src="themes/switch/images/pattern/pattern15.png"
+							alt="bootstrap business templates"></a>
 
-	<!-- Themes switcher section ============================================================================================= -->
-	<div id="secectionBox">
-		<link rel="stylesheet" href="themes/switch/themeswitch.css" type="text/css" media="screen" />
-		<script src="themes/switch/theamswitcher.js" type="text/javascript" charset="utf-8"></script>
-		<div id="themeContainer">
-			<div id="hideme" class="themeTitle">Style Selector</div>
-			<div class="themeName">Oregional Skin</div>
-			<div class="images style">
-				<a href="themes/css/#" name="bootshop"><img src="themes/switch/images/clr/bootshop.png"
-						alt="bootstrap business templates" class="active"></a>
-				<a href="themes/css/#" name="businessltd"><img src="themes/switch/images/clr/businessltd.png"
-						alt="bootstrap business templates" class="active"></a>
-			</div>
-			<div class="themeName">Bootswatch Skins (11)</div>
-			<div class="images style">
-				<a href="themes/css/#" name="amelia" title="Amelia"><img src="themes/switch/images/clr/amelia.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="spruce" title="Spruce"><img src="themes/switch/images/clr/spruce.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="superhero" title="Superhero"><img
-						src="themes/switch/images/clr/superhero.png" alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="cyborg"><img src="themes/switch/images/clr/cyborg.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="cerulean"><img src="themes/switch/images/clr/cerulean.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="journal"><img src="themes/switch/images/clr/journal.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="readable"><img src="themes/switch/images/clr/readable.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="simplex"><img src="themes/switch/images/clr/simplex.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="slate"><img src="themes/switch/images/clr/slate.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="spacelab"><img src="themes/switch/images/clr/spacelab.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="united"><img src="themes/switch/images/clr/united.png"
-						alt="bootstrap business templates"></a>
-				<p style="margin:0;line-height:normal;margin-left:-10px;display:none;"><small>These are just examples
-						and you can build your own color scheme in the backend.</small></p>
-			</div>
-			<div class="themeName">Background Patterns </div>
-			<div class="images patterns">
-				<a href="themes/css/#" name="pattern1"><img src="themes/switch/images/pattern/pattern1.png"
-						alt="bootstrap business templates" class="active"></a>
-				<a href="themes/css/#" name="pattern2"><img src="themes/switch/images/pattern/pattern2.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern3"><img src="themes/switch/images/pattern/pattern3.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern4"><img src="themes/switch/images/pattern/pattern4.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern5"><img src="themes/switch/images/pattern/pattern5.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern6"><img src="themes/switch/images/pattern/pattern6.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern7"><img src="themes/switch/images/pattern/pattern7.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern8"><img src="themes/switch/images/pattern/pattern8.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern9"><img src="themes/switch/images/pattern/pattern9.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern10"><img src="themes/switch/images/pattern/pattern10.png"
-						alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern16"><img src="themes/switch/images/pattern/pattern16.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern17"><img src="themes/switch/images/pattern/pattern17.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern18"><img src="themes/switch/images/pattern/pattern18.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern19"><img src="themes/switch/images/pattern/pattern19.png"
+							alt="bootstrap business templates"></a>
+					<a href="themes/css/#" name="pattern20"><img src="themes/switch/images/pattern/pattern20.png"
+							alt="bootstrap business templates"></a>
 
-				<a href="themes/css/#" name="pattern11"><img src="themes/switch/images/pattern/pattern11.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern12"><img src="themes/switch/images/pattern/pattern12.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern13"><img src="themes/switch/images/pattern/pattern13.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern14"><img src="themes/switch/images/pattern/pattern14.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern15"><img src="themes/switch/images/pattern/pattern15.png"
-						alt="bootstrap business templates"></a>
-
-				<a href="themes/css/#" name="pattern16"><img src="themes/switch/images/pattern/pattern16.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern17"><img src="themes/switch/images/pattern/pattern17.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern18"><img src="themes/switch/images/pattern/pattern18.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern19"><img src="themes/switch/images/pattern/pattern19.png"
-						alt="bootstrap business templates"></a>
-				<a href="themes/css/#" name="pattern20"><img src="themes/switch/images/pattern/pattern20.png"
-						alt="bootstrap business templates"></a>
-
+				</div>
 			</div>
 		</div>
-	</div>
-	<span id="themesBtn"></span>
+		<span id="themesBtn"></span>
 </body>
-
 <script src="/js/jsAdmin/productsDetails.js"></script>
 
 </html>
