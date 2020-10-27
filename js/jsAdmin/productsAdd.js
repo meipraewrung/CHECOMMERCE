@@ -81,6 +81,7 @@ $("#Add").click(function () {
         }
     });
     $("#err").show();
+    window.open('products.html');
     // window.location.href = "products.html";
     // setTimeout(location.reload.bind(window.location.href = "products.html"), 900);
 });
