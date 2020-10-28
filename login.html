@@ -33,7 +33,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
-	<script type="text/javascript" src="login.js"></script>
 </head>
 
 <body>
@@ -129,30 +128,21 @@
 					<h3> Login</h3>
 					<hr class="soft" />
 					<div class="row">
-						<div class="span1"> &nbsp;</div>
+						<div class="span1"></div>
 						<div class="span5">
 							<div class="well">
 								<!-- <h5 style="text-align:center;">ALREADY REGISTERED ?</h5> -->
-								<form>
-									<div class="control-group">
+								<form class="user">
+									<div class="form-group">
 										<label class="control-label" for="inputEmail1">Email</label>
-										<div class="controls">
-											<input class="span3" type="text" id="inputEmail" placeholder="Email">
-										</div>
+										<input type="email" class="form-control form-control-user" id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter a email" required>
 									</div>
-									<div class="control-group">
+									<div class="form-group">
 										<label class="control-label" for="inputPassword1">Password</label>
-										<div class="controls">
-											<input type="password" class="span3" id="inputPassword"
-												placeholder="Password">
-										</div>
+										<input type="password" class="form-control form-control-user" id="inputPassword" placeholder="Please provide a password" required>
 									</div>
-									<div class="control-group">
-										<div class="controls">
-											<button type="submit" class="btn btn-success" id="login">Log In</button> <a
-												href="forgetpass.html">Forget password?</a>
-										</div>
-									</div>
+									<button type="button" name="button" class="btn btn-success" id="login">Log In</button>
+									<a href="forgetpass.html">Forget password?</a>
 								</form>
 								<center>
 									<form action="register.html">
@@ -161,6 +151,15 @@
 										</div>
 									</form>
 								</center>
+								<div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+									<strong>incorrect email or password please try again</strong><br>
+									<span style="color:blue;font-weight:bold" id="summary"></span>
+								</div>
+								<div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+									<strong>login successfully</strong>
+								</div>
 							</div>
 						</div>
 						<div class="span2"> &nbsp;</div>
@@ -299,5 +298,5 @@
 	</div>
 	<span id="themesBtn"></span>
 </body>
-
+<script src="/js/login.js"></script>
 </html>
