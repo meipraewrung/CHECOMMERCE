@@ -103,12 +103,12 @@ $("#login").click(function() {
     //         console.log("customers", data2);
     //         console.log("email&pw", email, pwd);
     //         /////////////////////////////ยังไม่เข้า if/////////////////////////////
-    //         if(email == data1.adminEmail && pwd == data1.adminPW){
+    //         if(data1.adminEmail === email && data1.adminPW === pwd){
     //             console.log("email&pw", email, pwd);
     //             $("#suc").show();
     //             console.log("SuccessAdmin");
     //             window.location.href = "products.html" ;
-    //         } else if (email === data2.customerEmail && pwd === data2.customerPW){
+    //         } else if (data2.customerEmail === email && data2.customerPW === pwd){
     //             console.log(email, pwd);
     //             $("#suc").show();
     //             console.log("SuccessUser");
