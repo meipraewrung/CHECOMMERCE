@@ -30,3 +30,29 @@ $(document).ready(function() {
 		document.getElementById('showProduct').innerHTML = show;
 	});
   });
+
+  $('#pagination-container').pagination({
+	dataSource: c1,
+	totalNumber: 43,
+	pageSize: 5,
+	ajax: {
+	  beforeSend: function () {
+		$('#data-container').html('Loading data from flickr.com ...');
+	  }
+	},
+	callback: function (data, pagination) {
+	  // template method of yourself  
+	  // var html = Handlebars.compile($('#name').html(), {
+	  //     data: data
+	  // });                
+	  // var html = _.template($('#name').html, {
+	  //     data: data
+	  // }); 
+
+	  var html = simpleTemplating(data);
+
+	  $('#data-container').html(html);
+
+	}
+  })
+});
