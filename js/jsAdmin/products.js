@@ -8,16 +8,16 @@ $(function () {
     $('#pagination-container').pagination({
       dataSource: data,
       pageSize: 20,
-      // ajax: {
-      //     beforeSend: function() {
-      //         dataContainer.html('Loading data from flickr.com ...');
-      //     }
-      // },
-      // callback: function(data, pagination) {
-      //     // template method of yourself
-      //     var html = template(data);
-      //     $('#data-container').html(html);
-      // }
+      ajax: {
+          beforeSend: function() {
+              dataContainer.html('Loading data from flickr.com ...');
+          }
+      },
+      callback: function(data, pagination) {
+          // template method of yourself
+          var html = template(data);
+          $('#data-container').html(html);
+      }
   })
   });
 });
