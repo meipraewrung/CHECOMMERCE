@@ -17,7 +17,7 @@ $("#login").click(function () {
         console.log("email&pw", email, pwd);
         $("#suc").show();
         console.log("SuccessAdmin");
-        window.location.href = "products.html";
+        window.location.href = "index.html";
       }
     });
 
