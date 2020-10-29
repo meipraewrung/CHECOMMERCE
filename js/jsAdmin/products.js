@@ -80,5 +80,3 @@ function handleDelete(id) {
   setTimeout(location.reload.bind(location), 900);
 
 }
-
-
