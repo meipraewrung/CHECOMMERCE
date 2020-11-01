@@ -36,7 +36,7 @@ function simpleTemplating(data) {
       pid = index + 1;
       html +='<ul class="showProduct" id="showProduct">'+
         '<li class="span3">' +
-        '<div class="thumbnail">' +
+        '<div class="thumbnail" style="height: 350px;">' +
         '<a href="productsDetails.html?productID=' + data[index].id + '">' +
         '<img style="height: 150px; width: auto" src="' + data[index].proImage + '" alt="" />' +
         '</a>' +

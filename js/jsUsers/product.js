@@ -9,7 +9,7 @@ $(document).ready(function() {
 		for (let index = 0; index < 18; index++) {
 		  show+= 
 		  '<li class="span3">'+
-		  	'<div class="thumbnail" style="height: 350px;>'+
+		  	'<div class="thumbnail" style="height: 350px;">'+
 		  		'<a href="product_details.html?productID='+data[index].id+'">'+
 					'<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
 		  		'</a>'+
