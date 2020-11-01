@@ -1138,20 +1138,6 @@
       "proImage": "themes/images/products/เฟอร์นิเจอร์/เก้าอี้/เก้าอี้จัดเลี้ยง ขาชุบ เบาะดำ 1026-01.jpg"
     }
   ],
-  "user": [
-    {
-      "id": 1,
-      "username": "",
-      "password": "",
-      "email": "",
-      "name": "",
-      "address": {
-        "addressInfo": "",
-        "postalCode": 91100,
-        "phone": "074-627-077"
-      }
-    }
-  ],
   "users": [
     {
       "id": 1,
@@ -1160,7 +1146,7 @@
       "email": "",
       "name": "",
       "address": {
-        "addressInfo": "",
+        "addressInfo" : "",
         "postalCode": 91100,
         "phone": "074-627-077"
       }
@@ -1196,35 +1182,36 @@
       }
     },
     {
-      "customerID": 2,
-      "customerEmail": "cat@hotmail.com",
-      "customerPW": "123",
-      "companyName": "Berglunds snabbköp",
-      "contactName": "Christina Berglund",
-      "contactTitle": "Order Administrator",
-      "address": {
-        "street": "Berguvsvägen  8",
-        "city": "Luleå",
-        "region": "NULL",
-        "postalCode": "S-958 22",
-        "country": "Sweden",
-        "phone": "0921-12 34 65"
-      }
+        "customerID": 2,
+        "customerEmail": "cat@hotmail.com",
+        "customerPW": "123",
+        "companyName": "Berglunds snabbköp",
+        "contactName": "Christina Berglund",
+        "contactTitle": "Order Administrator",
+        "address": {
+            "street": "Berguvsvägen  8",
+            "city": "Luleå",
+            "region": "NULL",
+            "postalCode": "S-958 22",
+            "country": "Sweden",
+            "phone": "0921-12 34 65"
+        }
     },
     {
-      "customerID": 3,
-      "customerEmail": "tew@hotmail.com",
-      "customerPW": "1212",
-      "contactName": "Hanna Moos",
-      "contactTitle": "Sales Representative",
-      "address": {
-        "street": "Forsterstr. 57",
-        "city": "Mannheim",
-        "region": "NULL",
-        "postalCode": 68306,
-        "country": "Germany",
-        "phone": "0621-08460"
-      }
+        "customerID": 3,
+        "customerEmail": "tew@hotmail.com",
+        "customerPW": "1212",
+        "companyName": "Blauer See Delikatessen",
+        "contactName": "Hanna Moos",
+        "contactTitle": "Sales Representative",
+        "address": {
+            "street": "Forsterstr. 57",
+            "city": "Mannheim",
+            "region": "NULL",
+            "postalCode": 68306,
+            "country": "Germany",
+            "phone": "0621-08460"
+        }
     }
   ]
 }

@@ -203,3 +203,8 @@ function handleDelete (id){
     setTimeout(location.reload.bind(location), 900);
 
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> parent of 6a9417e... Merge pull request #33 from meipraewrung/praewrung
