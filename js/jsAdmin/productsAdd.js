@@ -58,23 +58,23 @@ function imageIsLoaded(e) {
 
 $("#Add").click(function () {
     console.log('ADD');
-    let newuser = {};
-    // newuser.id = pid;
-    newuser.proGroupN = $("#Groups").val();
-    newuser.proName = $("#ProName").val();
-    newuser.number = $("#total").val();
-    newuser.priceUnit = $("#price").val();
-    newuser.proType = $("#type").val(); 
-    newuser.proImage = document.getElementById('image').src;
+    let newProducts = {};
+    // newProducts.id = pid;
+    newProducts.proGroupN = $("#Groups").val();
+    newProducts.proName = $("#ProName").val();
+    newProducts.number = $("#total").val();
+    newProducts.priceUnit = $("#price").val();
+    newProducts.proType = $("#type").val(); 
+    newProducts.proImage = document.getElementById('image').src;
 
-    console.log(newuser);
+    console.log(newProducts);
     $.ajax({
         url: "http://localhost:3000/product/",
         type: 'POST',
-        // data: newuser,
+        // data: newProducts,
         dataType: 'json',
         contentType: 'application/json',
-        data: JSON.stringify(newuser),
+        data: JSON.stringify(newProducts),
         success: function (result) {
             // window.location.href = "productsEdit.html";
             console.log('Updated!');
