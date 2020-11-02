@@ -12,18 +12,18 @@ $("#register").click(function () {
     newUser.addressPostalCode = $("#postalCode").val();
     newUser.phone = $("#mobilePhone").val();
     console.log(newUser);
-    // $.ajax({
-    //     url: "http://localhost:3000/customers/",
-    //     type: 'POST',
-    //     // data: newUser,
-    //     dataType: 'json',
-    //     contentType: 'application/json',
-    //     data: JSON.stringify(newUser),
-    //     success: function (result) {
-    //         console.log('Success new user!');
-    //     }
-    // });
-    // $("#err").show();
+    $.ajax({
+        url: "http://localhost:3000/customers/",
+        type: 'POST',
+        // data: newUser,
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(newUser),
+        success: function (result) {
+            console.log('Success new user!');
+        }
+    });
+    $("#err").show();
     // window.open('index.html');
 });
 
