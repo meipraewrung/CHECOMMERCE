@@ -1136,6 +1136,15 @@
       "priceUnit": 500,
       "proType": "เฟอร์นิเจอร์",
       "proImage": "themes/images/products/เฟอร์นิเจอร์/เก้าอี้/เก้าอี้จัดเลี้ยง ขาชุบ เบาะดำ 1026-01.jpg"
+    },
+    {
+      "proGroupN": "ตู้เย็น 1 ประตู",
+      "proName": "",
+      "number": "",
+      "priceUnit": "",
+      "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน",
+      "proImage": "http://127.0.0.1:8080/productsAdd.html",
+      "id": 127
     }
   ],
   "admin": [
@@ -1159,11 +1168,9 @@
       "customerEmail": "Julalak@hotmail.com",
       "customerPW": "1234567",
       "customerHBD": "",
-      "address": {
-        "addressInfo": "",
-        "addressPostalCode": 91100,
-        "phone": "074-627-077"
-      }
+      "addressInfo": "",
+      "addressPostalCode": 91100,
+      "phone": "074-627-077"
     },
     {
       "id": 2,
@@ -1173,11 +1180,9 @@
       "customerEmail": "Praewrung@hotmail.com",
       "customerPW": "123456789",
       "customerHBD": "",
-      "address": {
-        "addressInfo": "",
-        "postalCode": 91110,
-        "phone": "074-629-099"
-      }
+      "addressInfo": "",
+      "addressPostalCode": 91100,
+      "phone": "074-627-077"
     }
   ]
 }

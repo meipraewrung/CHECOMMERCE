@@ -68,6 +68,7 @@ $("#Add").click(function () {
     newProducts.proImage = document.getElementById('image').src;
 
     console.log(newProducts);
+    
     $.ajax({
         url: "http://localhost:3000/product/",
         type: 'POST',
