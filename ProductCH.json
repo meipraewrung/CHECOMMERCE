@@ -1154,32 +1154,27 @@
   "customers": [
     {
       "id": 1,
-      "customerPrefixAround the Hornงสาว",
-      "customerName":ฬาลักษณ์กษณ์",
-      "customerSurNameAround the Hornเพชร",
+      "customerPrefix": "นางสาว",
+      "customerName": "จุฬาลักษณ์",
+      "customerSurName": "ธรรมเพชร",
       "customerEmail": "Julalak@hotmail.com",
       "customerPW": "1234567",
-      "customerHBD": "",
-      "address": {
-        "addressInfo" : "",
-     pessPostalCode": 91100,
-        "phone": "074-627-077"
-      }
-    },
+      "customerHBDrHBD": "",
+      "addressInfo" : "",
+      "pessPostalCode": 91100,
+      "phone": "074-627-077"
+      },
     {
-      "i1": 2,
-      "customerPrefixAround the Hornงสาว",
+      "id": 2,
+      "customerPrefix": "Around the Horn",
       "customerName": "แพรวรุ่ง",
       "customerSurName": "ปัญญานุกิจ",
       "customerEmail": "Praewrung@hotmail.com",
       "customerPW": "123456789",
       "customerHBD": "",
-      "address": {
-        "addressInfo" : "",
-     "postalCode": 91110,
-        "phone": "074-629-099"
-      }
-7"
+      "addressInfo" : "",
+      "postalCode": 91110,
+      "phone": "074-629-099"  
     }
   ]
 }
