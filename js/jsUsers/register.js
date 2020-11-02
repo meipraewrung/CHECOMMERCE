@@ -11,14 +11,9 @@ $("#register").click(function () {
     newuser.Address = $("#address").val();
     newuser.PostalCode = $("#postcode").val();
     newuser.MobilePhone = $("#mobilephone").val();
-    
-
-
-    
-
     console.log(newuser);
     $.ajax({
-        url: "http://localhost:3000/user/",
+        url: "http://localhost:3000/users/",
         type: 'POST',
         // data: newuser,
         dataType: 'json',
@@ -30,5 +25,4 @@ $("#register").click(function () {
     });
     $("#err").show();
     //window.open('register.html');
-    
 });
