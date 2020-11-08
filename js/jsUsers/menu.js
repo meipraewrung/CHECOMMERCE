@@ -177,7 +177,7 @@
 
 //product blockView
 $(document).ready(function () {
-	var url = "http://localhost:3000/product?";
+	var url = "http://localhost:3000/productTitle?";
 	console.log(url);
 	$.get(url, function (data) {
 	  var all = data.length;
