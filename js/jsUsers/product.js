@@ -10,16 +10,16 @@ $(document).ready(function() {
 		  show+= 
 		  '<li class="span3">'+
 		  	'<div class="thumbnail" style="height: 350px;">'+
-		  		'<a href="product_details.html?productID='+data[index].id+'">'+
+		  		'<a href="productDetails.html?productID='+data[index].id+'">'+
 					'<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
 		  		'</a>'+
 		  		'<div class="caption">'+
 					'<h5>'+ JSON.stringify(data[index].proName)+'</h5>'+
 					'<p>'+ data[index].priceUnit+'</p>'+
 					'<h4 style="text-align:center">'+
-					'<a class="btn" href="product_details.html?productID='+(index+1)+'">'+
+					'<a class="btn" href="productDetails.html?productID='+(index+1)+'">'+
 						'<i class="icon-zoom-in"></i></a> '+
-					// '<a class="btn" href="product_summary.html?productID='+(index+1)+'">'+'เพิ่ม'+
+					// '<a class="btn" href="productSummary.html?productID='+(index+1)+'">'+'เพิ่ม'+
 					// 	'<i class="icon-shopping-cart"></i></a> '+ 
 					'<a class="btn" href="#">'+'เพิ่ม'+
 						'<i class="icon-shopping-cart"></i></a> '+ 
