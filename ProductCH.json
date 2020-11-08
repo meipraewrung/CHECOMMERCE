@@ -1,4 +1,60 @@
 {
+  "productTitle": [
+    {
+      "id": 1,
+      "proType": "เครื่องใช้ไฟฟ้าภายในบ้าน",
+      "proGroupN": [  "LED",
+        "เตารีด",
+        "พัดลม",
+        "ทีวี",
+        "เครื่องซักผ้า",
+        "เครื่องดูดฝุ่น",
+        "ตู้เย็น",
+        "เครื่องทำน้ำอุ่น",
+        "ตู้เเช่"
+      ]
+    },
+    {
+      "id": 2,
+      "proType": "เครื่องใช้ไฟฟ้าในครัวเรือน",
+      "proGroupN": [  "เครื่องปั่น",
+        "เตาแก๊ส",
+        "กระทะ",
+        "เตาไฟฟ้า",
+        "เครื่องปิ้ง",
+        "กระทะไฟฟ้า",
+        "กระติกน้ำร้อน",
+        "หม้อ",
+        "เครื่องทำน้ำร้อน-เย็น"
+      ]
+    },
+    {
+      "id": 3,
+      "proType": "เครื่องปรับอากาศ",
+      "proGroupN": [  "เเอร์",
+        "เครื่องฟองอากาศ"
+      ]
+    },
+    {
+      "id": 4,
+      "proType": "เฟอร์นิเจอร์",
+      "proGroupN": [  "ที่นอน",
+        "เตียงเหล็ก",
+        "เตียงไม้",
+        "ตู้กับข้าว",
+        "ตู้เสื้อผ้า",
+        "โต๊ะ",
+        "ราวตากผ้า",
+        "เก้าอี้"
+      ]
+    },
+    {
+      "id": 5,
+      "proType": "กล้องวงจรปิด",
+      "proGroupN": [  "กล้องวงจรปิด"
+      ]
+    }
+  ],
   "product": [
     {
       "id": 1,
@@ -1153,25 +1209,27 @@
   "customers": [
     {
       "id": 1,
-      "customerPrefix": "นางสาว",
-      "customerName": "จุฬาลักษณ์",
-      "customerSurName": "ธรรมเพชร",
+      "customerNameSurName": "นางสาว จุฬาลักษณ์ ธรรมเพชร",
       "customerEmail": "Julalak@hotmail.com",
       "customerPW": "1234567",
-      "customerHBDrHBD": "",
-      "addressInfo": "",
+      "customerProfile": "",
+      "customerHBD": "",
+      "addressInfo1": "",
+      "addressInfo2": "",
+      "addressInfo3": "",
       "pessPostalCode": 91100,
       "phone": "074-627-077"
     },
     {
       "id": 2,
-      "customerPrefix": "Around the Horn",
-      "customerName": "แพรวรุ่ง",
-      "customerSurName": "ปัญญานุกิจ",
+      "customerNameSurName": "แพรวรุ่ง ปัญญานุกิจ",
       "customerEmail": "Praewrung@hotmail.com",
       "customerPW": "123456789",
+      "customerProfile": "",
       "customerHBD": "",
-      "addressInfo": "",
+      "addressInfo1": "",
+      "addressInfo2": "",
+      "addressInfo3": "",
       "postalCode": 91110,
       "phone": "074-629-099"
     }
