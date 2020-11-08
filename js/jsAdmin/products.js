@@ -57,7 +57,7 @@
 //     }
 //     // console.log('show',show);
 //     // document.getElementById('showProduct').innerHTML = show;
-    
+
 //   });
 //   return html;
 // };
@@ -82,8 +82,21 @@
 // }
 
 //product blockView
-$(document).ready(function() {
+
+var nameType = "all"
+
+$(document).ready(function () {
+  nameType = "all"
+  Pages(1);
+});
+
+function Category(name) {
+  nameType = name;
+}
+
+function Pages(page) {
   var url = "http://localhost:3000/product?";
+
   console.log(url);
   $.get(url, function(data) {
     console.log('data',data);          
@@ -110,26 +123,81 @@ $(document).ready(function() {
                 '</h4>'+
               '</div>'+'</div>'+'</li>';
         // console.log('show',show);
+
+
+  $.get(url, function (data) {
+
+    var min = (15 * page) - 15;
+    var max = (15 * page)
+
+    console.log("Item : form " + min + " to " + max)
+
+    var show = "";
+
+    for (let index = min; index <= max; index++) {
+
+      if(nameType == "all")
+      {
+        show +=
+        '<li class="span3">' +
+        '<div class="thumbnail" style="height: 350px;>' +
+        '<a href="/pages/admin/productsDetails.html?productID=' + data[index].id + '">' +
+        '<img style="height: 150px; width: auto" src="' + data[index].proImage + '" alt="" />' +
+        '</a>' +
+        '<div class="caption">' +
+        '<h5>' + JSON.stringify(data[index].proName) + '</h5>' +
+        '<p>' + data[index].priceUnit + '</p>' +
+        '<h4 style="text-align:center">' +
+        '<a class="btn" href="/pages/admin/productsDetails.html?productID=' + (index + 1) + '">' +
+        '<i class="icon-zoom-in"></i></a> ' +
+        '<a class="btn btn-primary" href="/pages/admin/productsEdit.html?productID=' + (index + 1) + '">แก้ไข' +
+        '<i class=""></i></a> ' +
+        '<a class="btn btn-danger" href="/pages/admin/products.html?productID=' + (index + 1) + '">ลบ' +
+        '<i class=""></i></a>' +
+        '</h4>' +
+        '</div>' + '</div>' + '</li>';
+      }else if (nameType == data[index].proType)
+      {
+        show +=
+        '<li class="span3">' +
+        '<div class="thumbnail" style="height: 350px;>' +
+        '<a href="/pages/admin/productsDetails.html?productID=' + data[index].id + '">' +
+        '<img style="height: 150px; width: auto" src="' + data[index].proImage + '" alt="" />' +
+        '</a>' +
+        '<div class="caption">' +
+        '<h5>' + JSON.stringify(data[index].proName) + '</h5>' +
+        '<p>' + data[index].priceUnit + '</p>' +
+        '<h4 style="text-align:center">' +
+        '<a class="btn" href="/pages/admin/productsDetails.html?productID=' + (index + 1) + '">' +
+        '<i class="icon-zoom-in"></i></a> ' +
+        '<a class="btn btn-primary" href="/pages/admin/productsEdit.html?productID=' + (index + 1) + '">แก้ไข' +
+        '<i class=""></i></a> ' +
+        '<a class="btn btn-danger" href="/pages/admin/products.html?productID=' + (index + 1) + '">ลบ' +
+        '<i class=""></i></a>' +
+        '</h4>' +
+        '</div>' + '</div>' + '</li>';
+
       }
       // console.log('show',show);
-      document.getElementById('showProduct').innerHTML = show;
+    }
+    // console.log('show',show);
+    document.getElementById('showProduct').innerHTML = show;
   });
-});
+}
 
 //product delete
-function handleDelete (id){
-  console.log('D',id);
+function handleDelete(id) {
+  console.log('D', id);
 
-    $.ajax({
-        url: "http://localhost:3000/product/"+id,
-        type: 'DELETE',  
-        dataType: 'json',
-        contentType: 'application/json',
-        success: function (result) {
-            console.log('Updated!');
-        }
-    });
-    $("#err").show();
-    setTimeout(location.reload.bind(location), 900);
-
+  $.ajax({
+    url: "http://localhost:3000/product/" + id,
+    type: 'DELETE',
+    dataType: 'json',
+    contentType: 'application/json',
+    success: function (result) {
+      console.log('Updated!');
+    }
+  });
+  $("#err").show();
+  setTimeout(location.reload.bind(location), 900);
 }
