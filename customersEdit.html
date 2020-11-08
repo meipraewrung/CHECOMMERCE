@@ -44,9 +44,8 @@
 							:</strong>@chpatlung</a></div>
 				<div class="span6">
 					<div class="pull-right">
-						
 						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i
-									class="icon-shopping-cart icon-white"></i>  </span> </a>
+									class="icon-shopping-cart icon-white"></i> </span> </a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +73,8 @@
 					</form>
 					<ul id="topMenu" class="nav pull-right">
 						<li class=""><a href="contact.html">ติดต่อเรา</a></li>
-						<li class=""><a href="login.html"><button type="submit" class="btn btn-success">เข้าสู่ระบบ</button></a></li>
+						<li class=""><a href="login.html"><button type="submit"
+									class="btn btn-success">เข้าสู่ระบบ</button></a></li>
 					</ul>
 				</div>
 			</div>
@@ -90,127 +90,86 @@
 					</ul>
 				</div>
 				<!-- Sidebar end=============================================== -->
-				<div class="span9">
-					<!-- <div class="well well-small">
-						<h4>Featured Products </h4>
-						<div class="row-fluid">
-							<div id="featured" class="carousel slide">
-								<div class="carousel-inner">
-									<div class="item active">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="img/product/เครื่องปรับอากาศ/เเอร์/แอร์ HAIER รุ่น HSU-13CTR03T.jpg"
-															alt=""></a>
-													<div class="caption">
-														<h5>แอร์ HAIER รุ่น HSU-13CTR03T</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">฿12900.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="themes/images/products/b2.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="themes/images/products/b3.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="themes/images/products/b4.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-										</ul>
+				<div class="span9" id="CTM">
+					<form class="form-inline" name="form_productAdd" method="post" action="">
+						<fieldset>
+							<div class="" id="profileCTM">
+								<h4>your profile</h4>
+								<label class="control-label" for="fileInput">profile</label>
+								<div class="control-group">
+									<div class="controls">
+										<img style="height: 150px; width: auto" accept='/themes/images/products/*'
+											id="image" src="" alt="" />
+										<input class="input-file" onchange="myFunction(this);" id="fileInput"
+											type="file">
 									</div>
-									<div class="item">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="themes/images/products/5.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="product_details.html"><img
-															src="themes/images/products/6.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="product_details.html"><img
-															src="themes/images/products/7.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="product_details.html"><img
-															src="themes/images/products/8.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Product name</h5>
-														<h4><a class="btn" href="product_details.html">VIEW</a> <span
-																class="pull-right">$222.00</span></h4>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-
-
 								</div>
-								<a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
-								<a class="right carousel-control" href="#featured" data-slide="next">›</a>
 							</div>
-						</div>
-					</div> -->
-					<!-- <h4>Latest Products </h4> -->
-					<ul class="thumbnails" id="showProduct">
-						<!-- show data -->
-					</ul>
+							<div id="editdata">
+								<div class="control-group">
+									<label class="control-label" for="select01">ชื่อ-นามสกุล</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="NameSurname">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input1">วันเกิด</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="HBD">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input1">เบอร์มือถือ</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="cusPhone">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input2">email</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="cusEmail">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input3">รหัสผ่าน</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="cusPW">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input_4">รหัสไปรษณีย์</label>
+									<div class="controls">
+										<input type="text" class="input-medium" id="PostalCode">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input_4">ที่อยู่ 1</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="arInfo1">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input_5">ที่อยู่ 2</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="arInfo2">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input_6">ที่อยู่ 3</label>
+									<div class="controls">
+										<input type="text" class="input-xxlarge" id="arInfo3">
+									</div>
+								</div>
+							</div>
+							<div class="form-actions">
+								<center>
+									<button type="button" class="btn btn-primary" id="save" name="save">
+										บันทึก </button>
+									<a href="customers.html" class="btn btn-danger" id="cancle">ยกเลิก<i class=""></i></a>
+								</center>
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -335,5 +294,6 @@
 	<span id="themesBtn"></span>
 </body>
 <script src="/js/jsUsers/menu.js"></script>
-<script src="/js/jsUsers/index.js"></script>
+<!-- <script src="/js/jsUsers/customers.js"></script> -->
+
 </html>
