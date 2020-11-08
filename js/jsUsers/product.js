@@ -71,7 +71,7 @@ $(document).ready(function() {
 		  '<li class="span3">'+
 		  	'<div class="thumbnail" style="height: 350px;>'+
 		  		'<a href="/pages/admin/productDetails.html?productID='+data[index].id+'">'+
-					'<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
+					'<img style="height: 150px; width: auto" src="/./'+data[index].proImage+'" alt="" />'+
 		  		'</a>'+
 		  		'<div class="caption">'+
 					'<h5>'+ JSON.stringify(data[index].proName)+'</h5>'+
