@@ -24,7 +24,7 @@ $("#register").click(function () {
         }
     });
     $("#err").show();
-    // window.open('index.html');
+    window.open('index.html');
 });
 
 // $("#Add").click(function () {
