@@ -19,6 +19,6 @@ $(document).ready(function () {
       }
     }
     // console.log('show',show);
-    document.getElementById("CTM").innerHTML = show;
+    document.getElementById("detailsCTM").innerHTML = show;
   });
 });

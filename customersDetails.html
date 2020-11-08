@@ -90,7 +90,7 @@
 					</ul>
 				</div>
 				<!-- Sidebar end=============================================== -->
-				<div class="span9" id="CTM">
+				<div class="span9" id="detailsCTM">
 					<form class="form-inline" name="form_productAdd" method="post" action="">
 						<fieldset>
 							<div class="" id="profileCTM">
@@ -98,10 +98,8 @@
 								<label class="control-label" for="fileInput">profile</label>
 								<div class="control-group">
 									<div class="controls">
-										<img style="height: 150px; width: auto" accept='/themes/images/products/*'
-											id="image" src="" alt="" />
-										<input class="input-file" onchange="myFunction(this);" id="fileInput"
-											type="file">
+										<img style="height: 150px; width: auto" accept='/themes/images/customers/*'
+											id="image" src="" alt="" disabled />
 									</div>
 								</div>
 							</div>
@@ -109,63 +107,50 @@
 								<div class="control-group">
 									<label class="control-label" for="select01">ชื่อ-นามสกุล</label>
 									<div class="controls">
-										<input type="text" class="input-xxlarge" id="NameSurname">
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input1">วันเกิด</label>
-									<div class="controls">
-										<input type="text" class="input-medium" id="HBD">
+										<input type="text" class="input-xxlarge" id="NameSurname" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input1">เบอร์มือถือ</label>
 									<div class="controls">
-										<input type="text" class="input-medium" id="cusPhone">
+										<input type="text" class="input-medium" id="cusPhone" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input2">email</label>
 									<div class="controls">
-										<input type="text" class="input-xxlarge" id="cusEmail">
+										<input type="text" class="input-xxlarge" id="cusEmail" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input3">รหัสผ่าน</label>
 									<div class="controls">
-										<input type="text" class="input-medium" id="cusPW">
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input_4">รหัสไปรษณีย์</label>
-									<div class="controls">
-										<input type="text" class="input-medium" id="PostalCode">
+										<input type="text" class="input-medium" id="cusPW" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input_4">ที่อยู่ 1</label>
 									<div class="controls">
-										<input type="text" class="input-xxlarge" id="arInfo1">
+										<input type="text" class="input-xxlarge" id="arInfo1" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input_5">ที่อยู่ 2</label>
 									<div class="controls">
-										<input type="text" class="input-xxlarge" id="arInfo2">
+										<input type="text" class="input-xxlarge" id="arInfo2" disabled>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="input_6">ที่อยู่ 3</label>
 									<div class="controls">
-										<input type="text" class="input-xxlarge" id="arInfo3">
+										<input type="text" class="input-xxlarge" id="arInfo3" disabled>
 									</div>
 								</div>
 							</div>
 							<div class="form-actions">
 								<center>
-									<button type="button" class="btn btn-primary" id="save" name="save">
-										บันทึก </button>
-									<a href="customersDetails.html" class="btn btn-danger" id="cancle">ยกเลิก<i class=""></i></a>
+									<a href="" class="btn btn-primary">แก้ไข<i class=""></i></a>
+									<a href="index.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>
 								</center>
 							</div>
 						</fieldset>
