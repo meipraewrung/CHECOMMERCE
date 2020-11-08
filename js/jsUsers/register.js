@@ -52,12 +52,12 @@ $("#register").click(function () {
 //         contentType: 'application/json',
 //         data: JSON.stringify(newUser),
 //         success: function (result) {
-//             // window.location.href = "productsEdit.html";
+//             // window.location.href = "/pages/admin/productsEdit.html";
 //             console.log('Updated!');
 //         }
 //     });
 //     $("#err").show();
-//     // window.open('index.html');
-//     // window.location.href = "products.html";
-//     // setTimeout(location.reload.bind(window.location.href = "products.html"), 900);
+//     // window.open('/pages/admin/index.html');
+//     // window.location.href = "/pages/admin/products.html";
+//     // setTimeout(location.reload.bind(window.location.href = "/pages/admin/products.html"), 900);
 // });

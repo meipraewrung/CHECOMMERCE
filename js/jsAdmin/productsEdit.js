@@ -80,7 +80,7 @@ $("#save").click(function () {
         contentType: 'application/json',
         data: JSON.stringify(newuser),
         success: function (result) {
-            // window.location.href = "productsEdit.htmlproductID= "+ data[index].productID;
+            // window.location.href = "/pages/admin/productsEdit.htmlproductID= "+ data[index].productID;
             console.log('Updated!');
         }
     });

@@ -15,7 +15,7 @@
 // 			data[index].proType +
 // 			"</a>" +
 // 				'<ul style="display:none">' +
-// 					'<li><a href="productGroup.html?productID=' +
+// 					'<li><a href="/pages/admin/productGroup.html?productID=' +
 // 					(index + 1) +
 // 					'"><i class="icon-chevron-right"></i>' +
 // 					data[index].proGroupN +
@@ -29,7 +29,7 @@
 // 			data[index].proType +
 // 			"</a>" +
 // 				'<ul style="display:none">' +
-// 					'<li><a href="productGroup.html?productID=' +
+// 					'<li><a href="/pages/admin/productGroup.html?productID=' +
 // 					(index + 1) +
 // 					'"><i class="icon-chevron-right"></i>' +
 // 					data[index].proGroupN +
@@ -74,7 +74,7 @@
 // 				data[index].proType +
 // 				'</span></b>' +
 // 				'<ul>' +
-// 					'<li><a href="productGroup.html?productID=' +
+// 					'<li><a href="/pages/admin/productGroup.html?productID=' +
 // 					(index + 1) +
 // 					'"><i class="icon-chevron-right"></i>' +
 // 					data[index].proGroupN +
@@ -89,7 +89,7 @@
 // 			  data[index].proType +
 // 			  '</span></b>'+
 // 			  '<ul>' +
-// 				  '<li><a href="productGroup.html?productID=' +
+// 				  '<li><a href="/pages/admin/productGroup.html?productID=' +
 // 				  (index + 1) +
 // 				  '"><i class="icon-chevron-right"></i>' +
 // 				  data[index].proGroupN +
@@ -134,7 +134,7 @@
 // 						data[index].proType +
 // 						'</span></b>' +
 // 						'<ul>' +
-// 							'<li><a href="productGroup.html?productID=' +
+// 							'<li><a href="/pages/admin/productGroup.html?productID=' +
 // 							(index + 1) +
 // 							'"><i class="icon-chevron-right"></i>' +
 // 							data[index].proGroupN +
@@ -149,7 +149,7 @@
 // 			  			data[index].proType +
 // 			  			'</span></b>'+
 // 			  			'<ul>' +
-// 				  			'<li><a href="productGroup.html?productID=' +
+// 				  			'<li><a href="/pages/admin/productGroup.html?productID=' +
 // 				  			(index + 1) +
 // 				  			'"><i class="icon-chevron-right"></i>' +
 // 				  			data[index].proGroupN +
@@ -193,7 +193,7 @@ $(document).ready(function () {
 				data[index].proType +
 				'</span></b>' +
 				'<ul>' +
-					'<li><a href="productGroup.html?productID=' +
+					'<li><a href="/pages/admin/productGroup.html?productID=' +
 					(index + 1) +
 					'"><i class="icon-chevron-right"></i>' +
 					data[index].proGroupN +
@@ -208,7 +208,7 @@ $(document).ready(function () {
 			  data[index].proType +
 			  '</span></b>'+
 			  '<ul>' +
-				  '<li><a href="productGroup.html?productID=' +
+				  '<li><a href="/pages/admin/productGroup.html?productID=' +
 				  (index + 1) +
 				  '"><i class="icon-chevron-right"></i>' +
 				  data[index].proGroupN +

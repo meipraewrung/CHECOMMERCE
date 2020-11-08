@@ -77,14 +77,14 @@ $("#Add").click(function () {
         contentType: 'application/json',
         data: JSON.stringify(newProducts),
         success: function (result) {
-            // window.location.href = "productsEdit.html";
+            // window.location.href = "/pages/admin/productsEdit.html";
             console.log('Updated!');
         }
     });
     $("#err").show();
-    window.open('products.html');
-    // window.location.href = "products.html";
-    // setTimeout(location.reload.bind(window.location.href = "products.html"), 900);
+    window.open('/pages/admin/products.html');
+    // window.location.href = "/pages/admin/products.html";
+    // setTimeout(location.reload.bind(window.location.href = "/pages/admin/products.html"), 900);
 });
 
 
