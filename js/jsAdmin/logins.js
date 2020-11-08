@@ -16,7 +16,7 @@ $("#login").click(function () {
           console.log("email&pw", email, pwd);
           $("#suc").show();
           console.log("SuccessUser");
-          window.location.href = "products.html" ;
+          window.location.href = "/pages/admin/products.html" ;
         }
       });
   

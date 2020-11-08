@@ -29,7 +29,7 @@
 // 			data[index].proType +
 // 			"</a>" +
 // 				'<ul style="display:none">' +
-// 					'<li><a href="productsGroup.html?productID=' +
+// 					'<li><a href="/pages/admin/productsGroup.html?productID=' +
 // 					(index + 1) +
 // 					'"><i class="icon-chevron-right"></i>' +
 // 					data[index].proGroupN +
@@ -74,7 +74,7 @@
 // 				data[index].proType +
 // 				'</span></b>' +
 // 				'<ul>' +
-// 					'<li><a href="productsGroup.html?productID=' +
+// 					'<li><a href="/pages/admin/productsGroup.html?productID=' +
 // 					(index + 1) +
 // 					'"><i class="icon-chevron-right"></i>' +
 // 					data[index].proGroupN +
@@ -89,7 +89,7 @@
 // 			  data[index].proType +
 // 			  '</span></b>'+
 // 			  '<ul>' +
-// 				  '<li><a href="productsGroup.html?productID=' +
+// 				  '<li><a href="/pages/admin/productsGroup.html?productID=' +
 // 				  (index + 1) +
 // 				  '"><i class="icon-chevron-right"></i>' +
 // 				  data[index].proGroupN +
@@ -134,7 +134,7 @@
 // 						data[index].proType +
 // 						'</span></b>' +
 // 						'<ul>' +
-// 							'<li><a href="productsGroup.html?productID=' +
+// 							'<li><a href="/pages/admin/productsGroup.html?productID=' +
 // 							(index + 1) +
 // 							'"><i class="icon-chevron-right"></i>' +
 // 							data[index].proGroupN +
@@ -149,7 +149,7 @@
 // 			  			data[index].proType +
 // 			  			'</span></b>'+
 // 			  			'<ul>' +
-// 				  			'<li><a href="productsGroup.html?productID=' +
+// 				  			'<li><a href="/pages/admin/productsGroup.html?productID=' +
 // 				  			(index + 1) +
 // 				  			'"><i class="icon-chevron-right"></i>' +
 // 				  			data[index].proGroupN +

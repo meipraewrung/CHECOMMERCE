@@ -25,19 +25,19 @@ $(document).ready(function() {
                 '<hr class="soft" />'+
                 '<h5>'+ JSON.stringify(data[index].proName)+'</h5>'+
                 '<p>'+ JSON.stringify(data[index].proName)+'</p>'+
-                '<a class="btn btn-small pull-right" href="productsDetails.html?productID='+index+'">รายละเอียด'+
+                '<a class="btn btn-small pull-right" href="/pages/admin/productsDetails.html?productID='+index+'">รายละเอียด'+
                     '<i class=""></i></a>'+
                 '<hr class="soft" />'+
                 '<div class="form-actions">'+
-                    '<a href="products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>'+
+                    '<a href="/pages/admin/products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>'+
                 '</div>'+
             '</div>'+
             '<div class="span3 alignR">'+
                 '<form class="form-horizontal qtyFrm">'+
                     '<h3>฿'+data[index].priceUnit+'</h3>'+
-                    '<a class="btn btn-primary" href="productsEdit.html?productID='+(index+1)+'">แก้ไข'+
+                    '<a class="btn btn-primary" href="/pages/admin/productsEdit.html?productID='+(index+1)+'">แก้ไข'+
                         '<i class=""></i></a> '+
-                    '<a class="btn btn-danger" href="products.html?productID='+(index+1)+'">ลบ'+
+                    '<a class="btn btn-danger" href="/pages/admin/products.html?productID='+(index+1)+'">ลบ'+
                         '<i class=""></i></a>'+
                 '<form>'+'</div>'+'</div>'+			
             '<hr class="soft" />';
@@ -45,7 +45,7 @@ $(document).ready(function() {
         // else {
         //   alert("Can not find");
         //   $("#err").show();
-        //   window.location.href = "products.html"
+        //   window.location.href = "/pages/admin/products.html"
         // }
           }
       document.getElementById('proListView').innerHTML = show;
