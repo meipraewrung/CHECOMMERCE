@@ -17,16 +17,15 @@ $(document).ready(function() {
         if(data[index].id==pid){
         show+= 
         '<div class="row">'+
+        '<div class="span10">'+
             '<div class="span2">'+
-                '<img style="height: 150px; width: auto" src="'+data[index].proImage+'" alt="" />'+
+                '<img style="height: 150px; width: auto" src="/./'+data[index].proImage+'" alt="" />'+
             '</div>'+
             '<div class="span4">'+
                 '<h3>'+ JSON.stringify(data[index].proName)+'</h3>'+
                 '<hr class="soft" />'+
-                '<h5>'+ JSON.stringify(data[index].proName)+'</h5>'+
+                '<h4>'+ JSON.stringify(data[index].proName)+'</h4>'+
                 '<p>'+ JSON.stringify(data[index].proName)+'</p>'+
-                '<a class="btn btn-small pull-right" href="/pages/admin/productsDetails.html?productID='+index+'">รายละเอียด'+
-                    '<i class=""></i></a>'+
                 '<hr class="soft" />'+
                 '<div class="form-actions">'+
                     '<a href="/pages/admin/products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>'+
@@ -39,7 +38,7 @@ $(document).ready(function() {
                         '<i class=""></i></a> '+
                     '<a class="btn btn-danger" href="/pages/admin/products.html?productID='+(index+1)+'">ลบ'+
                         '<i class=""></i></a>'+
-                '<form>'+'</div>'+'</div>'+			
+                '<form>'+'</div>'+'</div>'+		
             '<hr class="soft" />';
         }
         // else {
