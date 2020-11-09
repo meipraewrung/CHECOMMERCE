@@ -5,10 +5,10 @@ $(document).ready(function () {
 	$.get(url, function (data) {
 		let show = "";
 		for (let i = 0; i < data.length; i++) {
-			show += '<li class="subMenu"><p><b>' + data[i].proType + '</b></p>' +
+			show += '<li class="subMenu"><h4><b>' + data[i].proType + '</b></h4>' +
 				'<ul>'
 			for (let j = 0; j < data[i].proGroupN.length; j++) {
-				show += '<li><a href="/pages/admin/productsGroup.html?productID=' + (i + 1) +'">'+
+				show += '<li><a onclick=Category("' + data[i].proGroupN[j] +'")>'+
 						'<i class="icon-chevron-right"></i>' + data[i].proGroupN[j] + '</a></li>'
 			}
 			show += '</ul>' + '</li>';
