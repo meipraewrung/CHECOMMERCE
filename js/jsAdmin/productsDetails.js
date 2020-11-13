@@ -131,13 +131,13 @@ $(document).ready(function () {
       if (data[index].id == pid) {
         show +=
           '<div class="row">' +
-          '<div class="span10">' +
-          '<div class="span2">' +
+          '<div class="span9">' +
+          '<div class="span3">' +
           '<img style="height: 150px; width: auto" src="/./' +
           data[index].proImage +
           '" alt="" />' +
           "</div>" +
-          '<div class="span4">' +
+          '<div class="span3">' +
           "<h3>" +
           data[index].proName +
           "</h3>" +
@@ -153,7 +153,7 @@ $(document).ready(function () {
           "</p>" +
           '<hr class="soft" />' +
           "</div>" +
-          '<div class="span3 alignR">' +
+          '<div class="span2 alignR">' +
           '<form class="form-horizontal qtyFrm">' +
           "<h3>ราคา : " +
           data[index].priceUnit +
@@ -170,8 +170,8 @@ $(document).ready(function () {
           '<a href="/pages/admin/products.html" class="btn btn-danger" id="cancle">กลับ<i class=""></i></a>' +
           "<form>" +
           "</div>" +
-          '<div class="span10">' +
-          "<p style='font-size: 19px;'><b>รายละเอียดของสินค้า : </b><br>";
+          '<div class="span7">' +
+          "<p style='font-size: 17px;'><b>รายละเอียดของสินค้า : </b><br>";
         for (let j = 0; j < data[index].productDetail.length; j++) {
           console.log(data[index].productDetail.length);
           show += data[index].productDetail[j] + "<br>";
