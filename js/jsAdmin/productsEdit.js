@@ -129,22 +129,17 @@ $(document).ready(function() {
         // show += JSON.stringify(data[index]);
         if(data[index].id==pid){
             console.log(data[index]);
-                $("#Groups").val(data[index].proGroupN);
+                $("#Groups").val(data[index].proType + " / " + data[index].proGroupN);
                 $("#ProName").val(data[index].proName);
                 $("#total").val(data[index].number);
                 $("#price").val(data[index].priceUnit);
                 $("#type").val(data[index].proType);
+                $("#pdDetails").val(data[index].productDetail);
                 document.getElementById('image').src=data[index].proImage;
                 $("#fileInput").val(JSON.stringify(data[index].proImage));
-             
-
             }
-
         }
-
-
     });
-
 });
 
 

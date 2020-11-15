@@ -62,7 +62,8 @@
 						<button type="submit" id="submitButton" class="btn btn-primary">ค้นหา</button>
 					</form>
 					<ul id="topMenu" class="nav pull-right">
-						<li class=""><a href="/pages/contact.html">ติดต่อเรา</a></li>
+						<li class=""><a href="/pages/admin/orderList.html">รายการสั่งซื้อ</a></li>
+						<li class=""><a href="/pages/admin/statusProduct.html">สถานะการจัดส่ง</a></li>
 						<li class=""><a href="/pages/users/login.html"><button type="submit"
 									class="btn btn-success">เข้าสู่ระบบ</button></a></li>
 					</ul>
@@ -85,41 +86,47 @@
 					<form class="form-inline" name="form_productAdd" method="post" action="">
 						<fieldset>
 							<div class="control-group">
-								<label class="control-label" for="select01">ชื่อกลุ่มสินค้า</label>
+								<label class="control-label" for="select01">ประเภทสินค้า/กลุ่มสินค้า<span style="color: #ff0000;">*ประเภทสินค้า หรือลุ่มสินค้าตัวใหม่*</span></label>
 								<div class="controls">
-									<select id="Groups">
-										<option value="ตู้เย็น 1 ประตู">ตู้เย็น 1 ประตู</option>
-										<option value="ตู้เย็น 2 ประตูู">ตู้เย็น 2 ประตูู</option>
-										<option value="ตู้เเช่">ตู้เเช่</option>
-										<option value="เครื่องทำน้ำร้อน-เย็น">เครื่องทำน้ำร้อน-เย็น</option>
-										<option value="เครื่องซักผ้า 2 ถัง">เครื่องซักผ้า 2 ถัง</option>
-										<option value="เครื่องซักผ้า 1 ถัง">เครื่องซักผ้า 1 ถัง</option>
-										<option value="เครื่องซักผ้าฝาหน้า">เครื่องซักผ้าฝาหน้า</option>
-										<option value="กระติกน้ำร้อน">กระติกน้ำร้อน</option>
-										<option value="หม้อ">หม้อ</option>
-										<option value="เครื่องปั่น">เครื่องปั่น</option>
-										<option value="LED">LED</option>
-										<option value="เตาเเก๊ส">เตาเเก๊ส</option>
-										<option value="กระทะไฟฟ้า">กระทะไฟฟ้า</option>
-										<option value="กระทะ">กระทะ</option>
-										<option value="เตารีด">เตารีด</option>
-										<option value="เครื่องดูดฝุ่น">เครื่องดูดฝุ่น</option>
-										<option value="พัดลม">พัดลม</option>
-										<option value="เเอร์">เเอร์</option>
-										<option value="ทีวี">ทีวี</option>
-										<option value="เครื่องทำน้ำอุ่น">เครื่องทำน้ำอุ่น</option>
-										<option value="เครื่องปิ้ง">เครื่องปิ้ง</option>
-										<option value="เตาไฟฟ้า">เตาไฟฟ้า</option>
-										<option value="เครื่องฟอกอากาศ">เครื่องฟอกอากาศ</option>
-										<option value="กล้องวงจรปิด">กล้องวงจรปิด</option>
-										<option value="ที่นอน">ที่นอน</option>
-										<option value="ตู้กับข้าว">ตู้กับข้าว</option>
-										<option value="เตียงเหล็ก">เตียงเหล็ก</option>
-										<option value="เตียงไม้">เตียงไม้</option>
-										<option value="ตู้เสื้อผ้า">ตู้เสื้อผ้า</option>
-										<option value="โต๊ะ">โต๊ะ</option>
-										<option value="ราวตากผ้า">ราวตากผ้า</option>
-										<option value="เก้าอี้">เก้าอี้</option>
+									<input type="text" class="input-xxlarge" id="" placeholder="ชื่อประเภทสินค้า / ชื่อกลุ่มสินค้า">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="select01">ประเภทสินค้า/ชื่อกลุ่มสินค้า</label>
+								<div class="controls">
+									<select id="Groups"  class="input-xxlarge" >
+										<option value="ตู้เย็น 1 ประตู">เครื่องใช้ไฟฟ้าภายในบ้าน / ตู้เย็น 1 ประตู</option>
+										<option value="ตู้เย็น 2 ประตูู">เครื่องใช้ไฟฟ้าภายในบ้าน / ตู้เย็น 2 ประตูู</option>
+										<option value="ตู้เเช่">เครื่องใช้ไฟฟ้าภายในบ้าน / ตู้เเช่</option>
+										<option value="ทีวี">เครื่องใช้ไฟฟ้าภายในบ้าน / ทีวี</option>
+										<option value="เครื่องทำน้ำอุ่น">เครื่องใช้ไฟฟ้าภายในบ้าน / เครื่องทำน้ำอุ่น</option>
+										<option value="LED">เครื่องใช้ไฟฟ้าภายในบ้าน / LED</option>
+										<option value="เตารีด">เครื่องใช้ไฟฟ้าภายในบ้าน / เตารีด</option>
+										<option value="เครื่องดูดฝุ่น">เครื่องใช้ไฟฟ้าภายในบ้าน / เครื่องดูดฝุ่น</option>
+										<option value="พัดลม">เครื่องใช้ไฟฟ้าภายในบ้าน / พัดลม</option>
+										<option value="เครื่องซักผ้า 2 ถัง">เครื่องใช้ไฟฟ้าภายในบ้าน / เครื่องซักผ้า 2 ถัง</option>
+										<option value="เครื่องซักผ้า 1 ถัง">เครื่องใช้ไฟฟ้าภายในบ้าน / เครื่องซักผ้า 1 ถัง</option>
+										<option value="เครื่องซักผ้าฝาหน้า">เครื่องใช้ไฟฟ้าภายในบ้าน / เครื่องซักผ้าฝาหน้า</option>
+										<option value="เครื่องทำน้ำร้อน-เย็น">เครื่องใช้ไฟฟ้าภายในครัวเรือน / เครื่องทำน้ำร้อน-เย็น</option>
+										<option value="กระติกน้ำร้อน">เครื่องใช้ไฟฟ้าภายในครัวเรือน / กระติกน้ำร้อน</option>
+										<option value="หม้อ">เครื่องใช้ไฟฟ้าภายในครัวเรือน / หม้อ</option>
+										<option value="เครื่องปั่น">เครื่องใช้ไฟฟ้าภายในครัวเรือน / เครื่องปั่น</option>
+										<option value="เตาเเก๊ส">เครื่องใช้ไฟฟ้าภายในครัวเรือน / เตาเเก๊ส</option>
+										<option value="กระทะไฟฟ้า">เครื่องใช้ไฟฟ้าภายในครัวเรือน / กระทะไฟฟ้า</option>
+										<option value="กระทะ">เครื่องใช้ไฟฟ้าภายในครัวเรือน / กระทะ</option>
+										<option value="เครื่องปิ้ง">เครื่องใช้ไฟฟ้าภายในครัวเรือน / เครื่องปิ้ง</option>
+										<option value="เตาไฟฟ้า">เครื่องใช้ไฟฟ้าภายในครัวเรือน / เตาไฟฟ้า</option>
+										<option value="เเอร์">เครื่องปรับอากาศ / เเอร์</option>
+										<option value="เครื่องฟอกอากาศ">เครื่องปรับอากาศ / เครื่องฟอกอากาศ</option>
+										<option value="กล้องวงจรปิด">กล้องวงจรปิด / กล้องวงจรปิด</option>
+										<option value="ที่นอน">เฟอร์นิเจอร์ / ที่นอน</option>
+										<option value="ตู้กับข้าว">เฟอร์นิเจอร์ / ตู้กับข้าว</option>
+										<option value="เตียงเหล็ก">เฟอร์นิเจอร์ / เตียงเหล็ก</option>
+										<option value="เตียงไม้">เฟอร์นิเจอร์ / เตียงไม้</option>
+										<option value="ตู้เสื้อผ้า">เฟอร์นิเจอร์ / ตู้เสื้อผ้า</option>
+										<option value="โต๊ะ">เฟอร์นิเจอร์ / โต๊ะ</option>
+										<option value="ราวตากผ้า">เฟอร์นิเจอร์ / ราวตากผ้า</option>
+										<option value="เก้าอี้">เฟอร์นิเจอร์ / เก้าอี้</option>
 									</select>
 								</div>
 							</div>
@@ -142,16 +149,13 @@
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="select01">ประเภทสินค้า</label>
+								<label class="control-label" for="">รายละเอียดสินค้า</label>
 								<div class="controls">
-									<select id="type">
-										<option value="เครื่องใช้ไฟฟ้าภายในบ้าน">เครื่องใช้ไฟฟ้าภายในบ้าน</option>
-										<option value="เครื่องใช้ไฟฟ้าภายในครัวเรือน">เครื่องใช้ไฟฟ้าภายในครัวเรือน
-										</option>
-										<option value="เครื่องปรับอากาศ">เครื่องปรับอากาศ</option>
-										<option value="กล้องวงจรปิด">กล้องวงจรปิด</option>
-										<option value="เฟอร์นิเจอร์">เฟอร์นิเจอร์</option>
-									</select>
+									<textarea id="pdDetails" cols="45" rows="9" placeholder=
+									"- ขนาด(คิว):6.3
+									- ปริมาณความจุ(ลิตร):177
+									- ระบบทำความเย็น:R600A
+									- ระบบกระจายความเย็น:DIRECT COOL"></textarea>
 								</div>
 							</div>
 							<div class="control-group">
