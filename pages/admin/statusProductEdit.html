@@ -84,13 +84,81 @@
                 </div>
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">
-					<ul class="breadcrumb">
-						<li><a href="/pages/admin/statusProduct.html">สถานะการจัดส่ง</a> <span class="divider">/</span></li>
-						<li class="active">แก้ไขสถานะการจัดส่ง</li>
-					</ul>
-                    <form class="form-inline" name="form_productStatus" method="post" action="">
-
-                        <div class="form-actions">
+			<ul class="breadcrumb">
+				<li><a href="/pages/admin/statusProduct.html">สถานะการจัดส่ง</a> <span class="divider">/</span></li>
+				<li class="active">แก้ไขสถานะการจัดส่ง</li>
+			</ul>
+                        <form class="form-inline" name="form_productStatus" method="post" action="">
+				<fieldset>
+					<div id="productStatusED">
+						<div class="control-group">
+							<label class="control-label" for="ED00">ชื่อผู้สั่ง</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="customerNameSurName" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED01">เบอร์โทรติดต่อ</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="phone" disabled>
+							</div>
+						</div>
+                                                <div class="control-group">
+                                                        <label class="control-label" for="ED02">ที่อยู่ในการจัดส่ง</label>
+                                                        <div class="controls">
+                                                                <textarea id="address" cols="45" rows="3" disabled></textarea>
+                                                        </div>
+                                                </div>
+						<div class="control-group">
+							<label class="control-label" for="ED03">ชื่อสินค้า</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="nameProduct" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED04">จำนวน</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="amount" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED05">ราคา</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="piece" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED06">ค่าจัดส่ง</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="deliveryCost" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED07">รวมการสั้งซื้อ</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="includingOrder" disabled>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED08">วันที่จะได้รับสินค้า</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="DateOfReceiving">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="ED09">สถานะการจัดส่ง</label>
+							<div class="controls">
+								<input type="text" class="input-xxlarge" id="status">
+							</div>
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="button" class="btn btn-success" id="save" name="save"> บันทึก </button>
+						<a href="/pages/admin/statusProduct.html" class="btn btn-danger" id="cancle">ยกเลิก<i class=""></i></a>
+					</div>
+                                </fieldset>
+                                
+                        <!-- <div class="form-actions">
                             <div class="span8">
                                 <h3>ชื่อผู้สั่ง : นางสาวนงรักษ์ รักธรรม</h3>
                                 <p style="font-size: 15px;"><b style="font-size: 17px;">ที่อยู๋ในการจัดส่ง : </b>100
@@ -106,13 +174,13 @@
                                 <p style="font-size: 17px;"><b style="font-size: 21px;">สถานะการจัดส่ง :
                                     </b>กำลังจัดส่ง<b style="font-size: 17px;"></b></p>
                                 <div class="span8 alignR">
-                                    <a href="/pages/admin/statusProductDetails.html" class="btn" id=""><i
-                                            class="icon-zoom-in"></i></a>
-                                    <a href="/pages/admin/statusProductEdit.html" class="btn btn-primary">แก้ไข<i
-                                            class=""></i></a>
+                                        <button type="button" class="btn btn-outline-primary" id="save" name="save">
+                                                บันทึก </button>
+                                            <a href="/pages/admin/statusProduct.html" class="btn btn-danger">กลับ<i
+                                                    class=""></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
@@ -236,6 +304,6 @@
     <span id="themesBtn"></span>
 </body>
 <script src="/js/jsAdmin/menus.js"></script>
-<script language="JavaScript" type="text/javascript" src="/js/jsAdmin/productsAdd.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/jsAdmin/statusProductEdit.js"></script>
 
 </html>
