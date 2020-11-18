@@ -9,7 +9,6 @@ $("#register").click(function () {
     newUser.customerPW = $("#userPassword").val();
     newUser.customerHBD = $("#bDay").val();
     newUser.addressInfo = $("#address").val();
-    newUser.addressPostalCode = $("#postalCode").val();
     newUser.phone = $("#mobilePhone").val();
     console.log(newUser);
     $.ajax({
@@ -24,7 +23,7 @@ $("#register").click(function () {
         }
     });
     $("#err").show();
-    window.open('index.html');
+    window.open('/../index.html');
 });
 
 // $("#Add").click(function () {
