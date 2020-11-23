@@ -19,7 +19,7 @@ $randomProductInIndex = getRandomProductInIndex();
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="slider owl-carousel">
+            <div class="slider owl-carousel center">
               <img src="images/products/Home/ncMV7BBa-CH_Patlung_Exceptional_BannerBig (1).jpg" alt=""><!-- /.imagesHome1 -->
               <img src="images/products/Home/JZ2V2Pnd-S__23511042.jpg" alt=""><!-- /.imagesHome2 -->
             </div><!-- /.slider -->
@@ -27,16 +27,13 @@ $randomProductInIndex = getRandomProductInIndex();
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.flat-slider -->
-
-  
-
     <section class="flat-imagebox">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="product-tab">
               <ul class="tab-list">
-                <li class="active">สินค้าแนะนำ</li>
+                <!-- <li class="active">สินค้าแนะนำ</li> -->
               </ul>
             </div><!-- /.product-tab -->
           </div><!-- /.col-md-12 -->
@@ -45,8 +42,6 @@ $randomProductInIndex = getRandomProductInIndex();
 
         <div class="box-product">
           <div class="row">
-
-
             <?php if(empty($randomProductInIndex)){ ?>
               <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
             <?php }else{?>
@@ -58,7 +53,7 @@ $randomProductInIndex = getRandomProductInIndex();
                       <ul class="box-image ">
                         <li>
                           <a href="detail_product.php?id=<?php echo $dataPro['id'];?>" title="">
-                            <img src="images/product/<?php echo $dataPro['product_img'];?>" alt="">
+                            <img style="height:150px; width:auto;" src="images/product/<?php echo $dataPro['product_img'];?>" alt="">
                           </a>
                         </li>
                       </ul><!-- /.box-image -->
