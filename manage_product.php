@@ -6,7 +6,7 @@ require_once("header.php");
 <?php 
 $allProduct = getAllProduct();
 if (isset($_GET['delete'])) {
-  deleteCategory($_GET['delete']);
+  deleteProduct($_GET['delete']);
 }
 
 $status_map = array( 0=>'<a style="color:green">ปกติ</a>',1=>'<a style="color:blue">สินค้าหมด</a>',2=>'<a style="color:red">งดขายชั่วคราว</a>');
@@ -25,7 +25,7 @@ $status_map = array( 0=>'<a style="color:green">ปกติ</a>',1=>'<a style="
             <div class="col-md-12">
                 <div class="order-tracking">
                     <div class="title">
-                        <h3>จัดการประเภทสินค้า</h3>
+                        <h3>จัดการสินค้า</h3>
                     </div><!-- /.title -->
                     <div class="tracking-content">
                         <a href="edit_product.php" class="btn btn-success" style="float:right;">เพิ่มสินค้า</a>

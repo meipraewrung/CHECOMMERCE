@@ -20,7 +20,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
         <div class="col-md-12">
           <div class="order-tracking">
             <div class="title">
-              <h3>ประวัติการสั่งซื้อทั้งหมด</h3>
+              <h3>การสั่งซื้อทั้งหมด</h3>
             </div><!-- /.title -->
             <div class="tracking-content">
               <table class="table table-condensed" style="width:100%;">

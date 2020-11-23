@@ -3,6 +3,7 @@
 <?php
 require_once("header.php");
 ?>
+
 <body>
 
   <?php
@@ -20,9 +21,18 @@ require_once("header.php");
             </div><!-- /.title -->
             <div class="tracking-content">
 
+              <h3><b>บริษัท ซีเอชพัทลุง จำกัด</b></h3><br />
+              <h4>ที่อยู่ 102 หมู่ที่ 2 ตำบลเขาเจียก เขต/อำเภอเมืองพัทลุง จังหวัดพัทลุง รหัสไปรษณีย์93000</h4>
+              <h5>ข้างโลตัสพัทลุง อำเภอเมือง จังหวัดพัทลุง</h5><br />
+              <p>Tel :098-6719738,074-610464</p>
+              <p>Line ID :@chpatlung</p>
+              <p>Facebook : chpatlung</p><br />
+              
+              <br /><br /><br />
 
-
-            
+              <h4><b>เปิดบริการ</b></h4><br />
+              <h5>ทุกวันจันทร์ - วันเสาร์</h5>
+              <p>เวลา 09:00 น. - 17:30 น.</p>
 
             </div><!-- /.tracking-content -->
           </div><!-- /.order-tracking -->
@@ -37,4 +47,5 @@ require_once("header.php");
 
 
 </body>
+
 </html>
