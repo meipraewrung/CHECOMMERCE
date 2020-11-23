@@ -2,7 +2,7 @@
 error_reporting(0);
 
 //เชื่อต่อ Database
-$con = mysqli_connect("localhost","root","","ch_elect");
+$con = mysqli_connect("localhost","root","","checommerce");
 
 
 $con->set_charset("utf8");
@@ -384,6 +384,7 @@ function getCurrentProduct($id){
 
 	global $con;
 
+
 	$res = mysqli_query($con,"SELECT * FROM products WHERE id = '".$id."'");
 	$result=mysqli_fetch_array($res,MYSQLI_ASSOC);
 	return $result;
@@ -391,6 +392,42 @@ function getCurrentProduct($id){
 	mysqli_close($con);
 
 }
+
+function getRandomProductInIndex(){
+	global $con;
+
+	$sql = "SELECT *,p.id as pid
+	FROM products p 
+	LEFT JOIN categories c ON p.categories_id = c.id 
+	LEFT JOIN groups g ON p.groups_id = g.id 
+	ORDER BY RAND() LIMIT 4";
+	
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'id' => $row['pid'],
+			'cate_name' => $row['cate_name'],
+			'group_name' => $row['group_name'],
+			'pro_number' => $row['pro_number'],
+			'pro_name' => $row['pro_name'],
+			'pro_detail' => $row['pro_detail'],
+			'pro_size' => $row['pro_size'],
+			'pro_weight' => $row['pro_weight'],
+			'qunatity' => $row['qunatity'],
+			'price' => $row['price'],
+			'status' => $row['status'],
+			'product_img' => $row['product_img']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
 
 function getAllProductInGroupAndCategory($categories_id,$groups_id){
 	global $con;
@@ -489,6 +526,325 @@ function getAllHistoryBuy($users_id){
 	return $data;
 	mysqli_close($con);
 
+}
+
+function getAllOrderDetail($orders_id){
+	global $con;
+
+	$sql = "SELECT *,od.id as odid,od.amount as odamount,od.price as odprice,od.sum_price as odsum_price
+	FROM orders_detail od
+	LEFT JOIN products p ON od.products_id = p.id 
+	WHERE od.orders_id = '".$orders_id."'
+	ORDER BY od.id DESC";
+
+
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'id' => $row['odid'],
+			'pro_number' => $row['pro_number'],
+			'pro_name' => $row['pro_name'],
+			'pro_size' => $row['pro_size'],
+			'pro_weight' => $row['pro_weight'],
+			'product_img' => $row['product_img'],
+			'amount' => $row['odamount'],
+			'price' => $row['odprice'],
+			'sum_price' => $row['odsum_price']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
+function savePayment($orders_id,$pay_by,$bank_to,$bank_from,$bank_branch,$amount_pay,$slipt_img){
+	global $con;
+
+	if($slipt_img != null){
+		if(move_uploaded_file($_FILES["slipt_img"]["tmp_name"],"images/slipt/".$_FILES["slipt_img"]["name"]))
+		{
+
+			$sql = "INSERT INTO payments (orders_id, pay_by, bank_to, bank_from, bank_branch, amount_pay, slipt_img) VALUES('".$orders_id."','".$pay_by."','".$bank_to."','".$bank_from."','".$bank_branch."','".$amount_pay."','".$_FILES["slipt_img"]["name"]."')";
+			mysqli_query($con,$sql);
+		}
+
+		mysqli_query($con,"UPDATE orders SET status='2' WHERE id = '".$orders_id."'");
+	}
+
+
+	
+		
+	mysqli_close($con);
+	echo ("<script language='JavaScript'>
+		alert('บันทึกการชำระเรียบร้อย');
+		window.location.href='history_buy.php';
+		</script>"); 
+}
+
+function getCurrentOrders($id){
+
+	global $con;
+
+	$res = mysqli_query($con,"SELECT * FROM orders WHERE id = '".$id."'");
+	$result=mysqli_fetch_array($res,MYSQLI_ASSOC);
+	return $result;
+
+	mysqli_close($con);
+
+}
+
+function getCurrentPaymentOrder($orders_id){
+
+	global $con;
+
+	$res = mysqli_query($con,"SELECT * FROM payments WHERE orders_id = '".$orders_id."'");
+	$result=mysqli_fetch_array($res,MYSQLI_ASSOC);
+	return $result;
+
+	mysqli_close($con);
+
+}
+
+function getAllOrdersPay(){
+	global $con;
+
+	$sql = "SELECT *,o.id as ooid,o.status as ostatus
+	FROM orders o
+	LEFT JOIN users u ON o.users_id = u.id 
+	WHERE o.status = '2'
+	ORDER BY o.id DESC";
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'id' => $row['ooid'],
+			'receive_firstname' => $row['receive_firstname'],
+			'receive_lastname' => $row['receive_lastname'],
+			'receive_email' => $row['receive_email'],
+			'receive_phone' => $row['receive_phone'],
+			'receive_address' => $row['receive_address'],
+			'total_price' => $row['total_price'],
+			'date_order' => $row['date_order'],
+			'time_order' => $row['time_order'],
+			'status' => $row['ostatus']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
+function updatePayment($orders_id,$status){
+	global $con;
+
+	if($status == 1){
+		mysqli_query($con,"UPDATE orders SET status='".$status."' WHERE id = '".$orders_id."'");
+		mysqli_query($con,"DELETE FROM payments WHERE orders_id ='".$orders_id."'");
+	}else{
+		mysqli_query($con,"UPDATE orders SET status='".$status."' WHERE id = '".$orders_id."'");
+	}
+	
+		
+	mysqli_close($con);
+	echo ("<script language='JavaScript'>
+		alert('บันทึกการชำระเรียบร้อย');
+		window.location.href='check_pay.php';
+		</script>"); 
+}
+
+function getAllHistoryOrder(){
+	global $con;
+
+	$sql = "SELECT *,o.id as ooid,o.status as ostatus
+	FROM orders o
+	LEFT JOIN users u ON o.users_id = u.id 
+	ORDER BY o.id DESC";
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'id' => $row['ooid'],
+			'receive_firstname' => $row['receive_firstname'],
+			'receive_lastname' => $row['receive_lastname'],
+			'receive_email' => $row['receive_email'],
+			'receive_phone' => $row['receive_phone'],
+			'receive_address' => $row['receive_address'],
+			'total_price' => $row['total_price'],
+			'date_order' => $row['date_order'],
+			'time_order' => $row['time_order'],
+			'status' => $row['ostatus']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
+function updateSend($orders_id,$tracking_number,$status){
+	global $con;
+
+	
+	mysqli_query($con,"UPDATE orders SET tracking_number='".$tracking_number."',status='".$status."' WHERE id = '".$orders_id."'");
+		
+	mysqli_close($con);
+	echo ("<script language='JavaScript'>
+		alert('บันทึกการจัดส่งเรียบร้อย');
+		window.location.href='all_history_order.php';
+		</script>"); 
+}
+
+function getAllDataChartReportSale($dateStart,$dateEnd){
+
+	$arrDate1 = explode("/", $dateStart);
+	$convert_start_date = $arrDate1[2].'-'.$arrDate1[1].'-'.$arrDate1[0];
+	$arrDate2 = explode("/", $dateEnd);
+	$convert_end_date = $arrDate2[2].'-'.$arrDate2[1].'-'.$arrDate2[0];
+
+	global $con;
+	$sql = "SELECT sum(od.sum_price) as od_sum_price,p.pro_name as ppro_name
+	FROM orders o
+	LEFT JOIN orders_detail od
+	ON od.orders_id = o.id
+	LEFT JOIN products p
+	ON od.products_id = p.id 
+	WHERE (o.date_order BETWEEN '".$convert_start_date."' AND '".$convert_end_date."')
+	GROUP BY od.products_id
+	ORDER BY o.id DESC";
+
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+
+	$arrData = array(
+      "chart" => array(
+          "caption" => "รายงานการขาย",
+          "paletteColors" => "#0075c2",
+          "bgColor" => "#ffffff",
+          "borderAlpha"=> "20",
+          "canvasBorderAlpha"=> "0",
+          "usePlotGradientColor"=> "0",
+          "plotBorderAlpha"=> "10",
+          "showXAxisLine"=> "1",
+          "xAxisLineColor" => "#999999",
+          "showValues" => "0",
+          "divlineColor" => "#999999",
+          "divLineIsDashed" => "1",
+          "showAlternateHGridColor" => "0"
+        )
+    );
+
+    $jsonArray = array();
+
+    $arrData["data"] = array();
+    //
+
+	while($row = mysqli_fetch_array($res)) {
+      array_push($arrData["data"], array(
+
+          "label" => $row["ppro_name"],
+          "value" => $row["od_sum_price"]
+          )
+      );
+    }
+
+	$jsonEncodedData = json_encode($arrData);
+
+	return $jsonEncodedData;
+
+	mysqli_close($con);
+	
+	
+}
+
+function getAllDataReportSale($dateStart,$dateEnd){
+	$arrDate1 = explode("/", $dateStart);
+	$convert_start_date = $arrDate1[2].'-'.$arrDate1[1].'-'.$arrDate1[0];
+	$arrDate2 = explode("/", $dateEnd);
+	$convert_end_date = $arrDate2[2].'-'.$arrDate2[1].'-'.$arrDate2[0];
+	global $con;
+
+	$sql = "SELECT sum(od.sum_price) as od_sum_price,p.pro_name as ppro_name,sum(od.amount) as odamount
+	FROM orders o
+	LEFT JOIN orders_detail od
+	ON od.orders_id = o.id
+	LEFT JOIN products p
+	ON od.products_id = p.id
+	WHERE (o.date_order BETWEEN '".$convert_start_date."' AND '".$convert_end_date."')
+	GROUP BY od.products_id
+	ORDER BY o.id DESC";
+	$res = mysqli_query($con,$sql);
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'sum_price' => $row['od_sum_price'],
+			'pro_name' => $row['ppro_name'],
+			'amount' => $row['odamount']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
+function convertMoneyToText($number){ 
+$txtnum1 = array('ศูนย์','หนึ่ง','สอง','สาม','สี่','ห้า','หก','เจ็ด','แปด','เก้า','สิบ'); 
+$txtnum2 = array('','สิบ','ร้อย','พัน','หมื่น','แสน','ล้าน','สิบ','ร้อย','พัน','หมื่น','แสน','ล้าน'); 
+$number = str_replace(",","",$number); 
+$number = str_replace(" ","",$number); 
+$number = str_replace("บาท","",$number); 
+$number = explode(".",$number); 
+if(sizeof($number)>2){ 
+return 'ทศนิยมหลายตัวนะจ๊ะ'; 
+exit; 
+}
+$strlen = strlen($number[0]); 
+$convert = ''; 
+for($i=0;$i<$strlen;$i++){ 
+    $n = substr($number[0], $i,1); 
+    if($n!=0){ 
+        if($i==($strlen-1) AND $n==1){ $convert .= 'เอ็ด'; } 
+        elseif($i==($strlen-2) AND $n==2){  $convert .= 'ยี่'; } 
+        elseif($i==($strlen-2) AND $n==1){ $convert .= ''; } 
+        else{ $convert .= $txtnum1[$n]; } 
+        $convert .= $txtnum2[$strlen-$i-1]; 
+    } 
+} 
+
+$convert .= 'บาท'; 
+if($number[1]=='0' OR $number[1]=='00' OR 
+$number[1]==''){ 
+$convert .= 'ถ้วน'; 
+}else{ 
+$strlen = strlen($number[1]); 
+for($i=0;$i<$strlen;$i++){ 
+$n = substr($number[1], $i,1); 
+    if($n!=0){ 
+    if($i==($strlen-1) AND $n==1){$convert 
+    .= 'เอ็ด';} 
+    elseif($i==($strlen-2) AND 
+    $n==2){$convert .= 'ยี่';} 
+    elseif($i==($strlen-2) AND 
+    $n==1){$convert .= '';} 
+    else{ $convert .= $txtnum1[$n];} 
+    $convert .= $txtnum2[$strlen-$i-1]; 
+    } 
+} 
+$convert .= 'สตางค์'; 
+} 
+return $convert; 
 }
 
 ?>

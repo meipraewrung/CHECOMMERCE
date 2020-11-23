@@ -28,7 +28,7 @@ $status_map = array( 0=>'<a style="color:green">ปกติ</a>',1=>'<a style="
                         <h3>จัดการประเภทสินค้า</h3>
                     </div><!-- /.title -->
                     <div class="tracking-content">
-                        <a href="edit_product.php" class="btn btn-success" style="float:right;">เพิ่มประเภทสินค้า</a>
+                        <a href="edit_product.php" class="btn btn-success" style="float:right;">เพิ่มสินค้า</a>
                         <table class="table table-condensed">
                           <thead>
                             <tr>

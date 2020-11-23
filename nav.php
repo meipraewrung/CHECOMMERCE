@@ -16,7 +16,7 @@ $allCategory = getAllCategory();
         <div class="col-md-4">
           <ul class="flat-support">
            <li class="phone">
-            ติดต่อเรา: <a href="#" title="">(888) 1234 56789</a>
+            ติดต่อเรา: <a href="#" title="">(074) 610464</a>
           </li>
 
         </ul><!-- /.flat-support -->
@@ -52,8 +52,8 @@ $allCategory = getAllCategory();
     <div class="row">
       <div class="col-md-3">
         <div id="logo" class="logo">
-          <a href="index.html" title="">
-            <img src="images/logos/logo.png" alt="">
+          <a href="index.php" title="">
+            <img src="images/logos/logo2.png" alt="">
           </a>
         </div><!-- /#logo -->
       </div><!-- /.col-md-3 -->
@@ -72,6 +72,10 @@ $allCategory = getAllCategory();
         </div>-->
       </div>
       <div class="col-md-3">
+
+
+
+        <?php if($_SESSION["id"] != "" && !empty($_SESSION["id"])){ ?>
         <div class="box-cart">
           <?php 
           $numArr = count($_SESSION["shopping_cart"]);
@@ -155,6 +159,8 @@ $allCategory = getAllCategory();
             </div>
           </div><!-- /.inner-box -->
         </div><!-- /.box-cart -->
+
+      <?php } ?>
       </div><!-- /.col-md-3 -->
     </div><!-- /.row -->
   </div><!-- /.container -->
@@ -164,36 +170,8 @@ $allCategory = getAllCategory();
     <div class="row">
       <div class="col-md-3 col-2">
         <div id="mega-menu">
-          <div class="btn-mega"><span></span>ALL CATEGORIES</div>
-          <ul class="menu">
-
-            <li>
-              <a href="#" title="" class="dropdown">
-                <span class="menu-img">
-                  <img src="images/icons/menu/03.png" alt="">
-                </span>
-                <span class="menu-title">
-                  Home Devices
-                </span>
-              </a>
-              <div class="drop-menu">
-                <div class="one-third">
-                  <div class="cat-title">
-                    Home Devices
-                  </div>
-                  <ul>
-
-                    <li>
-                      <a href="#" title="">Internet Devices</a>
-                    </li>
-
-                  </ul>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
+          <div class="btn-mega"><span></span>Menu</div>
+          
         </div>
       </div><!-- /.col-md-3 -->
       <div class="col-md-9 col-10">
@@ -203,63 +181,94 @@ $allCategory = getAllCategory();
               <li class="column-1">
                 <a href="index.php" title="">หน้าหลัก</a>
               </li>
+              <li class="column-1">
+                <a href="about.php" title="">เกี่ยวกับเรา</a>
+              </li>
 
               <?php if($_SESSION["id"] == "" || empty($_SESSION["id"])){ ?>
 
               <?php }else{ ?>
-                <li class="column-1">
-                  <a href="#" title="">จัดการข้อมูล</a>
-                  <ul class="submenu">
-                    <li>
-                      <a href="manage_category.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการประเภทสินค้า</a>
-                    </li>
-                    <li>
-                      <a href="manage_groups.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการกลุ่มสินค้า</a>
-                    </li>
-                    <li>
-                      <a href="manage_product.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการสินค้า</a>
-                    </li>
 
-                  </ul>
-                </li>
-                <li class="column-1">
-                <a href="history_buy.php" title="">ประวัติการสั่งซื้อ</a>
-              </li>
-                <li class="has-mega-menu">
-                  <a href="#" title="">สินค้า</a>
-                  <div class="submenu">
-                    <div class="row">
+                <?php if($_SESSION["status"] == 1){ ?>
+                  <li class="has-mega-menu">
+                    <a href="#" title="">สินค้า</a>
+                    <div class="submenu">
+                      <div class="row">
 
-                      <?php if(empty($allCategory)){ ?>
-                        <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
-                      <?php }else{?>
-                        <?php $i=1;?>
-                        <?php foreach($allCategory as $dataCate){ ?>
-                          <div class="col-lg-3 col-md-12">
-                            <h3 class="cat-title"><?php echo $dataCate["cate_name"];?></h3>
-                            <ul class="submenu-child">
-                              <?php $allGroupsInCategory = getAllGroupsInCategory($dataCate["id"]); ?>
-                              <?php if(empty($allGroupsInCategory)){ ?>
-                                <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
-                              <?php }else{?>
-                                <?php $i=1;?>
-                                <?php foreach($allGroupsInCategory as $dataGroup){ ?>
-                                  <li>
-                                    <a href="all_product.php?cate_id=<?php echo $dataCate["id"];?>&group_id=<?php echo $dataGroup["id"];?>"><?php echo $dataGroup["group_name"];?></a>
-                                  </li>
+                        <?php if(empty($allCategory)){ ?>
+                          <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
+                        <?php }else{?>
+                          <?php $i=1;?>
+                          <?php foreach($allCategory as $dataCate){ ?>
+                            <div class="col-lg-3 col-md-12">
+                              <h3 class="cat-title"><?php echo $dataCate["cate_name"];?></h3>
+                              <ul class="submenu-child">
+                                <?php $allGroupsInCategory = getAllGroupsInCategory($dataCate["id"]); ?>
+                                <?php if(empty($allGroupsInCategory)){ ?>
+                                  <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
+                                <?php }else{?>
+                                  <?php $i=1;?>
+                                  <?php foreach($allGroupsInCategory as $dataGroup){ ?>
+                                    <li>
+                                      <a href="all_product.php?cate_id=<?php echo $dataCate["id"];?>&group_id=<?php echo $dataGroup["id"];?>"><?php echo $dataGroup["group_name"];?></a>
+                                    </li>
+                                  <?php } ?>
                                 <?php } ?>
-                              <?php } ?>
 
-                            </ul>
-                          </div>
+                              </ul>
+                            </div>
+                          <?php } ?>
                         <?php } ?>
-                      <?php } ?>
+
+                      </div>
 
                     </div>
+                  </li>
+                  <li class="column-1">
+                    <a href="history_buy.php" title="">ประวัติการสั่งซื้อ</a>
+                  </li>
+                  <li class="column-1">
+                    <a href="how_pay.php" title="">วิธีการชำระเงิน</a>
+                  </li>
+                <?php } ?>
 
-                  </div>
-                </li>
+                <?php if($_SESSION["status"] == 2){ ?>
+                  <li class="column-1">
+                    <a href="#" title="">จัดการข้อมูล</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="manage_category.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการประเภทสินค้า</a>
+                      </li>
+                      <li>
+                        <a href="manage_groups.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการกลุ่มสินค้า</a>
+                      </li>
+                      <li>
+                        <a href="manage_product.php" title=""><i class="fa fa-angle-right" aria-hidden="true"></i>จัดการสินค้า</a>
+                      </li>
+
+                    </ul>
+                  </li>
+                  <li class="column-1">
+                    <a href="check_pay.php" title="">ตรวจสอบการชำระ</a>
+                  </li>
+                  <li class="column-1">
+                    <a href="all_history_order.php" title="">การสั่งซื้อทั้งหมด</a>
+                  </li>
+                  <li class="column-1">
+                    <a href="report.php" title="">รายงาน</a>
+                  </li>
+                <?php } ?>
+                
+
+
+
+
               <?php } ?>
+              
+
+              <li class="column-1">
+                <a href="contact.php" title="">ติดต่อเรา</a>
+              </li>
 
               
               <!--<li class="column-1">
