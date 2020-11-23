@@ -45,5 +45,8 @@ require("function/function.php");
 
   <script type="text/javascript" src="javascript/main.js"></script>
 
+  <script src="datepicker/datetimepicker-master/jquery.datetimepicker.js"></script>
+  <link href="datepicker/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet" />
+
 </head>
 

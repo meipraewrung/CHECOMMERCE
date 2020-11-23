@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<p class="copyright"> All Rights Reserved © ซีเอชพัทลุง 2020</p>
+				<p class="copyright"> All Rights Reserved © บริษัท ซีเอชพัทลุง จำกัด 2020</p>
 				<p class="btn-scroll">
 					<a href="#" title="">
 						<img src="images/icons/top.png" alt="">
