@@ -51,7 +51,7 @@ require_once("header.php");
                     <p style="font-size: 15px;">5131 สาขาเทสโก้ โลตัส พัทลุง</p>
                   </div>
                   <div class="col-md-6">
-                    <h4>นายปณิธาน ชูเชื้อ </h4>
+                    <h4>นายปณิธาน ชูเชื้อ</h4>
                     <p style="font-size: 23px;"><b>เลขที่บัญชี 413-014756-4</b></p>
                     <p style="font-size: 21px;">บัญชีเงินฝากออมทรัพย์</p>
                   </div>

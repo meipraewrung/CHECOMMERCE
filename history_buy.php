@@ -26,14 +26,14 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
               <table class="table table-condensed" style="width:100%;">
                 <thead>
                   <tr>
-                    <td>ผู้รับ</td>
-                    <td>ที่อยู่การจัดส่ง</td>
+                    <td style="width:17%;">ผู้รับ</td>
+                    <td style="width:25%;">ที่อยู่การจัดส่ง</td>
                     <td>โทรศัพท์</td>
                     <td>วันที่สั่งซื้อ</td>
                     <td>เวลาที่สั่งซื้อ</td>
                     <td>ราคารวม</td>
-                    <td>สถานะ</td>
-                    <td></td>
+                    <td style="width:15%;">สถานะ</td>
+                    <td style="width:31%;"></td>
                   </tr>
                 </thead>
                 <tbody>

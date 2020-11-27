@@ -33,7 +33,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                     <td>เวลาที่สั่งซื้อ</td>
                     <td>ราคารวม</td>
                     <td>สถานะ</td>
-                    <td></td>
+                    <td style="width:31%;"></td>
                   </tr>
                 </thead>
                 <tbody>
@@ -55,7 +55,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                             <a href="send_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-warning">จัดส่ง</a>
                           <?php } ?>
                           <a href="detail_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-info">รายละเอียด</a>
-                          <?php if($data["status"] != 1){ ?>
+                          <?php if($data["status"] != 1 && $data["status"] != 2){ ?>
                             <a href="pdf_invoice.php?order_id=<?php echo $data['id'];?>" class="btn btn-success">ใบเสร็จ</a>
                             <?php } ?>
                         </td>
