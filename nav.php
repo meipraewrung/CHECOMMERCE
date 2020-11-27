@@ -96,16 +96,14 @@ $allCategory = getAllCategory();
        }
        ?>
        <div class="inner-box">
+       <?php if($_SESSION["status"] == 1){ ?>
         <a href="#" title="">
           <div class="icon-cart">
             <img src="images/icons/cart.png" alt="">
             <span><?php echo $numArr;?></span>
           </div>
-              <!--<div class="price">
-
-                0.00
-              </div>-->
             </a>
+      <?php } ?>
             <div class="dropdown-box">
 
 
@@ -157,6 +155,7 @@ $allCategory = getAllCategory();
                 <a href="checkout.php" class="check-out" title="">ยืนยันการสั่งซื้อ</a>
               </div>
             </div>
+
           </div><!-- /.inner-box -->
         </div><!-- /.box-cart -->
 
@@ -184,13 +183,8 @@ $allCategory = getAllCategory();
               <li class="column-1">
                 <a href="about.php" title="">เกี่ยวกับเรา</a>
               </li>
-
-              <?php if($_SESSION["id"] == "" || empty($_SESSION["id"])){ ?>
-
-              <?php }else{ ?>
-
-                <?php if($_SESSION["status"] == 1){ ?>
-                  <li class="has-mega-menu">
+              <?php if( $_SESSION["id"] == "" || $_SESSION["status"] != 2 ){ ?>
+              <li class="has-mega-menu">
                     <a href="#" title="">สินค้า</a>
                     <div class="submenu">
                       <div class="row">
@@ -224,6 +218,14 @@ $allCategory = getAllCategory();
 
                     </div>
                   </li>
+              <?php } ?>
+
+              <?php if($_SESSION["id"] == "" || empty($_SESSION["id"])){ ?>
+
+              <?php }else{ ?>
+
+                <?php if($_SESSION["status"] == 1){ ?>
+                  
                   <li class="column-1">
                     <a href="history_buy.php" title="">ประวัติการสั่งซื้อ</a>
                   </li>

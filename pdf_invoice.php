@@ -109,7 +109,7 @@ $header_html  .= <<<EOD
 <div style="text-align:left;margin:0;border:1px solid black;"><b>บริษัท ซีเอชพัทลุง จำกัด</b><br />
 ที่อยู่ 102 หมู่ที่ 2 ตำบลเขาเจียก เขต/อำเภอเมืองพัทลุง จังหวัดพัทลุง รหัสไปรษณีย์93000<br/>
 โทร: 098-6719738,074-610464<br/>
-<div style="text-align:center;margin:0;"><b>ใบสั่งซื้อ</b></div>
+<div style="text-align:center;margin:0;"><b>ใบเสร็จ</b></div>
 <div style="text-align:left;margin:0;"><b style="color:red">เลขที่การสั่งซื้อ :</b>{$_GET["order_id"]}</div>
 </div>
                 

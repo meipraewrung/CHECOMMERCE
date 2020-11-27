@@ -70,7 +70,7 @@ $columnChart->render();
 
               <table class="table" id="data_table">
                 <thead class=" text-primary">
-                  <th style="text-align: center">ชื่อขนม</th>
+                  <th style="text-align: center">ชื่อสินค้า</th>
                   <th style="text-align: center">จำนวนที่ขาย</th>
                   <th style="text-align: center">รวมสุทธิ</th>
                 </thead>

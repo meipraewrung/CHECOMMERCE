@@ -253,6 +253,26 @@ function getAllGroups(){
 
 }
 
+function getAllGroupsInCategoryProduct($categories_id){
+	global $con;
+
+	$res = mysqli_query($con,"SELECT * FROM groups WHERE categories_id = '".$categories_id."' ORDER BY id DESC");
+
+	$data = array();
+	while($row = mysqli_fetch_assoc($res)) {
+		$namesArray[] = array(
+			'id' => $row['id'],
+			'categories_id' => $row['categories_id'],
+			'group_name' => $row['group_name']);
+	}
+
+	$data = $namesArray;
+
+	return $data;
+	mysqli_close($con);
+
+}
+
 function getAllGroupsInCategory($categories_id){
 	global $con;
 
@@ -503,7 +523,7 @@ function getAllHistoryBuy($users_id){
 	FROM orders o
 	LEFT JOIN users u ON o.users_id = u.id 
 	WHERE o.users_id = '".$users_id."'
-	ORDER BY o.id DESC";
+	ORDER BY o.date_order DESC";
 	$res = mysqli_query($con,$sql);
 
 	$data = array();
@@ -564,11 +584,17 @@ function getAllOrderDetail($orders_id){
 function savePayment($orders_id,$pay_by,$bank_to,$bank_from,$bank_branch,$amount_pay,$slipt_img){
 	global $con;
 
+	$dateNow = date("d/m/Y");
+	$arrDateNow = explode("/", $dateNow);
+	$arrDateNow[2] = $arrDateNow[2] + 543;
+	$convert_dateNow = $arrDateNow[2].'-'.$arrDateNow[1].'-'.$arrDateNow[0];
+	$timeNow = date("H:i");
+
 	if($slipt_img != null){
 		if(move_uploaded_file($_FILES["slipt_img"]["tmp_name"],"images/slipt/".$_FILES["slipt_img"]["name"]))
 		{
 
-			$sql = "INSERT INTO payments (orders_id, pay_by, bank_to, bank_from, bank_branch, amount_pay, slipt_img) VALUES('".$orders_id."','".$pay_by."','".$bank_to."','".$bank_from."','".$bank_branch."','".$amount_pay."','".$_FILES["slipt_img"]["name"]."')";
+			$sql = "INSERT INTO payments (orders_id, pay_by, bank_to, bank_from, bank_branch, amount_pay, slipt_img, date_pay, time_pay) VALUES('".$orders_id."','".$pay_by."','".$bank_to."','".$bank_from."','".$bank_branch."','".$amount_pay."','".$_FILES["slipt_img"]["name"]."','".$convert_dateNow."','".$timeNow."')";
 			mysqli_query($con,$sql);
 		}
 
@@ -644,11 +670,17 @@ function getAllOrdersPay(){
 function updatePayment($orders_id,$status){
 	global $con;
 
+	$dateNow = date("d/m/Y");
+	$arrDateNow = explode("/", $dateNow);
+	$arrDateNow[2] = $arrDateNow[2] + 543;
+	$convert_dateNow = $arrDateNow[2].'-'.$arrDateNow[1].'-'.$arrDateNow[0];
+	$timeNow = date("H:i");
+
 	if($status == 1){
 		mysqli_query($con,"UPDATE orders SET status='".$status."' WHERE id = '".$orders_id."'");
 		mysqli_query($con,"DELETE FROM payments WHERE orders_id ='".$orders_id."'");
 	}else{
-		mysqli_query($con,"UPDATE orders SET status='".$status."' WHERE id = '".$orders_id."'");
+		mysqli_query($con,"UPDATE orders SET status='".$status."',last_update_date='".$convert_dateNow."',last_update_time='".$timeNow."' WHERE id = '".$orders_id."'");
 	}
 	
 		
@@ -692,9 +724,13 @@ function getAllHistoryOrder(){
 
 function updateSend($orders_id,$tracking_number,$status){
 	global $con;
-
+	$dateNow = date("d/m/Y");
+	$arrDateNow = explode("/", $dateNow);
+	$arrDateNow[2] = $arrDateNow[2] + 543;
+	$convert_dateNow = $arrDateNow[2].'-'.$arrDateNow[1].'-'.$arrDateNow[0];
+    $timeNow = date("H:i");
 	
-	mysqli_query($con,"UPDATE orders SET tracking_number='".$tracking_number."',status='".$status."' WHERE id = '".$orders_id."'");
+	mysqli_query($con,"UPDATE orders SET tracking_number='".$tracking_number."',status='".$status."',last_update_date='".$convert_dateNow."',last_update_time='".$timeNow."' WHERE id = '".$orders_id."'");
 		
 	mysqli_close($con);
 	echo ("<script language='JavaScript'>
@@ -847,4 +883,23 @@ $convert .= 'สตางค์';
 return $convert; 
 }
 
+
+function runNumberProduct(){
+	global $con;
+
+	$res = mysqli_query($con,"SELECT max(id) as mid FROM products");
+	$data = array();
+	while($row = mysqli_fetch_array($res)) {
+		$data['mid'] = $row['mid'];
+	}
+	$run = intval($data['mid']);
+	$run = $run+1;
+
+	if($run=="")
+		$run=1;
+	$number_order = "PD".sprintf('%05d', $run);
+
+	return $number_order;
+	mysqli_close($con);
+}
 ?>

@@ -55,9 +55,10 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                             <a href="send_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-warning">จัดส่ง</a>
                           <?php } ?>
                           <a href="detail_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-info">รายละเอียด</a>
-                          <a href="pdf_invoice.php?order_id=<?php echo $data['id'];?>" class="btn btn-success">ใบสั่งซื้อ</a>
+                          <?php if($data["status"] != 1){ ?>
+                            <a href="pdf_invoice.php?order_id=<?php echo $data['id'];?>" class="btn btn-success">ใบเสร็จ</a>
+                            <?php } ?>
                         </td>
-                        
                       </tr>
                       <?php $i++; ?>
                     <?php } ?>

@@ -109,11 +109,44 @@ if(isset($_POST["submit"])){
                   <?php } ?>
                 </tbody>
               </table><!-- /.product -->
+
               <table>
                 <tbody>
+                  <?php if(!empty($_SESSION["shopping_cart"])){
+                    $amount = 0;
+
+                    foreach($_SESSION["shopping_cart"] as $keys => $values)  {
+                      $amount += $values["item_amount"];
+                      ?>
+                      <tr>
+                        <td>จำนวนที่สั่ง</td>
+                        <td><?php echo number_format($amount);?></td>
+                      </tr>
+                    <?php } ?>
+                  <?php } ?>
                   <tr>
+                    <td>ค่าจัดส่ง</td>
+                    <?php
+                    if($total_weight >= 1 && $total_weight >= 4){
+                      $send_price = 110;
+                    }else if($total_weight >= 5 && $total_weight >= 9){
+                      $send_price = 125;
+                    }else if($total_weight >= 10 && $total_weight >= 14){
+                      $send_price = 165;
+                    }else if($total_weight >= 15 && $total_weight >= 19){
+                      $send_price = 215;
+                    }else if($total_weight >= 20 && $total_weight >= 24){
+                      $send_price = 300;
+                    }else{
+                      $send_price = 390;
+                    }
+                    ?>
+                    <td class="sub-total"><?php echo number_format($send_price);?> บาท</td>
+                  </tr>
+                  <tr>
+                    <?php $total = $total + $send_price;?>
                     <td>Total</td>
-                    <td class="price-total"><?php echo number_format($total);?></td>
+                    <td class="price-total"><?php echo number_format($total);?> บาท</td>
                   </tr>
                 </tbody>
               </table>

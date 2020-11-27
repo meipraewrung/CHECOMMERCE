@@ -6,8 +6,11 @@ require_once("header.php");
 <?php 
 
 $currentProduct = getCurrentProduct($_GET["id"]);
+$runNumber = runNumberProduct();
 $allCategory = getAllCategory();
 $allGroups = getAllGroups();
+$allGroupsInCategory = getAllGroupsInCategoryProduct($currentProduct['categories_id']);
+
 if(isset($_POST["submit"])){
   if($_POST["id"] == ""){
     saveProduct($_POST["categories_id"],$_POST["groups_id"],$_POST["pro_number"],$_POST["pro_name"],$_POST["pro_detail"],$_POST["pro_size"],$_POST["pro_weight"],$_POST["qunatity"],$_POST["price"],$_POST["status"],$_FILES["product_img"]["name"]);
@@ -40,11 +43,12 @@ if($_GET["id"] == ""){
         <div class="col-md-6">
           <div class="flexslider">
             <ul class="slides">
-              <li data-thumb="images/product/flexslider/thumb/2.jpg">
-                <?php if($currentProduct["pro_image"] == ""){ ?>
-                  <img id="blah" src="images/product/flexslider/big-size.jpg" alt='' width='400' height='300' />
+              
+              <li data-thumb="themes/images/products/NoImage.gif">
+                <?php if($currentProduct["product_img"] == ""){ ?>
+                  <img id="blah" src="themes/images/products/NoImage.gif" alt='' width='400' height='300' />
                 <?php }else{ ?>
-                  <img id="blah" src="images/product/<?php echo $currentProduct["pro_image"];?>" alt='' width='400' height='300' />
+                  <img id="blah" src="images/product/<?php echo $currentProduct["product_img"];?>" alt='' width='400' height='300' />
                 <?php } ?>
                 
               </li>
@@ -56,7 +60,7 @@ if($_GET["id"] == ""){
             <input type="hidden" id="id" name="id" value="<?php echo $currentProduct['id'];?>">
             <div class="one-half order-id">
               <label for="order-id">ประเภทสินค้า</label>
-              <select name="categories_id" class="form-control">
+              <select name="categories_id" class="form-control" id="categories_id">
                 <option value="">-- โปรดเลือกประเภทสินค้า --</option>
                 <?php foreach($allCategory as $dataCate){ ?>
                   <?php $selected = ""; 
@@ -71,22 +75,27 @@ if($_GET["id"] == ""){
             </div>
             <div class="one-half order-id">
               <label for="order-id">กลุ่มสินค้า</label>
-              <select name="groups_id" id="groups_id" class="form-control">
+              <?php if ($currentProduct['groups_id'] == ""){ ?>
+              <select name="groups_id" id="groups_id" class="form-control"></select>
+              <?php }else{ ?>
+                <select name="groups_id" id="groups_id" class="form-control">
                 <option value="">-- โปรดเลือกประเภทสินค้า --</option>
-                <?php foreach($allGroups as $dataGroup){ ?>
+                <?php foreach($allGroupsInCategory as $dataGr){ ?>
                   <?php $selected = ""; 
-                  if($currentProduct['groups_id'] == $dataGroup['id']){
+                  if($currentProduct['groups_id'] == $dataGr['id']){
                     $selected = " selected"; 
 
                   } 
                   ?> 
-                  <option value="<?php echo $dataGroup['id'];?>" <?php echo $selected;?>><?php echo $dataGroup['group_name'];?></option>
+                  <option value="<?php echo $dataGr['id'];?>" <?php echo $selected;?>><?php echo $dataGr['group_name'];?></option>
                 <?php } ?>
               </select>
+
+              <?php } ?>
             </div>
             <div class="one-half order-id">
               <label for="order-id">รหัสสินค้า</label>
-              <input type="text" id="cate_name" name="pro_number" placeholder="รหัสสินค้า" value="<?php echo $currentProduct['pro_number'];?>">
+              <input type="text" id="cate_name" readonly name="pro_number" placeholder="รหัสสินค้า" value="<?php if($_GET["id"] == "" ){ echo $runNumber;}else { echo $currentProduct['pro_number']; } ?>">
             </div>
             <div class="one-half order-id">
               <label for="order-id">ชื่อสินค้า</label>
@@ -151,6 +160,37 @@ if($_GET["id"] == ""){
       readURL(this);
     });
   </script>
+
+<script>
+      $(function(){
+        var defaultOption = '<option value=""> ------- เลือก ------ </option>';
+
+
+        $('#categories_id').change(function() {
+          $("#groups_id").html(defaultOption);
+          $.ajax({
+      // A string containing the URL to which the request is sent.
+      url: "json_filter/jsonAction.php",
+      // Data to be sent to the server.
+      data: ({ nextList : 'groups_id', categoriesId: $('#categories_id').val() }),
+      // The type of data that you're expecting back from the server.
+      dataType: "json",
+      beforeSend: function() {
+      },
+      // success is called if the request succeeds.
+      success: function(json){
+        // Iterate over a jQuery object, executing a function for each matched element.
+        $.each(json, function(index, value) {
+          // Insert content, specified by the parameter, to the end of each element
+          // in the set of matched elements.
+          $("#groups_id").append('<option value="' + value.id + '">' + value.group_name + '</option>');
+        });
+      }
+    });
+        });
+
+      });
+</script>
 
   <?php
   require_once("footer.php");
