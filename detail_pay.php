@@ -62,6 +62,16 @@ if(isset($_POST["submit"])){
                     <div class="clearfix"></div>
                   </div>
                   <div class="field-row">
+                    <p class="field-one-half">
+                      <label for="email-address">วันที่สั่งซื้อ : <?php echo formatDateFull($currentOrders["date_order"]);?></label>
+                    </p>
+                    <p class="field-one-half">
+                      <label for="phone">เวลาที่สั่งซื้อ : <?php echo $currentOrders["time_order"];?></label>
+                    </p>
+
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="field-row">
                     <label for="company-name">สถานะ : <?php echo $status_map[$currentOrders["status"]];?></label>
                   </div>
 
@@ -164,12 +174,19 @@ if(isset($_POST["submit"])){
                       <p class="field-one-half">
                         <label for="phone">สาขาที่โอน : <?php echo $currentPaymentOrder["bank_branch"];?></label>
                       </p>
+                      <p class="field-one-half">
+                        <label for="email-address">วันที่ชำระ : <?php echo formatDateFull($currentPaymentOrder["date_pay"]);?></label>
+                      </p>
+                      <p class="field-one-half">
+                        <label for="phone">เวลาที่ชำระ : <?php echo $currentPaymentOrder["time_pay"];?></label>
+                      </p>
                       <div class="field-row">
                         <label for="company-name">จำนวนเงิน : <?php echo number_format($currentPaymentOrder["amount_pay"]);?> บาท</label>
                       </div>
 
                       <div class="clearfix"></div>
                     </div>
+
                     <div class="field-row">
                       <label for="company-name">อัพเดทสถานะ</label>
                       <select name="status" required>

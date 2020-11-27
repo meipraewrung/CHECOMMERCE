@@ -124,8 +124,15 @@ if(isset($_POST["add_to_cart"]))
               </div><!-- /.quanlity-box -->
               <div class="box-cart style2" >
                 <div class="btn-add-cart">
-                  <button type="submit" name="add_to_cart" class="btn btn-danger"><img src="images/icons/add-cart.png" alt="">ใส่ตะกร้า</button>
-                  
+                  <?php if($_SESSION["id"] != ""){ ?>
+                    <?php if($_SESSION["status"] == 1){ ?>
+                    <button type="submit" name="add_to_cart" class="btn btn-danger"><img src="images/icons/add-cart.png" alt="">ใส่ตะกร้า</button>
+                    <?php }else{ ?>
+                      <p style="color: red;">สงวนสิทธิ์สำหรับสมาชิก หรือลูกค้าเท่านั้น</p>
+                    <?php } ?>
+                  <?php }else{ ?>
+                    <p style="color: red;">กรุณาสมัครสมาชิก หรือเข้าสู่ระบบเพื่อทำการสั่งซื้อ</p>
+                  <?php } ?>
                 </div>
               </div><!-- /.box-cart -->
               

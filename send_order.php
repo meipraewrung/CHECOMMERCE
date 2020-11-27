@@ -62,6 +62,16 @@ if(isset($_POST["submit"])){
                     <div class="clearfix"></div>
                   </div>
                   <div class="field-row">
+                    <p class="field-one-half">
+                      <label for="email-address">วันที่สั่งซื้อ : <?php echo formatDateFull($currentOrders["date_order"]);?></label>
+                    </p>
+                    <p class="field-one-half">
+                      <label for="phone">เวลาที่สั่งซื้อ : <?php echo $currentOrders["time_order"];?></label>
+                    </p>
+
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="field-row">
                     <label for="company-name">สถานะ : <?php echo $status_map[$currentOrders["status"]];?></label>
                   </div>
 
@@ -89,9 +99,11 @@ if(isset($_POST["submit"])){
                   <?php }else{?>
                     <?php $total = 0;?>
                     <?php $total_weight = 0;?>
+                    <?php $total_size = 0;?> <!-- not use -->
                     <?php foreach($allOrderDetail as $data){ ?>
                       <?php $total += $data["sum_price"];?>
                       <?php $total_weight += $data["pro_weight"];?>
+                      <?php $total_size += $data["pro_size"];?> <!-- not use -->
                       <tr>
                         <td>
                           <?php echo $data["pro_name"];?>
@@ -106,7 +118,20 @@ if(isset($_POST["submit"])){
                 <tbody>
                   <tr>
                     <td>ค่าจัดส่ง</td>
-                    <?php
+                    <?php/*
+                    if($total_weight >= 1 && $total_weight >= 4){
+                      $send_price = 110;
+                    }else if($total_weight >= 5 && $total_weight >= 9){
+                      $send_price = 125;
+                    }else if($total_weight >= 10 && $total_weight >= 14){
+                      $send_price = 165;
+                    }else if($total_weight >= 15 && $total_weight >= 19){
+                      $send_price = 215;
+                    }else if($total_weight >= 20 && $total_weight >= 24){
+                      $send_price = 300;
+                    }else{
+                      $send_price = 390;
+                    }*/
                     if($total_weight >= 1 && $total_weight >= 4){
                       $send_price = 110;
                     }else if($total_weight >= 5 && $total_weight >= 9){
@@ -163,6 +188,12 @@ if(isset($_POST["submit"])){
                       </p>
                       <p class="field-one-half">
                         <label for="phone">สาขาที่โอน : <?php echo $currentPaymentOrder["bank_branch"];?></label>
+                      </p>
+                      <p class="field-one-half">
+                        <label for="email-address">วันที่ชำระ : <?php echo formatDateFull($currentPaymentOrder["date_pay"]);?></label>
+                      </p>
+                      <p class="field-one-half">
+                        <label for="phone">เวลาที่ชำระ : <?php echo $currentPaymentOrder["time_pay"];?></label>
                       </p>
                       <div class="field-row">
                         <label for="company-name">จำนวนเงิน : <?php echo number_format($currentPaymentOrder["amount_pay"]);?> บาท</label>

@@ -56,7 +56,7 @@ if(isset($_POST["submit"])){
                   
                   
                   <div class="form-group">
-                    <button type="submit" class="btn btn-fill-out btn-block" name="submit">ลงทะเบียน</button>
+                    <button type="submit" class="btn btn-fill-out btn-block btn-warning" name="submit">ลงทะเบียน</button>
                   </div>
                 </form>
                 
