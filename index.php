@@ -42,7 +42,7 @@ $randomProductInIndex = getRandomProductInIndex();
 
         <div class="box-product">
           <div class="row">
-            <?php if(empty($randomProductInIndex)){ ?>
+            <?php if(empty($randomProductInIndex)){ ?> 
               <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
             <?php }else{?>
               <?php $i=1;?>
