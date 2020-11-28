@@ -2,7 +2,7 @@
 error_reporting(0);
 
 //เชื่อต่อ Database
-$con = mysqli_connect("3306","praewrung2542","praew_2542","checommerce");
+$con = mysqli_connect("127.0.0.1","praewrung2542@localhost","praew_2542","checommerce");
 // $con = mysqli_connect("localhost","root","","checommerce");
 
 
@@ -903,4 +903,3 @@ function runNumberProduct(){
 	return $number_order;
 	mysqli_close($con);
 }
-?>
