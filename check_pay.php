@@ -26,13 +26,13 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
               <table class="table table-condensed" style="width:100%;">
                 <thead>
                   <tr>
-                    <td>ผู้รับ</td>
-                    <td>ที่อยู่การจัดส่ง</td>
+                    <td style="width:25%;">ผู้รับ</td>
+                    <td style="width:31%;">ที่อยู่การจัดส่ง</td>
                     <td>โทรศัพท์</td>
                     <td>วันที่สั่งซื้อ</td>
                     <td>เวลาที่สั่งซื้อ</td>
                     <td>ราคารวม</td>
-                    <td>สถานะ</td>
+                    <td style="width:15%;">สถานะ</td>
                     <td></td>
                   </tr>
                 </thead>
@@ -40,7 +40,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                   <?php if(empty($allOrdersPay)){ ?>
                     <?php echo "<h3>ไม่พบข้อมูล</h3>";?>
                   <?php }else{?>
-                    <?php $i=1;?>
+                    <?php $i=1; ?>
                     <?php foreach($allOrdersPay as $data){ ?>
                       <tr>
                         <td><?php echo $data["receive_firstname"];?> <?php echo $data["receive_lastname"];?></td>
@@ -51,7 +51,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                         <td><?php echo number_format($data["total_price"]);?></td>
                         <td><?php echo $status_map[$data["status"]];?></td>
                         <td>
-                          <a href="detail_pay.php?order_id=<?php echo $data['id'];?>" class="btn btn-info">รายละเอียด</a>
+                          <a href="detail_pay.php?order_id=<?php echo $data['id'];?>" class="btn btn-info">ตรวจสอบ</a>
                         </td>
                         
                       </tr>
