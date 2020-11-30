@@ -44,26 +44,26 @@ if(isset($_POST["submit"])){
                   <div class="field-row">
                     <p class="field-one-half">
                       <label for="first-name">ชื่อ</label>
-                      <input type="text" id="first-name" name="receive_firstname" placeholder="" value="<?php echo $currentUser['firstname'];?>">
+                      <input type="text" id="first-name" name="receive_firstname" placeholder="" value="<?php echo $currentUser['firstname'];?>" pattern="^[ก-๙]+$" title="ชื่อต้องเป็นภาษาไทยเท่านั้น ตัวอย่าง:นิยม">
                     </p>
                     <p class="field-one-half">
                       <label for="last-name">นามสกุล</label>
-                      <input type="text" id="last-name" name="receive_lastname" placeholder="" value="<?php echo $currentUser['lastname'];?>">
+                      <input type="text" id="last-name" name="receive_lastname" placeholder="" value="<?php echo $currentUser['lastname'];?>" pattern="^[ก-๙]+$" title="นามสกุลอต้องเป็นภาษาไทยเท่านั้น ตัวอย่าง:ยินดี">
                     </p>
                     <div class="clearfix"></div>
                   </div>
                   <div class="field-row">
                     <label for="company-name">ที่อยู่ในการจัดส่ง</label>
-                    <input type="text" id="company-name" name="receive_address" value="<?php echo $currentUser['address'];?>">
+                    <input type="text" id="company-name" name="receive_address" value="<?php echo $currentUser['address'];?>" title="กรุณากรอกที่อยู่ ตัวอย่าง:ที่อยู่ 103 หมู่ที่ 3 ตำบลเขาเจียก เขต/อำเภอเมืองพัทลุง จังหวัดพัทลุง 93103">
                   </div>
                   <div class="field-row">
                     <p class="field-one-half">
                       <label for="email-address">อีเมล </label>
-                      <input type="email" id="email-address" name="receive_email" value="<?php echo $currentUser['email'];?>">
+                      <input type="email" id="email-address" name="receive_email" value="<?php echo $currentUser['email'];?>" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Email ยังไม่ถูกต้อง ตัวอย่าง:abc123@Gmail.com">
                     </p>
                     <p class="field-one-half">
                       <label for="phone">หมายเลขโทรศัพท์</label>
-                      <input type="text" id="phone" name="receive_phone" value="<?php echo $currentUser['phone'];?>">
+                      <input type="text" id="phone" name="receive_phone" value="<?php echo $currentUser['phone'];?>" pattern="^0([8|9|6])([0-9]{8}$)" title="กรุณากรอกเบอร์มือถือตัวเลข 10 หลัก ตัวอย่าง:0888888888">
                     </p>
                     <div class="clearfix"></div>
                   </div>

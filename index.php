@@ -6,7 +6,6 @@
 
 <body class="header_sticky">
 
-  <div>test =======</div>
   <?php
   require_once("header.php");
   $randomProductInIndex = getRandomProductInIndex();

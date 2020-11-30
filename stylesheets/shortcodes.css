@@ -6099,6 +6099,121 @@ table.product thead tr th:last-child {
 	background-color:#2d2d2d;
 }
 
+/* Flat Tracking
+-------------------------------------------------------------- */
+.flat-tracking {
+	padding-top:30px;
+	padding-bottom:5px;
+}
+
+.show-details-text {
+	background-color:#fff;
+	border-radius:10px;
+	padding:120px 90px 116px;
+	/* text-align:center; */
+	box-shadow:0px 2px 3px 0px rgba(234, 234, 234, 1);
+}
+
+.show-details-text .title {
+	margin-bottom:22px;
+}
+
+.show-details-text .title h3 {
+	color:#2d2d2d;
+	margin-bottom:26px;
+}
+
+.show-details-text .title p {
+	color:#929292;
+	padding-left:5px;
+}
+
+.show-details-text form .one-half {
+	width:50%;
+	float:left;
+	padding-right:15px;
+	padding-left:15px;
+	text-align:left;
+}
+
+.show-details-text form .one-half label {
+	margin-bottom:12px;
+}
+
+.show-details-text form .one-half input {
+	height:40px;
+	padding-left:27px;
+}
+
+.show-details-text form .btn-track button {
+	height:50px;
+	line-height:50px;
+	padding:0 64px;
+	color:#fff;
+	background-color:#f92400;
+	border-radius:25px;
+	font-size:16px;
+	font-weight:600;
+	margin-top:32px;
+	margin-left:8px;
+	letter-spacing:0.5px;
+}
+
+.show-details-text form .btn-track button:hover {
+	background-color:#2d2d2d;
+}
+.show-details-text-form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  *zoom: 1;
+}
+.show-details-text-form-actions:before,
+.form-actions:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.show-details-text-form-actions:after {
+  clear: both;
+}
+.show-details-text-form-action-red {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 3px solid #f32727;
+  *zoom: 1;
+}
+.show-details-text-form-action-red:before,
+.show-details-text-form-action-red:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.show-details-text-form-action-red:after {
+  clear: both;
+}
+.show-details-text-form-action-blue {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 3px solid #2d19e2;
+  *zoom: 1;
+}
+.show-details-text-form-action-blue:before,
+.show-details-text-form-action-blue:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.show-details-text-form-action-blue:after {
+  clear: both;
+}
+
 /* Flat Wishlist
 -------------------------------------------------------------- */
 .flat-wishlist {

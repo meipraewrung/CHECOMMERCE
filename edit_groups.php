@@ -39,16 +39,16 @@ if($_GET["id"] == ""){
       </div>
       <br/><br/>
       <div class="row">
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div class="flexslider">
             <ul class="slides">
               <li data-thumb="images/product/flexslider/thumb/2.jpg">
                 <img src="images/product/flexslider/big-size.jpg" alt='' width='400' height='300' />
               </li>
-            </ul><!-- /.slides -->
-          </div><!-- /.flexslider -->
-        </div><!-- /.col-md-6 -->
-        <div class="col-md-6">
+            </ul>/.slides
+          </div>/.flexslider
+        </div>/.col-md-6 -->
+        <div class="col-md-12">
           <form action="#" method="post">
             <input type="hidden" id="id" name="id" value="<?php echo $currentGroups['id'];?>">
             <div class="one-half order-id">
