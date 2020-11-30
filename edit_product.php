@@ -102,7 +102,7 @@ if($_GET["id"] == ""){
               <input type="text" id="cate_name" name="pro_name" placeholder="ชื่อสินค้า" value="<?php echo $currentProduct['pro_name'];?>">
             </div>
             <div class="one-half order-id">
-              <label for="order-id">รายละเอีบด</label>
+              <label for="order-id">รายละเอียด</label>
               <textarea id="comment-contact" name="pro_detail"><?php echo $currentProduct['pro_detail'];?></textarea>
             </div>
             <div class="one-half order-id">

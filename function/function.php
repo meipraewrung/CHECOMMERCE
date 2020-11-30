@@ -5,6 +5,7 @@ error_reporting(0);
 //mysql://bc2517fa0b713e:51d9eedf@us-cdbr-east-02.cleardb.com/heroku_45df18dc71671e8?reconnect=true
 //$con = mysqli_connect("us-cdbr-east-02.cleardb.com","bc2517fa0b713e","51d9eedf","heroku_45df18dc71671e8e");
 $con = mysqli_connect("localhost","root","","checommerce");
+//$con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
 
 
 $con->set_charset("utf8");
@@ -553,7 +554,7 @@ function getAllHistoryBuy($users_id){
 function getAllOrderDetail($orders_id){
 	global $con;
 
-	$sql = "SELECT *,od.id as odid,od.amount as odamount,od.price as odprice,od.sum_price as odsum_price
+	$sql = "SELECT *,od.id as odid,od.amount as odamount,od.products_id as odproducts_id,od.price as odprice,od.sum_price as odsum_price,p.qunatity as pqunatity
 	FROM orders_detail od
 	LEFT JOIN products p ON od.products_id = p.id 
 	WHERE od.orders_id = '".$orders_id."'
@@ -566,12 +567,14 @@ function getAllOrderDetail($orders_id){
 	while($row = mysqli_fetch_assoc($res)) {
 		$namesArray[] = array(
 			'id' => $row['odid'],
+			'products_id' => $row['odproducts_id'],
 			'pro_number' => $row['pro_number'],
 			'pro_name' => $row['pro_name'],
 			'pro_size' => $row['pro_size'],
 			'pro_weight' => $row['pro_weight'],
 			'product_img' => $row['product_img'],
 			'amount' => $row['odamount'],
+			'pro_amount' => $row['pqunatity'],
 			'price' => $row['odprice'],
 			'sum_price' => $row['odsum_price']);
 	}
@@ -669,7 +672,7 @@ function getAllOrdersPay(){
 
 }
 
-function updatePayment($orders_id,$status){
+function updatePayment($orders_id,$status,$pro_id,$amount_old,$amount_new){
 	global $con;
 
 	$dateNow = date("d/m/Y");
@@ -682,6 +685,18 @@ function updatePayment($orders_id,$status){
 		mysqli_query($con,"UPDATE orders SET status='".$status."' WHERE id = '".$orders_id."'");
 		mysqli_query($con,"DELETE FROM payments WHERE orders_id ='".$orders_id."'");
 	}else{
+
+		
+
+		foreach( $pro_id as $key => $pi ) {
+			if ($pi != "") {
+				$ao = $amount_old[$key];
+				$an = $amount_new[$key];
+				$bal = $ao - $an;
+				mysqli_query($con,"UPDATE products SET qunatity='".$bal."' WHERE id = '".$pi."'");
+			}
+		}
+
 		mysqli_query($con,"UPDATE orders SET status='".$status."',last_update_date='".$convert_dateNow."',last_update_time='".$timeNow."' WHERE id = '".$orders_id."'");
 	}
 	

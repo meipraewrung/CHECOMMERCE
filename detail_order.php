@@ -77,10 +77,10 @@ if (isset($_POST["submit"])) {
                   <?php if ($currentOrders["status"] == 3 || $currentOrders["status"] == 4) { ?>
                     <div class="field-row">
                       <p class="field-one-half">
-                        <label for="email-address">วันที่อัพเดท : <?php echo formatDateFull($currentOrders["last_update_date"]); ?></label>
+                        <label for="email-address">วันที่อัพเดทสถานะ : <?php echo formatDateFull($currentOrders["last_update_date"]); ?></label>
                       </p>
                       <p class="field-one-half">
-                        <label for="phone">เวลาที่อัพเดท : <?php echo $currentOrders["last_update_time"]; ?></label>
+                        <label for="phone">เวลาที่อัพเดทสถานะ : <?php echo $currentOrders["last_update_time"]; ?></label>
                       </p>
                     <div class="clearfix"></div>
                     </div>

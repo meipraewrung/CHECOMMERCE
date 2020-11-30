@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <?php
 require_once("header.php");
@@ -26,10 +26,9 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                 <div class="col-md-12">
                     <div class="order-tracking">
                         <div class="title">
-                            <h3>จัดการสินค้า</h3>
+                            <h3>จัดการสินค้าที่หมด</h3>
                         </div><!-- /.title -->
                         <div class="tracking-content">
-                            <a href="edit_product.php" class="btn btn-success" style="float:right;">เพิ่มสินค้า</a>
                             <table class="table table-condensed">
                                 <thead>
                                     <tr>
@@ -43,7 +42,7 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                                         <td>ราคา</td>
                                         <td>สถานะ</td>
                                         <td style="width:18%;">
-                                            <a href="run_out_product.php" class="btn btn-info">สินค้าที่หมด</a>
+                                            <a href="manage_product.php" class="btn btn-primary">จัดการสินค้า</a>
                                         </td>
                                     </tr>
                                 </thead>
@@ -53,21 +52,23 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                                     <?php } else { ?>
                                         <?php $i = 1; ?>
                                         <?php foreach ($allProduct as $data) { ?>
-                                            <tr>
-                                                <td><?php echo $data["pro_number"]; ?></td>
-                                                <td><?php echo $data["pro_name"]; ?></td>
-                                                <td><?php echo $data["cate_name"]; ?></td>
-                                                <td><?php echo $data["group_name"]; ?></td>
-                                                <td><?php echo $data["pro_size"]; ?></td>
-                                                <td><?php echo $data["pro_weight"]; ?></td>
-                                                <td><?php echo $data["qunatity"]; ?></td>
-                                                <td><?php echo number_format($data["price"]); ?></td>
-                                                <td><?php echo $status_map[$data["status"]]; ?></td>
-                                                <td>
-                                                    <a href="edit_product.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">แก้ไข</a>
-                                                    <a href="?delete=<?php echo $data['id']; ?>" class="btn btn-danger" onClick="javascript: return confirm('ยืนยันการลบ');">ลบ</a>
-                                                </td>
-                                            </tr>
+                                            <?php if ($data["qunatity"] == 0) { ?>
+                                                <tr>
+                                                    <td><?php echo $data["pro_number"]; ?></td>
+                                                    <td><?php echo $data["pro_name"]; ?></td>
+                                                    <td><?php echo $data["cate_name"]; ?></td>
+                                                    <td><?php echo $data["group_name"]; ?></td>
+                                                    <td><?php echo $data["pro_size"]; ?></td>
+                                                    <td><?php echo $data["pro_weight"]; ?></td>
+                                                    <td><?php echo $data["qunatity"]; ?></td>
+                                                    <td><?php echo number_format($data["price"]); ?></td>
+                                                    <td><?php echo $status_map[$data["status"]]; ?></td>
+                                                    <td>
+                                                        <a href="edit_product.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">แก้ไข</a>
+                                                        <a href="?delete=<?php echo $data['id']; ?>" class="btn btn-danger" onClick="javascript: return confirm('ยืนยันการลบ');">ลบ</a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
                                             <?php $i++; ?>
                                         <?php } ?>
                                     <?php } ?>

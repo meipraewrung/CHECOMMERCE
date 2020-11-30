@@ -14,8 +14,11 @@ $status_map = array(1 => '<a style="color:red">ค้างชำระ</a>', 2 
 ?>
 <?php
 if (isset($_POST["submit"])) {
-
-  updatePayment($_POST["orders_id"], $_POST["status"]);
+  
+  $pro_id = $_POST["pro_id"];
+  $amount_old = $_POST["amount_old"];
+  $amount_new = $_POST["amount_new"];
+  updatePayment($_POST["orders_id"], $_POST["status"],$pro_id,$amount_old,$amount_new);
 }
 ?>
 
@@ -107,6 +110,9 @@ if (isset($_POST["submit"])) {
                       <tr>
                         <td>
                           <?php echo $data["pro_name"]; ?>
+                          <input type="hidden" id="first-name" name="pro_id[]" placeholder="" value="<?php echo $data['products_id']; ?>">
+                          <input type="hidden" id="first-name" name="amount_old[]" placeholder="" value="<?php echo $data['pro_amount']; ?>">
+                          <input type="hidden" id="first-name" name="amount_new[]" placeholder="" value="<?php echo $data['amount']; ?>">
                         </td>
                         <td><?php echo number_format($data["sum_price"]); ?></td>
                       </tr>

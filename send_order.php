@@ -74,6 +74,17 @@ if (isset($_POST["submit"])) {
                   <div class="field-row">
                     <label for="company-name">สถานะ : <?php echo $status_map[$currentOrders["status"]]; ?></label>
                   </div>
+                  <?php if ($currentOrders["status"] == 3 || $currentOrders["status"] == 4) { ?>
+                    <div class="field-row">
+                      <p class="field-one-half">
+                        <label for="email-address">วันที่อัพเดทสถานะ : <?php echo formatDateFull($currentOrders["last_update_date"]); ?></label>
+                      </p>
+                      <p class="field-one-half">
+                        <label for="phone">เวลาที่อัพเดทสถานะ : <?php echo $currentOrders["last_update_time"]; ?></label>
+                      </p>
+                      <div class="clearfix"></div>
+                    </div>
+                  <?php } ?>
 
 
 
@@ -99,12 +110,14 @@ if (isset($_POST["submit"])) {
                   <?php } else { ?>
                     <?php $total = 0; ?>
                     <?php $total_weight = 0; ?>
-                    <?php $total_size = 0; ?><!-- /.not use -->
+                    <?php $total_size = 0; ?>
+                    <!-- /.not use -->
                     <?php $amount = 0; ?>
                     <?php foreach ($allOrderDetail as $data) { ?>
                       <?php $total += $data["sum_price"]; ?>
                       <?php $total_weight += $data["pro_weight"]; ?>
-                      <?php $total_size += $data["pro_size"]; ?><!-- /.not use -->
+                      <?php $total_size += $data["pro_size"]; ?>
+                      <!-- /.not use -->
                       <?php $amount += number_format($data["amount"]); ?>
                       <tr>
                         <td>
@@ -210,7 +223,6 @@ if (isset($_POST["submit"])) {
                       <div class="field-row">
                         <label for="company-name">จำนวนเงิน : <?php echo number_format($currentPaymentOrder["amount_pay"]); ?> บาท</label>
                       </div>
-
                       <div class="clearfix"></div>
                     </div>
                     <div class="field-row">
@@ -221,8 +233,8 @@ if (isset($_POST["submit"])) {
                       <label for="company-name">อัพเดทสถานะ</label>
                       <select name="status" required>
                         <!-- <option value="">-- โปรดเลือก -- </option> -->
-                        <!-- <option value="1" <?php /*if ($currentOrders['status'] == 1) { ?> selected<?php } */?>>ค้างชำระ</option> -->
-                        <!-- <option value="2" <?php /*if ($currentOrders['status'] == 2) { ?> selected<?php } */?>>รอการตรวจสอบ</option> -->
+                        <!-- <option value="1" <?php /*if ($currentOrders['status'] == 1) { ?> selected<?php } */ ?>>ค้างชำระ</option> -->
+                        <!-- <option value="2" <?php /*if ($currentOrders['status'] == 2) { ?> selected<?php } */ ?>>รอการตรวจสอบ</option> -->
                         <option value="3" <?php if ($currentOrders['status'] == 3) { ?> selected<?php } ?>>ชำระเรียบร้อย</option>
                         <option value="4" <?php if ($currentOrders['status'] == 4) { ?> selected<?php } ?>>จัดส่งเรียบร้อย</option>
                       </select>
