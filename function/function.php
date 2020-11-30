@@ -2,10 +2,8 @@
 error_reporting(0);
 
 //เชื่อต่อ Database
-//mysql://bc2517fa0b713e:51d9eedf@us-cdbr-east-02.cleardb.com/heroku_45df18dc71671e8?reconnect=true
-//$con = mysqli_connect("us-cdbr-east-02.cleardb.com","bc2517fa0b713e","51d9eedf","heroku_45df18dc71671e8e");
 $con = mysqli_connect("localhost","root","","checommerce");
-//$con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
+// $con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
 
 
 $con->set_charset("utf8");
