@@ -220,9 +220,9 @@ if (isset($_POST["submit"])) {
                     <div class="field-row">
                       <label for="company-name">อัพเดทสถานะ</label>
                       <select name="status" required>
-                        <option value="">-- โปรดเลือก -- </option>
-                        <option value="1" <?php if ($currentOrders['status'] == 1) { ?> selected<?php } ?>>ค้างชำระ</option>
-                        <option value="2" <?php if ($currentOrders['status'] == 2) { ?> selected<?php } ?>>รอการตรวจสอบ</option>
+                        <!-- <option value="">-- โปรดเลือก -- </option> -->
+                        <!-- <option value="1" <?php /*if ($currentOrders['status'] == 1) { ?> selected<?php } */?>>ค้างชำระ</option> -->
+                        <!-- <option value="2" <?php /*if ($currentOrders['status'] == 2) { ?> selected<?php } */?>>รอการตรวจสอบ</option> -->
                         <option value="3" <?php if ($currentOrders['status'] == 3) { ?> selected<?php } ?>>ชำระเรียบร้อย</option>
                         <option value="4" <?php if ($currentOrders['status'] == 4) { ?> selected<?php } ?>>จัดส่งเรียบร้อย</option>
                       </select>

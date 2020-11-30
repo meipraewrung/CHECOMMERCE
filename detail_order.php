@@ -69,12 +69,22 @@ if (isset($_POST["submit"])) {
                     <p class="field-one-half">
                       <label for="phone">เวลาที่สั่งซื้อ : <?php echo $currentOrders["time_order"]; ?></label>
                     </p>
-
                     <div class="clearfix"></div>
                   </div>
                   <div class="field-row">
                     <label for="company-name">สถานะ : <?php echo $status_map[$currentOrders["status"]]; ?></label>
                   </div>
+                  <?php if ($currentOrders["status"] == 3 || $currentOrders["status"] == 4) { ?>
+                    <div class="field-row">
+                      <p class="field-one-half">
+                        <label for="email-address">วันที่อัพเดท : <?php echo formatDateFull($currentOrders["last_update_date"]); ?></label>
+                      </p>
+                      <p class="field-one-half">
+                        <label for="phone">เวลาที่อัพเดท : <?php echo $currentOrders["last_update_time"]; ?></label>
+                      </p>
+                    <div class="clearfix"></div>
+                    </div>
+                  <?php } ?>
                   <?php if ($currentOrders["status"] == 4) { ?>
                     <div class="field-row">
                       <label for="company-name" style="color:red;">หมายเลขการจัดส่ง : <?php echo $currentOrders["tracking_number"]; ?></label>
