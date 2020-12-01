@@ -2,8 +2,8 @@
 error_reporting(0);
 
 //เชื่อต่อ Database
-$con = mysqli_connect("localhost","root","","checommerce");
-// $con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
+// $con = mysqli_connect("localhost","root","","checommerce");
+$con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
 
 
 $con->set_charset("utf8");

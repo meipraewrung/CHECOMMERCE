@@ -4311,6 +4311,27 @@ input[type="checkbox"]:checked + label:before {
 	font-weight:400;
 	color:#838383;
 }
+.product-qunatity {
+	margin-top:11px;
+	font-size:17px;
+	color:#484848;
+	font-weight:bold;
+}
+
+.product-qunatity .id {
+	font-weight:400;
+	color:#838383;
+}
+
+.product-size-weight {
+	color:#484848;
+	font-weight:bold;
+}
+
+.product-size-weight .id {
+	font-weight:400;
+	color:#838383;
+}
 
 .product-detail .footer-detail {
 	margin-top:30px;

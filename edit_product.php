@@ -114,12 +114,12 @@ if($_GET["id"] == ""){
               <input type="text" id="cate_name" name="pro_weight" placeholder="น้ำหนัก" value="<?php echo $currentProduct['pro_weight'];?>">
             </div>
             <div class="one-half order-id">
-              <label for="order-id">หน่วยจำนวน</label>
-              <input type="text" id="cate_name" name="qunatity" placeholder="หน่วยจำนวน" value="<?php echo $currentProduct['qunatity'];?>">
+              <label for="order-id">จำนวน(ชิ้น)</label>
+              <input type="text" id="cate_name" name="qunatity" placeholder="จำนวน(ชิ้น)" value="<?php echo $currentProduct['qunatity'];?>">
             </div>
             <div class="one-half order-id">
-              <label for="order-id">ราคาต่อหน่วย</label>
-              <input type="text" id="cate_name" name="price" placeholder="ราคาต่อหน่วย" value="<?php echo $currentProduct['price'];?>">
+              <label for="order-id">ราคาต่อชิ้น</label>
+              <input type="text" id="cate_name" name="price" placeholder="ราคาต่อชิ้น" value="<?php echo $currentProduct['price'];?>">
             </div>
             <div class="one-half order-id">
               <label for="order-id">รูปสินค้า</label>

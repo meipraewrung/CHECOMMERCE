@@ -108,12 +108,19 @@ if(isset($_POST["add_to_cart"]))
                   <?php echo number_format($currentProduct['price']);?> บาท
                 </div>
               </div>
+              <div class="product-qunatity">
+                จำนวนที่มี : <span class="id"><?php echo $currentProduct['qunatity'];?></span>
+              </div>
               <div class="info-text">
                 <?php echo $currentProduct['pro_detail'];?>
               </div>
               <div class="product-id">
                 รหัสสินค้า : <span class="id"><?php echo $currentProduct['pro_number'];?></span>
               </div>
+              <!-- <div class="product-size-weight"> -->
+                <!-- ขนาด : <span class="id"><?php /*echo $currentProduct['pro_size'];*/?></span> ซ.ม.&emsp;&emsp;&emsp; --> <!-- /.&emsp; 4*3 -->
+                <!-- น้ำหนัก : <span class="id"><?php /*echo $currentProduct['pro_weight'];*/?></span> ก.ก. -->
+              <!-- </div> -->
             </div><!-- /.content-detail -->
             <div class="footer-detail">
               <div class="quanlity-box">

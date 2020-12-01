@@ -39,8 +39,8 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                                         <td>กลุ่ม</td>
                                         <td>ขนาด</td>
                                         <td>น้ำหนัก</td>
-                                        <td>จำนวน</td>
-                                        <td>ราคา</td>
+                                        <td>จำนวน(ชิ้น)</td>
+                                        <td>ราคาต่อชิ้น</td>
                                         <td>สถานะ</td>
                                         <td style="width:18%;">
                                             <a href="run_out_product.php" class="btn btn-info">สินค้าที่หมด</a>

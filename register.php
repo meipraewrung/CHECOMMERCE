@@ -33,10 +33,10 @@ if (isset($_POST["submit"])) {
                 <br />
                 <form method="post" action="">
                   <div class="form-group">
-                    <input type="text" required="" class="form-control" name="username" placeholder="Username" pattern="^[a-zA-Z\s]+$" title="Username ต้องเป็นภาษาอังกฤษเท่านั้น ตัวอย่าง:customer">
+                    <input type="text" required="" class="form-control" name="username" placeholder="ชื่อผู้ใช้งาน" pattern="^[a-zA-Z\s]+$" title="Username ต้องเป็นภาษาอังกฤษเท่านั้น ตัวอย่าง:customer">
                   </div>
                   <div class="form-group">
-                    <input type="password" required="" class="form-control" name="password" placeholder="Password" pattern="[a-zA-Z0-9-_\.].{7,45}" title="Password ต้องมีมากกว่าหรือเท่ากับ 8 ตัวขึ้นไป ตัวอย่าง:customer103">
+                    <input type="password" required="" class="form-control" name="password" placeholder="รหัสผ่าน" pattern="[a-zA-Z0-9-_\.].{7,45}" title="Password ต้องมีมากกว่าหรือเท่ากับ 8 ตัวขึ้นไป ตัวอย่าง:customer103">
                   </div>
                   <div class="form-group">
                     <input type="text" required="" class="form-control" name="firstname" placeholder="ชื่อ" pattern="^[ก-๙]+$" title="ชื่อต้องเป็นภาษาไทยเท่านั้น ตัวอย่าง:นิยม">
