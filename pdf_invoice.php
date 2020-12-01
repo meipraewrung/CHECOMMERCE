@@ -80,19 +80,36 @@ EOD;
 }
 
 
-if($total_weight >= 1 && $total_weight >= 4){
-    $send_price = 110;
-}else if($total_weight >= 5 && $total_weight >= 9){
-    $send_price = 125;
-}else if($total_weight >= 10 && $total_weight >= 14){
-    $send_price = 165;
-}else if($total_weight >= 15 && $total_weight >= 19){
-    $send_price = 215;
-}else if($total_weight >= 20 && $total_weight >= 24){
-    $send_price = 300;
-}else{
-    $send_price = 390;
-}
+// if($total_weight >= 1 && $total_weight >= 4){
+//     $send_price = 110;
+// }else if($total_weight >= 5 && $total_weight >= 9){
+//     $send_price = 125;
+// }else if($total_weight >= 10 && $total_weight >= 14){
+//     $send_price = 165;
+// }else if($total_weight >= 15 && $total_weight >= 19){
+//     $send_price = 215;
+// }else if($total_weight >= 20 && $total_weight >= 24){
+//     $send_price = 300;
+// }else{
+//     $send_price = 390;
+// }
+if($total_weight >= 1 && $total_weight <= 3){
+    $send_price = 45;
+  }else if($total_weight >= 4 && $total_weight <= 5){
+    $send_price = 80;
+  }else if($total_weight >= 6 && $total_weight <= 10){
+    $send_price = 100;
+  }else if($total_weight >= 11 && $total_weight <= 15){
+    $send_price = 115;
+  }else if($total_weight >= 16 && $total_weight <= 20){
+    $send_price = 155;
+  }else if($total_weight >= 21 && $total_weight <= 25){
+    $send_price = 205;
+  }else if($total_weight >= 26 && $total_weight <= 30){
+    $send_price = 330;
+  }else{
+    $send_price = 420;
+  }
                     
 
 //$total_price = $price + 40;

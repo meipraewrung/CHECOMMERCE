@@ -485,7 +485,7 @@ function getAllProductInGroupAndCategory($categories_id,$groups_id){
 
 }
 
-function saveOrders($users_id,$receive_firstname,$receive_lastname,$receive_address,$receive_email,$receive_phone,$total_price,$products_id,$amount,$unit_price,$sum_price){
+function saveOrders($users_id,$receive_firstname,$receive_lastname,$receive_address,$receive_email,$receive_phone,$total_price,$total_send_price,$products_id,$amount,$unit_price,$sum_price){
 	global $con;
 	unset($_SESSION["shopping_cart"]);
 	$dateNow = date("d/m/Y");
@@ -494,7 +494,7 @@ function saveOrders($users_id,$receive_firstname,$receive_lastname,$receive_addr
 	$convert_dateNow = $arrDateNow[2].'-'.$arrDateNow[1].'-'.$arrDateNow[0];
 	$timeNow = date("H:i");
 
-	$sql = "INSERT INTO orders (users_id, receive_firstname, receive_lastname, receive_email, receive_phone, receive_address, total_price, date_order, time_order, status) VALUES('".$users_id."','".$receive_firstname."','".$receive_lastname."','".$receive_email."','".$receive_phone."','".$receive_address."','".$total_price."','".$convert_dateNow."','".$timeNow."','1')";
+	$sql = "INSERT INTO orders (users_id, receive_firstname, receive_lastname, receive_email, receive_phone, receive_address, total_price, total_send_price, date_order, time_order, status) VALUES('".$users_id."','".$receive_firstname."','".$receive_lastname."','".$receive_email."','".$receive_phone."','".$receive_address."','".$total_price."','".$total_send_price."','".$convert_dateNow."','".$timeNow."','1')";
 
 	mysqli_query($con,$sql);
 
@@ -549,6 +549,7 @@ function getAllHistoryBuy($users_id){
 			'receive_phone' => $row['receive_phone'],
 			'receive_address' => $row['receive_address'],
 			'total_price' => $row['total_price'],
+			'total_send_price' => $row['total_send_price'],
 			'date_order' => $row['date_order'],
 			'time_order' => $row['time_order'],
 			'status' => $row['ostatus']);
@@ -670,6 +671,7 @@ function getAllOrdersPay(){
 			'receive_phone' => $row['receive_phone'],
 			'receive_address' => $row['receive_address'],
 			'total_price' => $row['total_price'],
+			'total_send_price' => $row['total_send_price'],
 			'date_order' => $row['date_order'],
 			'time_order' => $row['time_order'],
 			'status' => $row['ostatus']);
@@ -737,6 +739,7 @@ function getAllHistoryOrder(){
 			'receive_phone' => $row['receive_phone'],
 			'receive_address' => $row['receive_address'],
 			'total_price' => $row['total_price'],
+			'total_send_price' => $row['total_send_price'],
 			'date_order' => $row['date_order'],
 			'time_order' => $row['time_order'],
 			'status' => $row['ostatus']);

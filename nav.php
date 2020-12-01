@@ -170,13 +170,6 @@ $allCategory = getAllCategory();
                   <a href="index.php" title="">หน้าหลัก</a>
                 </li>
                 <!--  -->
-                <?php if ($_SESSION["id"] == "" || $_SESSION["status"] != 2) { ?>
-                  <!--  -->
-                  <li class="column-1">
-                    <a href="how_pay.php" title="">วิธีการชำระเงิน</a>
-                  </li>
-                <?php } ?>
-                <!--  -->
                 <li class="has-mega-menu">
                   <a href="#" title="">สินค้า</a>
                   <div class="submenu">
@@ -209,13 +202,6 @@ $allCategory = getAllCategory();
                   </div>
                 </li>
                 <!--  -->
-                <?php if ($_SESSION["id"] == "" || $_SESSION["status"] != 2) { ?>
-                  <!--  -->
-                  <li class="column-1">
-                    <a href="how_buy.php" title="">วิธีการสั่งซื้อสินค้า</a>
-                  </li>
-                <?php } ?>
-                <!--  -->
                 <?php if ($_SESSION["id"] == "" || empty($_SESSION["id"])) { ?>
                   <!--  -->
                 <?php } else { ?>
@@ -223,6 +209,17 @@ $allCategory = getAllCategory();
                   <?php if ($_SESSION["status"] == 1) { ?>
                     <li class="column-1">
                       <a href="history_buy.php" title="">ประวัติการสั่งซื้อ</a>
+                    </li>
+                  <?php } ?>
+                  <!--  -->
+                  <?php if ($_SESSION["id"] == "" || $_SESSION["status"] != 2) { ?>
+                    <!--  -->
+                    <li class="column-1">
+                      <a href="how_pay.php" title="">วิธีการชำระเงิน</a>
+                    </li>
+                    <!--  -->
+                    <li class="column-1">
+                      <a href="how_buy.php" title="">วิธีการสั่งซื้อสินค้า</a>
                     </li>
                   <?php } ?>
                   <!--  -->

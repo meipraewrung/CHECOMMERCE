@@ -27,7 +27,7 @@ if (isset($_GET['delete'])) {
             </div><!-- /.title -->
             <div class="tracking-content">
               <table class="table table-condensed" style="width:100%;">
-                <thead>
+                <thead style="font-size: 17px;">
                   <tr>
                     <td style="width:15%;">ผู้รับ</td>
                     <td style="width:17%;">ที่อยู่การจัดส่ง</td>

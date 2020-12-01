@@ -31,7 +31,7 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                         <div class="tracking-content">
                             <a href="edit_product.php" class="btn btn-success" style="float:right;">เพิ่มสินค้า</a>
                             <table class="table table-condensed">
-                                <thead>
+                                <thead style="font-size: 17px;">
                                     <tr>
                                         <td>เลขที่</td>
                                         <td>สินค้า</td>

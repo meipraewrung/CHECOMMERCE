@@ -24,7 +24,7 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
             </div><!-- /.title -->
             <div class="tracking-content">
               <table class="table table-condensed" style="width:100%;">
-                <thead>
+                <thead style="font-size: 17px;">
                   <tr>
                     <td style="width:25%;">ผู้รับ</td>
                     <td style="width:31%;">ที่อยู่การจัดส่ง</td>

@@ -27,7 +27,7 @@ if (isset($_GET['delete'])) {
                     <div class="tracking-content">
                         <a href="edit_category.php" class="btn btn-success" style="float:right;">เพิ่มประเภทสินค้า</a>
                         <table class="table table-condensed">
-                          <thead>
+                          <thead style="font-size: 17px;">
                             <tr>
                               <td>ชื่อประเภท</td>
                               <td></td>

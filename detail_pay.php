@@ -14,11 +14,11 @@ $status_map = array(1 => '<a style="color:red">ค้างชำระ</a>', 2 
 ?>
 <?php
 if (isset($_POST["submit"])) {
-  
+
   $pro_id = $_POST["pro_id"];
   $amount_old = $_POST["amount_old"];
   $amount_new = $_POST["amount_new"];
-  updatePayment($_POST["orders_id"], $_POST["status"],$pro_id,$amount_old,$amount_new);
+  updatePayment($_POST["orders_id"], $_POST["status"], $pro_id, $amount_old, $amount_new);
 }
 ?>
 
@@ -90,10 +90,11 @@ if (isset($_POST["submit"])) {
               <h3>รายการสั่งซื้อ</h3>
 
               <table class="product">
-                <thead>
+                <thead style="font-size: 17px;">
                   <tr>
                     <th>สินค้า</th>
                     <th>ราคา</th>
+                    <th>จำนวนที่สั่ง</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -101,11 +102,9 @@ if (isset($_POST["submit"])) {
                     <?php echo "<h3>ไม่พบข้อมูล</h3>"; ?>
                   <?php } else { ?>
                     <?php $total = 0; ?>
-                    <?php $total_weight = 0; ?>
                     <?php $amount = 0; ?>
                     <?php foreach ($allOrderDetail as $data) { ?>
                       <?php $total += $data["sum_price"]; ?>
-                      <?php $total_weight += $data["pro_weight"]; ?>
                       <?php $amount += number_format($data["amount"]); ?>
                       <tr>
                         <td>
@@ -115,6 +114,7 @@ if (isset($_POST["submit"])) {
                           <input type="hidden" id="first-name" name="amount_new[]" placeholder="" value="<?php echo $data['amount']; ?>">
                         </td>
                         <td><?php echo number_format($data["sum_price"]); ?></td>
+                        <td><?php echo $amount; ?></td>
                       </tr>
                     <?php } ?>
                   <?php } ?>
@@ -123,43 +123,15 @@ if (isset($_POST["submit"])) {
               <table>
                 <tbody>
                   <tr>
-                    <td>จำนวนที่สั่ง</td>
-                    <td><?php echo $amount; ?></td>
-                  </tr>
-                  <tr>
                     <td>ค่าจัดส่ง</td>
-                    <?php
-                    if ($total_weight >= 1 && $total_weight <= 3) {
-                      $send_price = 45;
-                    } else if ($total_weight >= 4 && $total_weight <= 5) {
-                      $send_price = 80;
-                    } else if ($total_weight >= 6 && $total_weight <= 10) {
-                      $send_price = 100;
-                    } else if ($total_weight >= 11 && $total_weight <= 15) {
-                      $send_price = 115;
-                    } else if ($total_weight >= 16 && $total_weight <= 20) {
-                      $send_price = 155;
-                    } else if ($total_weight >= 21 && $total_weight <= 25) {
-                      $send_price = 205;
-                    } else if ($total_weight >= 26 && $total_weight <= 30) {
-                      $send_price = 330;
-                    } else {
-                      $send_price = 420;
-                    }
-                    ?>
-                    <?php $send_price = $send_price * $amount; ?>
-                    <td class="sub-total"><?php echo number_format($send_price); ?> บาท</td>
+                    <td class="sub-total"><?php echo number_format($currentOrders["total_send_price"]); ?> บาท</td>
                   </tr>
                   <tr>
-                    <?php $total = ($total * $amount) + $send_price; ?>
                     <td>Total</td>
-                    <td class="price-total"><?php echo number_format($total); ?> บาท</td>
+                    <td class="price-total"><?php echo number_format($currentOrders["total_price"]); ?> บาท</td>
                   </tr>
                 </tbody>
               </table>
-
-              <input type="hidden" name="total_price" value="<?php echo $total; ?>">
-              <!-- /.btn-order -->
 
             </div><!-- /.cart-totals style2 -->
           </div><!-- /.col-md-5 -->

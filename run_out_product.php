@@ -30,7 +30,7 @@ $status_map = array(0 => '<a style="color:green">ปกติ</a>', 1 => '<a sty
                         </div><!-- /.title -->
                         <div class="tracking-content">
                             <table class="table table-condensed">
-                                <thead>
+                                <thead style="font-size: 17px;">
                                     <tr>
                                         <td>เลขที่</td>
                                         <td>สินค้า</td>
