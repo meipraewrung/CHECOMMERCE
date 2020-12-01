@@ -421,7 +421,7 @@ function getRandomProductInIndex(){
 	FROM products p 
 	LEFT JOIN categories c ON p.categories_id = c.id 
 	LEFT JOIN groups g ON p.groups_id = g.id 
-	ORDER BY RAND() LIMIT 4";
+	ORDER BY RAND() LIMIT 12";
 	
 	$res = mysqli_query($con,$sql);
 
