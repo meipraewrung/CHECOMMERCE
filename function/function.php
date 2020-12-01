@@ -2,8 +2,8 @@
 error_reporting(0);
 
 //เชื่อต่อ Database
-// $con = mysqli_connect("localhost","root","","checommerce");
-$con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
+$con = mysqli_connect("localhost","root","","checommerce");
+// $con = mysqli_connect("localhost","checomme_cheomm","checommerce","checomme_cheomm");
 
 
 $con->set_charset("utf8");
@@ -515,6 +515,18 @@ function saveOrders($users_id,$receive_firstname,$receive_lastname,$receive_addr
 		window.location.href='index.php';
 		</script>"); 
 	
+}
+
+function deleteHistoryBuy($id){
+	global $con;
+
+	mysqli_query($con,"DELETE FROM orders WHERE id='".$id."'");
+	mysqli_close($con);
+	echo ("<script language='JavaScript'>
+		alert('ลบข้อมูลเรียบร้อยแล้ว');
+		window.location.href='history_buy.php';
+		</script>"); 
+
 }
 
 function getAllHistoryBuy($users_id){

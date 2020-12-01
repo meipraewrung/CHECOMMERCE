@@ -126,7 +126,7 @@ if(isset($_POST["add_to_cart"]))
               <div class="quanlity-box">
 
                 <div class="quanlity">
-                  <input type="text" name="amount" value="" min="1" max="100" placeholder="Quanlity" required>
+                  <input type="text" name="amount" value="" pattern="[0-9]{1,101}" title="กรอกตัวเลขเท่านั้น(สูงสุด100ชิ้น)" placeholder="จำนวนสินค้าที่ต้องการ" required>
                 </div>
               </div><!-- /.quanlity-box -->
               <div class="box-cart style2" >

@@ -6,6 +6,9 @@ require_once("header.php");
 <?php 
 $allHistoryBuy = getAllHistoryBuy($_SESSION["id"]);
 $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'<a style="color:blue">รอการตรวจสอบ</a>',3=>'<a style="color:green">ชำระเรียบร้อย</a>',4=>'<a style="color:green">จัดส่งเรียบร้อย</a>');
+if (isset($_GET['delete'])) {
+  deleteHistoryBuy($_GET['delete']);
+}
 ?>
 <body>
 
@@ -26,13 +29,13 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
               <table class="table table-condensed" style="width:100%;">
                 <thead>
                   <tr>
-                    <td style="width:17%;">ผู้รับ</td>
-                    <td style="width:25%;">ที่อยู่การจัดส่ง</td>
+                    <td style="width:15%;">ผู้รับ</td>
+                    <td style="width:17%;">ที่อยู่การจัดส่ง</td>
                     <td>โทรศัพท์</td>
                     <td>วันที่สั่งซื้อ</td>
                     <td>เวลาที่สั่งซื้อ</td>
                     <td>ราคารวม</td>
-                    <td style="width:15%;">สถานะ</td>
+                    <td style="width:13%;">สถานะ</td>
                     <td style="width:31%;"></td>
                   </tr>
                 </thead>
@@ -55,6 +58,9 @@ $status_map = array( 1=>'<a style="color:red">ค้างชำระ</a>',2=>'
                             <a href="pay_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-warning">ชำระเงิน</a>
                           <?php } ?>
                           <a href="detail_order.php?order_id=<?php echo $data['id'];?>" class="btn btn-info">รายละเอียด</a>
+                          <?php if($data["status"] == 1){ ?>
+                                    <a href="?delete=<?php echo $data['id'];?>" class="btn btn-danger" onClick="javascript: return confirm('ยืนยันการลบ');">ยกเลิกการสั่ง</a>
+                          <?php } ?>
                         </td>
                         
                       </tr>

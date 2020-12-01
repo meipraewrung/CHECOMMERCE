@@ -149,7 +149,7 @@ if(isset($_POST["submit"])){
                     <td class="sub-total"><?php echo number_format($send_price);?> บาท</td>
                   </tr>
                   <tr>
-                    <?php $total = $total + $send_price;?>
+                    <?php $total = ($total * $amount) + $send_price;?>
                     <td>Total</td>
                     <td class="price-total"><?php echo number_format($total);?> บาท</td>
                   </tr>
