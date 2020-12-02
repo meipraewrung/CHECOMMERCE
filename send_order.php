@@ -169,10 +169,10 @@ if (isset($_POST["submit"])) {
                         <label for="phone">สาขาที่โอน : <?php echo $currentPaymentOrder["bank_branch"]; ?></label>
                       </p>
                       <p class="field-one-half">
-                        <label for="email-address">วันที่ชำระ : <?php echo formatDateFull($currentPaymentOrder["date_pay"]); ?></label>
+                        <label for="email-address">วันที่บันทึกการชำระ : <?php echo formatDateFull($currentPaymentOrder["date_pay"]); ?></label>
                       </p>
                       <p class="field-one-half">
-                        <label for="phone">เวลาที่ชำระ : <?php echo $currentPaymentOrder["time_pay"]; ?></label>
+                        <label for="phone">เวลาที่บันทึกการชำระ : <?php echo $currentPaymentOrder["time_pay"]; ?></label>
                       </p>
                       <div class="field-row">
                         <label for="company-name">จำนวนเงิน : <?php echo number_format($currentPaymentOrder["amount_pay"]); ?> บาท</label>
