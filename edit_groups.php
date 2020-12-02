@@ -68,7 +68,7 @@ if($_GET["id"] == ""){
             </div>
             <div class="one-half order-id">
               <label for="order-id">กลุ่มสินค้า</label>
-              <input type="text" id="group_name" name="group_name" placeholder="ชื่อประเภทสินค้า" value="<?php echo $currentGroups['group_name'];?>">
+              <input type="text" id="group_name" name="group_name" placeholder="ชื่อกลุ่มสินค้า" value="<?php echo $currentGroups['group_name'];?>">
             </div><!-- /.one-half order-id -->
             <div class="btn-track" style="text-align: center;">
               <br/>
